@@ -1,0 +1,38 @@
+.Hgirar:hover{
+
+	-moz-animation-duration: 1,5s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-name:girar_hover;
+	-webkit-animation-duration:1.5s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-name:girar;
+}
+.girar{
+	-moz-animation-name: girar;
+	-moz-animation-duration:2s;
+	-moz-animation-iteration-count:1;
+}
+
+@-moz-keyframes girar
+{
+	0%{
+		-moz-transform:rotateX(0);
+	}
+	50%{
+		-moz-transform:rotateY(180deg);
+	}
+	100%{
+		-mos-transform:rotateY(360deg);
+	}
+}
+@-moz-keyframes girar_hover{
+	0%{
+		-moz-transform:rotateX(0);
+	}
+	50%{
+		-moz-transform:rotateY(180deg);
+	}
+	100%{
+		-mos-transform:rotateY(360deg);
+	}
+}
