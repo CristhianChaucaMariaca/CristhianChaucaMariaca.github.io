@@ -32,7 +32,9 @@ body .container {
     padding-bottom: 0;
     color: #006064;
     -webkit-animation: nombre 1s;
-    animation: nombre 1s; }
+    animation: nombre 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
   #portada #icon-portada {
     width: 80%;
     margin: auto;
@@ -82,7 +84,8 @@ body .container {
   90% {
     opacity: 10; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    display: none; } }
 
 @keyframes portada {
   0% {
@@ -90,4 +93,5 @@ body .container {
   90% {
     opacity: 10; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    display: none; } }

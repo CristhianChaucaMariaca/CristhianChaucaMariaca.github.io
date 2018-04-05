@@ -17,7 +17,8 @@
                 margin-top: 150px;
                 padding-bottom: 0;
                 color: $color1;
-            animation: nombre 1s;
+                animation: nombre 1s;
+                animation-fill-mode: forwards;
             
         }
         #icon-portada{
@@ -66,5 +67,6 @@
     }
     100%{
         opacity: 0;
+        display: none;
     }
 }
