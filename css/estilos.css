@@ -12,23 +12,27 @@ body .container {
     margin: auto; }
 
 #portada {
-  width: 80%;
+  width: 100%;
+  left: 0;
+  top: 0;
   margin: auto;
   margin-bottom: 0;
-  height: auto;
-  display: block;
-  position: relative;
-  text-align: center; }
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  -webkit-animation: portada 4s;
+  animation: portada 4s; }
   #portada h1, #portada .titulo {
     width: 80%;
     margin: auto;
     text-align: center;
     font-family: "Dancing Script", cursive;
     font-size: 4em;
-    margin-bottom: 0;
     margin-top: 150px;
     padding-bottom: 0;
-    color: #006064; }
+    color: #006064;
+    -webkit-animation: nombre 1s;
+    animation: nombre 1s; }
   #portada #icon-portada {
     width: 80%;
     margin: auto;
@@ -41,7 +45,49 @@ body .container {
     font-size: 3em;
     margin-top: 0;
     padding-top: 0;
-    color: #00b8d4; }
+    color: #00b8d4;
+    -webkit-animation: formacion 3s;
+    animation: formacion 3s; }
     #portada span span, #portada #etiqueta span {
       font-size: 0.5em;
       margin-left: 5px; }
+
+@-webkit-keyframes nombre {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 10; } }
+
+@keyframes nombre {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 10; } }
+
+@-webkit-keyframes formacion {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 10; } }
+
+@keyframes formacion {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 10; } }
+
+@-webkit-keyframes portada {
+  0% {
+    opacity: 10; }
+  90% {
+    opacity: 10; }
+  100% {
+    opacity: 0; } }
+
+@keyframes portada {
+  0% {
+    opacity: 10; }
+  90% {
+    opacity: 10; }
+  100% {
+    opacity: 0; } }
