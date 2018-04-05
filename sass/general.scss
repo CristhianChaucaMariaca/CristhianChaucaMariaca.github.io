@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Chathura|Dancing+Script');
+$titulo: 'Dancing Script', cursive;
+$etiquetas: 'Chathura', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    .container{
+        width: 100%;
+        header{
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

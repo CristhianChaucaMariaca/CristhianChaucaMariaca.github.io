@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Chathura|Dancing+Script");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body .container {
+  width: 100%; }
+  body .container header {
+    width: 80%;
+    margin: auto; }
+
+#portada {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 0;
+  height: auto;
+  display: block;
+  position: relative;
+  text-align: center; }
+  #portada h1, #portada .titulo {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 150px;
+    padding-bottom: 0;
+    color: #006064; }
+  #portada #icon-portada {
+    width: 80%;
+    margin: auto;
+    font-size: 2em;
+    color: #b2ebf2; }
+  #portada span, #portada #etiqueta {
+    font-family: "Chathura", sans-serif;
+    width: 80%;
+    margin: auto;
+    font-size: 3em;
+    margin-top: 0;
+    padding-top: 0;
+    color: #00b8d4; }
+    #portada span span, #portada #etiqueta span {
+      font-size: 0.5em;
+      margin-left: 5px; }
