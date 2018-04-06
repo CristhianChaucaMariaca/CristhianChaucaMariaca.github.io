@@ -20,8 +20,12 @@ body .container {
   height: 100%;
   position: fixed;
   text-align: center;
+  background-color: white;
   -webkit-animation: portada 4s;
-  animation: portada 4s; }
+  animation: portada 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  z-index: 100; }
   #portada h1, #portada .titulo {
     width: 80%;
     margin: auto;
@@ -32,9 +36,7 @@ body .container {
     padding-bottom: 0;
     color: #006064;
     -webkit-animation: nombre 1s;
-    animation: nombre 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; }
+    animation: nombre 1s; }
   #portada #icon-portada {
     width: 80%;
     margin: auto;
@@ -95,3 +97,60 @@ body .container {
   100% {
     opacity: 0;
     display: none; } }
+
+section, .navegador {
+  width: 70%;
+  margin: auto; }
+  section nav ul, .navegador nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    section nav ul li, .navegador nav ul li {
+      width: 20%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      list-style: none; }
+      section nav ul li a, .navegador nav ul li a {
+        text-decoration: none;
+        text-align: center;
+        font-family: "Chathura", sans-serif;
+        font-size: 2.5em;
+        color: #00b8d4;
+        display: block;
+        position: relative;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        section nav ul li a:hover, .navegador nav ul li a:hover {
+          color: #006064;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+      section nav ul li #saludo, .navegador nav ul li #saludo {
+        background-color: #006064;
+        color: #b2ebf2;
+        width: 80%;
+        height: 90%;
+        padding-top: 20px;
+        text-align: center;
+        display: block;
+        position: relative;
+        border-radius: 0px 0px 15px 15px;
+        font-family: "Dancing Script", cursive;
+        font-size: 1.3em; }
+
+section.portafolio {
+  width: 80%;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%; }
+  section.portafolio .titulo-gen h2 {
+    color: #006064;
+    font-family: "Chathura", sans-serif;
+    font-size: 2.5em;
+    text-decoration: underline; }
+    section.portafolio .titulo-gen h2:before {
+      content: "P";
+      color: #00b8d4; }

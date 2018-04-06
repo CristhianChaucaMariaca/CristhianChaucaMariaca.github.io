@@ -7,7 +7,10 @@
         height: 100%;
         position: fixed;
         text-align: center;
+        background-color: $color0;
         animation: portada 4s;
+        animation-fill-mode: forwards;
+        z-index: 100;
         h1,.titulo{
                 width: 80%;
                 margin: auto;
@@ -18,7 +21,6 @@
                 padding-bottom: 0;
                 color: $color1;
                 animation: nombre 1s;
-                animation-fill-mode: forwards;
             
         }
         #icon-portada{

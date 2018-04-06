@@ -1,0 +1,25 @@
+section.portafolio{
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    .titulo-gen{
+        h2{
+            color: $color1;
+            font-family: $etiquetas;
+            font-size: 2.5em;
+            text-decoration: underline;
+            &:before{
+                content: "P";
+                color: $color3;
+            }
+        }
+    }
+    .item{
+        .titulo{
+            h3{
+                
+            }
+        }
+    }
+}
