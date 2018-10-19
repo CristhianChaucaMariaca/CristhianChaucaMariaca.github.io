@@ -159,7 +159,7 @@ section, .navegador {
 
 .container .item {
   background-color: #1c2833;
-  margin-top: 20px;
+  margin-top: 15px;
   border-radius: 5px;
   padding: 10px; }
   .container .item .titulo-item h3 {
@@ -183,3 +183,18 @@ section.portafolio {
     section.portafolio .titulo-gen h2:before {
       content: "T";
       color: #00b8d4; }
+
+footer.footer {
+  width: 100%;
+  background-color: #1c2833;
+  color: white;
+  margin-top: 15px; }
+  footer.footer h3.title {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5em;
+    color: #00b8d4; }
+  footer.footer section.social .social-link a {
+    color: #b2ebf2;
+    text-decoration: none;
+    font-size: 2em; }

@@ -15,7 +15,7 @@
   }
   .item{
     background-color: $color1;
-    margin-top: 20px;
+    margin-top: 15px;
     border-radius: 5px;
     padding: 10px;
     .titulo-item{
@@ -48,4 +48,28 @@ section.portafolio{
             }
         }
     }
+}
+footer.footer{
+  width:100%;
+  background-color:$color1;
+  color:$color0;
+  margin-top:15px;
+  h3.title{
+    text-align:center;
+    font-family:$titulo;
+    font-size:1.5em;
+    color:$color3;
+  }
+  section.social{
+    .social-link{
+      a{
+        color:$color2;
+        text-decoration:none;
+        font-size:2em;
+        span{
+
+        }
+      }
+    }
+  }
 }
