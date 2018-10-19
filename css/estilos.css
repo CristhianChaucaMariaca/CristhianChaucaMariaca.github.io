@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Chathura|Dancing+Script");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
 * {
   margin: 0;
   padding: 0;
@@ -163,8 +164,8 @@ section, .navegador {
   padding: 10px; }
   .container .item .titulo-item h3 {
     text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 2em;
+    font-family: "Cutive Mono", monospace;
+    font-size: 1.5em;
     color: #00b8d4; }
   .container .item .descripcion-item {
     color: white; }
