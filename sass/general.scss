@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Chathura|Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Glegoo');
 $titulo: 'Dancing Script', cursive;
 $etiquetas: 'Chathura', sans-serif;
+$text: 'Glegoo', serif;
 $transition:0.3s;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 body{
+  font-family: $text;
+}
+  font-size: 1em;
     .container{
         width: 100%;
         header{

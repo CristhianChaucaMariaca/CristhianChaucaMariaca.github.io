@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Chathura|Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=Glegoo");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body .container {
-  width: 100%; }
-  body .container header {
-    width: 80%;
-    margin: auto; }
+  box-sizing: border-box;
+  font-size: 1em; }
+  * body {
+    font-family: "Glegoo", serif; }
+  * .container {
+    width: 100%; }
+    * .container header {
+      width: 80%;
+      margin: auto; }
 
 #portada {
   width: 100%;
@@ -34,7 +37,7 @@ body .container {
     font-size: 4em;
     margin-top: 150px;
     padding-bottom: 0;
-    color: #006064;
+    color: #1c2833;
     -webkit-animation: nombre 1s;
     animation: nombre 1s; }
   #portada #icon-portada {
@@ -124,12 +127,12 @@ section, .navegador {
         -o-transition: 0.3s;
         transition: 0.3s; }
         section nav ul li a:hover, .navegador nav ul li a:hover {
-          color: #006064;
+          color: #1c2833;
           -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
           transform: scale(1.1); }
       section nav ul li #saludo, .navegador nav ul li #saludo {
-        background-color: #006064;
+        background-color: #1c2833;
         color: #b2ebf2;
         width: 80%;
         height: 90%;
@@ -141,16 +144,42 @@ section, .navegador {
         font-family: "Dancing Script", cursive;
         font-size: 1.3em; }
 
+.container section.cris {
+  text-align: center; }
+  .container section.cris h3 {
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    color: #00b8d4; }
+  .container section.cris h4.slogan {
+    font-family: "Glegoo", serif;
+    font-size: 0.7em;
+    color: #b2ebf2; }
+
+.container .item {
+  background-color: #1c2833;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 10px; }
+  .container .item .titulo-item h3 {
+    text-align: center;
+    font-family: "Chathura", sans-serif;
+    text-decoration: underline;
+    font-size: 2.5em;
+    color: #00b8d4; }
+  .container .item .descripcion-item {
+    color: white; }
+
 section.portafolio {
   width: 80%;
   margin: auto;
   padding-left: 5%;
   padding-right: 5%; }
   section.portafolio .titulo-gen h2 {
-    color: #006064;
+    color: #1c2833;
     font-family: "Chathura", sans-serif;
     font-size: 2.5em;
     text-decoration: underline; }
     section.portafolio .titulo-gen h2:before {
-      content: "P";
+      content: "T";
       color: #00b8d4; }
