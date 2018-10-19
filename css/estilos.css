@@ -153,7 +153,7 @@ section, .navegador {
     color: #00b8d4; }
   .container section.cris h4.slogan {
     font-family: "Glegoo", serif;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #b2ebf2; }
 
 .container .item {
@@ -163,9 +163,8 @@ section, .navegador {
   padding: 10px; }
   .container .item .titulo-item h3 {
     text-align: center;
-    font-family: "Chathura", sans-serif;
-    text-decoration: underline;
-    font-size: 2.5em;
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
     color: #00b8d4; }
   .container .item .descripcion-item {
     color: white; }
