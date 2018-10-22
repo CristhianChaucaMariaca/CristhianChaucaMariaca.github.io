@@ -2,3 +2,37 @@ $color1: #1c2833 ;
 $color3:#00b8d4;
 $color2:#b2ebf2;
 $color0: white;
+
+.text-color0{
+  color:$color0;
+}
+.text-color1{
+  color:$color1;
+}
+.text-color2{
+  color:$color2;
+}
+.text-color3{
+  color:$color3;
+}
+
+.claro{
+  background-color: $color3;
+  color: $color1;
+  h1,h2,h3,h4{
+    color:$color0;
+  }
+  hr{
+    color:$color1;
+  }
+}
+.oscuro{
+  background-color: $color1;
+  color:$color0;
+  h1,h2,h3,h4{
+    color:$color3;
+  }
+  hr{
+    color: $color3;
+  }
+}

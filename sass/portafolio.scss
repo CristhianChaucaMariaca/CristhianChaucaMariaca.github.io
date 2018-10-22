@@ -12,22 +12,22 @@
       font-size: 0.8em;
       color:$color2;
     }
+    p{
+      font-family: $titulo;
+      text-align: center;
+    }
   }
   .item{
-    background-color: $color1;
     margin-top: 15px;
     border-radius: 5px;
     padding: 10px;
+    text-align: justify;
     .titulo-item{
       h3{
         text-align: center;
         font-family: $subtitulo;
         font-size: 1.5em;
-        color:$color3;
       }
-    }
-    .descripcion-item{
-      color: $color0;
     }
   }
 }
@@ -59,15 +59,29 @@ footer.footer{
     font-family:$titulo;
     font-size:1.5em;
     color:$color3;
+    padding-top: 20px;
   }
   section.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .social-link{
+      padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: $color3;
+      border-radius: 60px;
       a{
+        text-align: center;
         color:$color2;
+        border-radius: 10%;
         text-decoration:none;
         font-size:2em;
         span{
 
+        }
+        &:hover{
+          background-color: red;
         }
       }
     }

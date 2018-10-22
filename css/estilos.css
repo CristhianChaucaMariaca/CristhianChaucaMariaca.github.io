@@ -1,6 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Chathura|Dancing+Script");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+.text-color0 {
+  color: white; }
+
+.text-color1 {
+  color: #1c2833; }
+
+.text-color2 {
+  color: #b2ebf2; }
+
+.text-color3 {
+  color: #00b8d4; }
+
+.claro {
+  background-color: #00b8d4;
+  color: #1c2833; }
+  .claro h1, .claro h2, .claro h3, .claro h4 {
+    color: white; }
+  .claro hr {
+    color: #1c2833; }
+
+.oscuro {
+  background-color: #1c2833;
+  color: white; }
+  .oscuro h1, .oscuro h2, .oscuro h3, .oscuro h4 {
+    color: #00b8d4; }
+  .oscuro hr {
+    color: #00b8d4; }
+
 * {
   margin: 0;
   padding: 0;
@@ -156,19 +184,19 @@ section, .navegador {
     font-family: "Glegoo", serif;
     font-size: 0.8em;
     color: #b2ebf2; }
+  .container section.cris p {
+    font-family: "Dancing Script", cursive;
+    text-align: center; }
 
 .container .item {
-  background-color: #1c2833;
   margin-top: 15px;
   border-radius: 5px;
-  padding: 10px; }
+  padding: 10px;
+  text-align: justify; }
   .container .item .titulo-item h3 {
     text-align: center;
     font-family: "Cutive Mono", monospace;
-    font-size: 1.5em;
-    color: #00b8d4; }
-  .container .item .descripcion-item {
-    color: white; }
+    font-size: 1.5em; }
 
 section.portafolio {
   width: 80%;
@@ -193,8 +221,27 @@ footer.footer {
     text-align: center;
     font-family: "Dancing Script", cursive;
     font-size: 1.5em;
-    color: #00b8d4; }
-  footer.footer section.social .social-link a {
-    color: #b2ebf2;
-    text-decoration: none;
-    font-size: 2em; }
+    color: #00b8d4;
+    padding-top: 20px; }
+  footer.footer section.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    footer.footer section.social .social-link {
+      padding: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #00b8d4;
+      border-radius: 60px; }
+      footer.footer section.social .social-link a {
+        text-align: center;
+        color: #b2ebf2;
+        border-radius: 10%;
+        text-decoration: none;
+        font-size: 2em; }
+        footer.footer section.social .social-link a:hover {
+          background-color: red; }
