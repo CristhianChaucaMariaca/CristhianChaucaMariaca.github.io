@@ -232,9 +232,12 @@ footer.footer {
     -ms-flex-pack: distribute;
     justify-content: space-around; }
     footer.footer section.social .social-link {
+      width: 70px;
+      height: 70px;
+      text-align: center;
       padding: 15px;
       margin-top: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       background-color: #00b8d4;
       border-radius: 60px; }
       footer.footer section.social .social-link a {
@@ -242,6 +245,6 @@ footer.footer {
         color: #b2ebf2;
         border-radius: 10%;
         text-decoration: none;
-        font-size: 2em; }
+        font-size: 1.5em; }
         footer.footer section.social .social-link a:hover {
-          background-color: red; }
+          color: red; }

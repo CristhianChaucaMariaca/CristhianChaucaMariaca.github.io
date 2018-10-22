@@ -66,9 +66,12 @@ footer.footer{
     flex-wrap: wrap;
     justify-content: space-around;
     .social-link{
+      width: 70px;
+      height: 70px;
+      text-align: center;
       padding: 15px;
       margin-top: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       background-color: $color3;
       border-radius: 60px;
       a{
@@ -76,12 +79,9 @@ footer.footer{
         color:$color2;
         border-radius: 10%;
         text-decoration:none;
-        font-size:2em;
-        span{
-
-        }
+        font-size:1.5em;
         &:hover{
-          background-color: red;
+          color: red;
         }
       }
     }
