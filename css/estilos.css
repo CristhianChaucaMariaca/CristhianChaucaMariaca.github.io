@@ -207,9 +207,8 @@ section, .navegador {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     padding-top: 10px; }
     .container .item .descripcion-item p {
       width: 60%; }
@@ -217,9 +216,56 @@ section, .navegador {
       width: 30%; }
       .container .item .descripcion-item .img img {
         width: 100%;
-        border: solid white 2px;
         border-radius: 5px;
         margin: 5px; }
+
+.container .projects {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #b2ebf2;
+  border-radius: 5px; }
+  .container .projects .title-projects {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .container .projects .projects-var {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .container .projects .projects-var .project {
+      background-color: #00b8d4;
+      width: 30%;
+      margin: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px; }
+      .container .projects .projects-var .project .title-project {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center; }
+      .container .projects .projects-var .project .description-project {
+        width: 90%;
+        padding: 5%;
+        text-align: justify; }
+      .container .projects .projects-var .project .link-project {
+        width: 90%;
+        margin: 5%; }
+        .container .projects .projects-var .project .link-project a {
+          background-color: #1c2833;
+          border-radius: 5px;
+          color: white;
+          text-decoration: none;
+          width: 100%;
+          text-align: center;
+          display: block; }
 
 section.portafolio {
   width: 80%;
