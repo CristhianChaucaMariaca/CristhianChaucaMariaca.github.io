@@ -17,9 +17,9 @@
   background-color: #00b8d4;
   color: #1c2833; }
   .claro h1, .claro h2, .claro h3, .claro h4 {
-    color: white; }
-  .claro hr {
     color: #1c2833; }
+  .claro hr {
+    color: white; }
 
 .oscuro {
   background-color: #1c2833;
@@ -213,9 +213,10 @@ section, .navegador {
     .container .item .descripcion-item p {
       width: 60%; }
     .container .item .descripcion-item .img {
-      width: 30%; }
+      width: 30%;
+      text-align: center; }
       .container .item .descripcion-item .img img {
-        width: 100%;
+        width: 70%;
         border-radius: 5px;
         margin: 5px; }
 
@@ -269,8 +270,6 @@ section, .navegador {
           width: 100%;
           text-align: center;
           display: block; }
-          .container .projects .projects-var .project .link-project a:hover {
-            color: white; }
 
 section.portafolio {
   width: 80%;

@@ -40,8 +40,9 @@
       }
       .img{
         width:30%;
+        text-align:center;
         img{
-          width:100%;
+          width:70%;
           border-radius: 5px;
           margin: 5px;
         }
@@ -108,9 +109,6 @@
             width:100%;
             text-align:center;
             display:block;
-            &:hover{
-              color:$color0;
-            }
           }
         }
       }
