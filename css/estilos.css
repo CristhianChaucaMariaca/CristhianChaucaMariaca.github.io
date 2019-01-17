@@ -240,32 +240,37 @@ section, .navegador {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .container .projects .projects-var .project {
-      background-color: #00b8d4;
+      background-color: #1c2833;
       width: 30%;
       margin: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
       border-radius: 5px; }
       .container .projects .projects-var .project .title-project {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 100%;
+        background-color: #00b8d4;
         text-align: center; }
+        .container .projects .projects-var .project .title-project h4 {
+          color: #1c2833; }
       .container .projects .projects-var .project .description-project {
         width: 90%;
         padding: 5%;
         text-align: justify; }
+        .container .projects .projects-var .project .description-project p {
+          color: white; }
       .container .projects .projects-var .project .link-project {
         width: 90%;
         margin: 5%; }
         .container .projects .projects-var .project .link-project a {
-          background-color: #1c2833;
+          background-color: #00b8d4;
           border-radius: 5px;
-          color: white;
+          color: #1c2833;
           text-decoration: none;
           width: 100%;
           text-align: center;
           display: block; }
+          .container .projects .projects-var .project .link-project a:hover {
+            color: white; }
 
 section.portafolio {
   width: 80%;

@@ -68,19 +68,18 @@
       justify-content:space-between;
       flex-wrap:wrap;
       .project{
-        background-color:$color3;
+        background-color:$color1;
         width:30%;
         margin:10px;
         padding-top:10px;
         padding-bottom:10px;
         border-radius:5px;
         .title-project{
-          width:90%;
-          margin-left:5%;
-          margin-right:5%;
+          width:100%;
+          background-color:$color3;
           text-align:center;
           h4{
-
+            color:$color1;
           }
         }
         .img-project{
@@ -95,20 +94,23 @@
           padding:5%;
           text-align:justify;
           p{
-
+            color:$color0;
           }
         }
         .link-project{
           width:90%;
           margin:5%;
           a{
-            background-color:$color1;
+            background-color:$color3;
             border-radius:5px;
-            color:$color0;
+            color:$color1;
             text-decoration:none;
             width:100%;
             text-align:center;
             display:block;
+            &:hover{
+              color:$color0;
+            }
           }
         }
       }
@@ -164,7 +166,7 @@ footer.footer{
         border-radius: 10%;
         text-decoration:none;
         font-size:1.5em;
-        &:hover{
+        &:hover {
           color: red;
         }
       }
