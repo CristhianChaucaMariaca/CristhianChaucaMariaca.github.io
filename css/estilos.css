@@ -74,7 +74,7 @@
     margin: auto;
     font-size: 2em;
     color: #b2ebf2; }
-  #portada span, #portada #etiqueta {
+  #portada span > #etiqueta {
     font-family: "Chathura", sans-serif;
     width: 80%;
     margin: auto;
@@ -84,7 +84,7 @@
     color: #00b8d4;
     -webkit-animation: formacion 3s;
     animation: formacion 3s; }
-    #portada span span, #portada #etiqueta span {
+    #portada span > #etiqueta span {
       font-size: 0.5em;
       margin-left: 5px; }
 
@@ -175,20 +175,30 @@ section, .navegador {
 
 .container section.cris {
   text-align: center; }
+  .container section.cris img {
+    background-color: #00b8d4;
+    border: 7px solid #1c2833;
+    -webkit-box-shadow: 2px 2px 7px #999;
+    box-shadow: 2px 2px 7px #999;
+    border-radius: 200px; }
   .container section.cris h3 {
     width: 100%;
     font-family: "Dancing Script", cursive;
     font-size: 2em;
-    color: #00b8d4; }
+    color: #00b8d4;
+    text-shadow: 1px 1px 15px #999; }
   .container section.cris h4.slogan {
     font-family: "Glegoo", serif;
-    font-size: 0.8em;
+    font-size: 1em;
     color: #b2ebf2; }
   .container section.cris p {
     font-family: "Dancing Script", cursive;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.3em; }
 
 .container .item {
+  -webkit-box-shadow: 2px 2px 7px #999;
+  box-shadow: 2px 2px 7px #999;
   margin-top: 15px;
   border-radius: 5px;
   padding: 10px;
@@ -224,7 +234,6 @@ section, .navegador {
   margin-top: 10px;
   padding-bottom: 10px;
   width: 100%;
-  background-color: #b2ebf2;
   border-radius: 5px; }
   .container .projects .title-projects {
     width: 100%;
@@ -241,9 +250,10 @@ section, .navegador {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .container .projects .projects-var .project {
+      -webkit-box-shadow: 2px 2px 7px #999;
+      box-shadow: 2px 2px 7px #999;
       background-color: #1c2833;
       width: 30%;
-      margin: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
       border-radius: 5px;
