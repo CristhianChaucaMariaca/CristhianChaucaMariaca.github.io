@@ -246,7 +246,12 @@ section, .navegador {
       margin: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
       .container .projects .projects-var .project .title-project {
         width: 100%;
         background-color: #00b8d4;
@@ -255,19 +260,23 @@ section, .navegador {
           color: #1c2833; }
       .container .projects .projects-var .project .description-project {
         width: 90%;
-        padding: 5%;
+        height: 150px;
+        margin: 5%;
         text-align: justify; }
         .container .projects .projects-var .project .description-project p {
           color: white; }
       .container .projects .projects-var .project .link-project {
         width: 90%;
-        margin: 5%; }
+        margin: 0% 5%; }
         .container .projects .projects-var .project .link-project a {
+          padding-top: 5px;
+          padding-bottom: 5px;
           background-color: #00b8d4;
           border-radius: 5px;
           color: #1c2833;
           text-decoration: none;
           width: 100%;
+          height: auto;
           text-align: center;
           display: block; }
 
@@ -283,6 +292,14 @@ section.portafolio {
     text-decoration: underline; }
     section.portafolio .titulo-gen h2:before {
       content: "T";
+      color: #00b8d4; }
+  section.portafolio .titulo-cap h2 {
+    color: #1c2833;
+    font-family: "Chathura", sans-serif;
+    font-size: 2.5em;
+    text-decoration: underline; }
+    section.portafolio .titulo-cap h2:before {
+      content: "C";
       color: #00b8d4; }
 
 footer.footer {

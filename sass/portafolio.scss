@@ -75,13 +75,16 @@
         padding-top:10px;
         padding-bottom:10px;
         border-radius:5px;
+        display: flex;
+        flex-wrap:wrap;
+
         .title-project{
           width:100%;
           background-color:$color3;
           text-align:center;
           h4{
             color:$color1;
-          }
+          };
         }
         .img-project{
           a{
@@ -92,21 +95,26 @@
         }
         .description-project{
           width:90%;
-          padding:5%;
+          height:150px;
+          margin:5%;
           text-align:justify;
+          
           p{
             color:$color0;
           }
         }
         .link-project{
           width:90%;
-          margin:5%;
+          margin:0% 5%;
           a{
+            padding-top:5px;
+            padding-bottom:5px;
             background-color:$color3;
             border-radius:5px;
             color:$color1;
             text-decoration:none;
             width:100%;
+            height:auto;
             text-align:center;
             display:block;
           }
@@ -128,6 +136,18 @@ section.portafolio{
             text-decoration: underline;
             &:before{
                 content: "T";
+                color: $color3;
+            }
+        }
+    }
+    .titulo-cap{
+        h2{
+            color: $color1;
+            font-family: $etiquetas;
+            font-size: 2.5em;
+            text-decoration: underline;
+            &:before{
+                content: "C";
                 color: $color3;
             }
         }
