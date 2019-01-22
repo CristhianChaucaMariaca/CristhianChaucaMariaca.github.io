@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Chathura|Dancing+Script");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
@@ -155,7 +156,7 @@ section, .navegador {
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
-        section nav ul li a:hover, .navegador nav ul li a:hover {
+        section nav ul li a::hover, .navegador nav ul li a::hover {
           color: #1c2833;
           -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
@@ -175,12 +176,18 @@ section, .navegador {
 
 .container section.cris {
   text-align: center; }
-  .container section.cris img {
-    background-color: #00b8d4;
-    border: 7px solid #1c2833;
+  .container section.cris .img {
+    border: 1px solid #1c2833;
     -webkit-box-shadow: 2px 2px 7px #999;
     box-shadow: 2px 2px 7px #999;
-    border-radius: 200px; }
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-image: url("../media/cristhianchauca.jpeg");
+    background-size: 240px;
+    background-position: center;
+    background-repeat: no-repeat; }
   .container section.cris h3 {
     width: 100%;
     font-family: "Dancing Script", cursive;
@@ -346,5 +353,22 @@ footer.footer {
         border-radius: 10%;
         text-decoration: none;
         font-size: 1.5em; }
-        footer.footer section.social .social-link a:hover {
-          color: red; }
+        footer.footer section.social .social-link a::hover {
+          background-color: red; }
+  footer.footer footer.copy {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #00b8d4;
+    color: #b2ebf2;
+    text-align: center; }
+    footer.footer footer.copy span {
+      font-size: 0.9em; }
+      footer.footer footer.copy span::before {
+        content: '©Copyright ';
+        font-size: 0.8em;
+        color: #1c2833; }
+      footer.footer footer.copy span::after {
+        content: ' Cristhian Chauca';
+        font-size: 0.9em;
+        color: #1c2833; }

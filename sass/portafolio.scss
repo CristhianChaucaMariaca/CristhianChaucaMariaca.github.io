@@ -1,11 +1,17 @@
 .container{
   section.cris{
     text-align: center;
-    img{
-      background-color:$color3;
-      border:7px solid $color1;
+    .img{
+      border:1px solid $color1;
       box-shadow:2px 2px 7px $sombra;
       border-radius:200px;
+      width: 250px;
+      height: 250px;
+      margin: auto;
+      background-image: url("../media/cristhianchauca.jpeg");
+      background-size: 240px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     h3{
       width: 100%;
@@ -192,9 +198,30 @@ footer.footer{
         border-radius: 10%;
         text-decoration:none;
         font-size:1.5em;
-        &:hover {
-          color: red;
+        &::hover {
+          background-color: red;
         }
+      }
+    }
+  }
+  footer.copy{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    span{
+      font-size: 0.9em;
+      &::before{
+        content: '©Copyright ';
+        font-size: 0.8em;
+        color: $color1;
+      }
+      &::after{
+        content: ' Cristhian Chauca';
+        font-size: 0.9em;
+        color: $color1;
       }
     }
   }
