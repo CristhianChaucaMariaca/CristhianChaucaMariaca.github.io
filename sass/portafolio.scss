@@ -166,6 +166,60 @@ section.portafolio{
             }
         }
     }
+    .trabajos#certificaciones{
+      .item{
+        .descripcion-cer{
+          width: 90%;
+          p{
+            margin: 10px;
+          }
+        }
+        .certificados{
+          margin: 10px;
+          ul{
+            li{
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+    .tecnologias{
+      section.tec-tipo{
+        width: 100%;
+        section.techs{
+          width: 100%;
+          .tech{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            .name{
+              width: 25%;
+              span{
+
+              }
+            }
+            .bar{
+              width: 75%;
+              height: 30px;
+              .base{
+                background-color: $color3;
+                width: 100%;
+                height: 30px;
+                border-radius: 50px;
+                .progres{
+                  width: 30%;
+                  height: 30px;
+                  background-color: $color2;
+                  border-radius: 50px;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
 }
 footer.footer{
   width:100%;

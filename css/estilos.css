@@ -21,6 +21,11 @@
     color: #1c2833; }
   .claro hr {
     color: white; }
+  .claro a {
+    text-decoration: none;
+    color: #b2ebf2; }
+    .claro a span.icon-link {
+      color: #1c2833; }
 
 .oscuro {
   background-color: #1c2833;
@@ -29,6 +34,11 @@
     color: #00b8d4; }
   .oscuro hr {
     color: #00b8d4; }
+  .oscuro a {
+    text-decoration: none;
+    color: #00b8d4; }
+    .oscuro a span.icon-link {
+      color: #b2ebf2; }
 
 * {
   margin: 0;
@@ -120,7 +130,7 @@
     margin: auto;
     font-size: 2em;
     color: #b2ebf2; }
-  #portada span > #etiqueta {
+  #portada span.etiqueta {
     font-family: "Chathura", sans-serif;
     width: 80%;
     margin: auto;
@@ -130,7 +140,7 @@
     color: #00b8d4;
     -webkit-animation: formacion 3s;
     animation: formacion 3s; }
-    #portada span > #etiqueta span {
+    #portada span.etiqueta span {
       font-size: 0.5em;
       margin-left: 5px; }
 
@@ -363,6 +373,40 @@ section.portafolio {
     section.portafolio .titulo-cap h2:before {
       content: "C";
       color: #00b8d4; }
+  section.portafolio .trabajos#certificaciones .item .descripcion-cer {
+    width: 90%; }
+    section.portafolio .trabajos#certificaciones .item .descripcion-cer p {
+      margin: 10px; }
+  section.portafolio .trabajos#certificaciones .item .certificados {
+    margin: 10px; }
+    section.portafolio .trabajos#certificaciones .item .certificados ul li {
+      list-style: none; }
+  section.portafolio .tecnologias section.tec-tipo {
+    width: 100%; }
+    section.portafolio .tecnologias section.tec-tipo section.techs {
+      width: 100%; }
+      section.portafolio .tecnologias section.tec-tipo section.techs .tech {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 10px; }
+        section.portafolio .tecnologias section.tec-tipo section.techs .tech .name {
+          width: 25%; }
+        section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar {
+          width: 75%;
+          height: 30px; }
+          section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base {
+            background-color: #00b8d4;
+            width: 100%;
+            height: 30px;
+            border-radius: 50px; }
+            section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base .progres {
+              width: 30%;
+              height: 30px;
+              background-color: #b2ebf2;
+              border-radius: 50px; }
 
 footer.footer {
   width: 100%;

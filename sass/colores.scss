@@ -26,6 +26,13 @@ $sombra: #999;
   hr{
     color:$color0;
   }
+  a{
+    text-decoration: none;
+    color: $color2;
+    span.icon-link{
+      color:$color1;
+    }
+  }
 }
 .oscuro{
   background-color: $color1;
@@ -35,5 +42,12 @@ $sombra: #999;
   }
   hr{
     color: $color3;
+  }
+  a{
+    text-decoration: none;
+    color: $color3;
+    span.icon-link{
+      color:$color2;
+    }
   }
 }
