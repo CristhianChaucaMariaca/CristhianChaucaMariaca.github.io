@@ -247,8 +247,7 @@ section, .navegador {
     width: 100%;
     font-family: "Dancing Script", cursive;
     font-size: 2em;
-    color: #00b8d4;
-    text-shadow: 1px 1px 15px #999; }
+    color: #00b8d4; }
   .container section.cris h4.slogan {
     font-family: "Glegoo", serif;
     font-size: 1em;
@@ -288,7 +287,7 @@ section, .navegador {
       width: 30%;
       text-align: center; }
       .container .item .descripcion-item .img img {
-        width: 70%;
+        width: 60%;
         border-radius: 5px;
         margin: 5px; }
 
@@ -380,7 +379,25 @@ section.portafolio {
   section.portafolio .trabajos#certificaciones .item .certificados {
     margin: 10px; }
     section.portafolio .trabajos#certificaciones .item .certificados ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       list-style: none; }
+      section.portafolio .trabajos#certificaciones .item .certificados ul li .titulo {
+        width: 60%; }
+        section.portafolio .trabajos#certificaciones .item .certificados ul li .titulo h3 {
+          text-decoration: underline; }
+      section.portafolio .trabajos#certificaciones .item .certificados ul li .empresa {
+        width: 20%; }
+        section.portafolio .trabajos#certificaciones .item .certificados ul li .empresa h3 {
+          text-decoration: underline; }
+      section.portafolio .trabajos#certificaciones .item .certificados ul li span.certificados-codigo {
+        width: 20%;
+        text-align: right; }
+        section.portafolio .trabajos#certificaciones .item .certificados ul li span.certificados-codigo h3 {
+          text-decoration: underline; }
   section.portafolio .tecnologias section.tec-tipo {
     width: 100%; }
     section.portafolio .tecnologias section.tec-tipo section.techs {
@@ -393,20 +410,33 @@ section.portafolio {
         flex-wrap: wrap;
         margin-top: 10px; }
         section.portafolio .tecnologias section.tec-tipo section.techs .tech .name {
-          width: 25%; }
+          width: 20%; }
         section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar {
-          width: 75%;
+          width: 73%;
           height: 30px; }
           section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base {
             background-color: #00b8d4;
             width: 100%;
-            height: 30px;
+            height: 20px;
             border-radius: 50px; }
             section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base .progres {
               width: 30%;
-              height: 30px;
+              height: 20px;
               background-color: #b2ebf2;
               border-radius: 50px; }
+            section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base #prog-1 {
+              width: 90%; }
+            section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base #prog-2 {
+              width: 80%; }
+            section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base #prog-3 {
+              width: 50%; }
+            section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base #prog-4 {
+              width: 30%; }
+            section.portafolio .tecnologias section.tec-tipo section.techs .tech .bar .base #prog-5 {
+              width: 50%; }
+        section.portafolio .tecnologias section.tec-tipo section.techs .tech .porcentaje {
+          width: 7%;
+          text-align: right; }
 
 footer.footer {
   width: 100%;
