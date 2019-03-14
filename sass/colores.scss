@@ -23,8 +23,10 @@ $sombra: #999;
   h1,h2,h3,h4{
     color:$color1;
   }
-  hr{
-    color:$color0;
+  .hr{
+    height: 3px;
+    width: 100%;
+    background-color:$color1;
   }
   a{
     text-decoration: none;
@@ -40,8 +42,10 @@ $sombra: #999;
   h1,h2,h3,h4{
     color:$color3;
   }
-  hr{
-    color: $color3;
+  .hr{
+    height: 3px;
+    width: 100%;
+    background-color: $color3;
   }
   a{
     text-decoration: none;

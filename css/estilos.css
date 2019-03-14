@@ -19,8 +19,10 @@
   color: #1c2833; }
   .claro h1, .claro h2, .claro h3, .claro h4 {
     color: #1c2833; }
-  .claro hr {
-    color: white; }
+  .claro .hr {
+    height: 3px;
+    width: 100%;
+    background-color: #1c2833; }
   .claro a {
     text-decoration: none;
     color: #b2ebf2; }
@@ -32,8 +34,10 @@
   color: white; }
   .oscuro h1, .oscuro h2, .oscuro h3, .oscuro h4 {
     color: #00b8d4; }
-  .oscuro hr {
-    color: #00b8d4; }
+  .oscuro .hr {
+    height: 3px;
+    width: 100%;
+    background-color: #00b8d4; }
   .oscuro a {
     text-decoration: none;
     color: #00b8d4; }
@@ -268,6 +272,10 @@ section, .navegador {
     text-align: center;
     font-family: "Cutive Mono", monospace;
     font-size: 1.5em; }
+  .container .item .titulo-item img.logo-certificacion {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%; }
   .container .item .descripcion-item {
     display: -webkit-box;
     display: -ms-flexbox;

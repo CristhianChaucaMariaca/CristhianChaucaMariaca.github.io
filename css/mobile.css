@@ -1,0 +1,46 @@
+@media only screen and (max-width: 400px) {
+  body .container header {
+    width: 100%; }
+    body .container header section.navegador nav ul {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .container header section.navegador nav ul li {
+        width: 100%; }
+        body .container header section.navegador nav ul li #saludo {
+          width: 100%;
+          padding-bottom: 20px;
+          margin: 0 auto; }
+  body .container section.portafolio {
+    width: 100%; }
+  body .container .item .titulo-item h3 {
+    font-size: 1.5em; }
+  body .container .item .descripcion-item p {
+    width: 100%; }
+  body .container .item .descripcion-item .img {
+    width: 100%; }
+    body .container .item .descripcion-item .img img {
+      width: 70%; }
+  body .container .projects {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-radius: 5px; }
+    body .container .projects .title-projects {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    body .container .projects .projects-var {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      body .container .projects .projects-var .project {
+        width: 100%;
+        margin-bottom: 10px; } }
