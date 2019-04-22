@@ -1,0 +1,44 @@
+@mixin oscuro {
+    color:$color-3;
+    background-color: $color-1;
+}
+@mixin medio {
+    color:$color-4;
+    background-color: $color-2;
+}
+@mixin claro {
+    background-color: $color-4;
+}
+@mixin link {
+    color:$color-3;
+    transition: $transition;
+    text-decoration: none;
+    &:hover{
+        color:$color-4;
+    }
+}
+@mixin padding {
+    padding: $padding; 
+}
+@mixin leyenda {
+    color:$color-3;
+}
+@mixin title-1 {
+    color: $color-1;
+}
+@mixin title-2 {
+    font-family: $font-title;
+    font-size: $font-title-2;
+    text-align: left;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:$color-2;
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@mixin shadow {
+    box-shadow: 2px 2px 10px rgba($color: #00000057, $alpha: .50)
+}

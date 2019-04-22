@@ -1,0 +1,35 @@
+.container{
+    .body{
+        .section{
+            .certificado{
+                width: $width-t;
+                @include flex;
+                .certificado-item{
+                    width: 30%;
+                    padding: 10%;
+                    padding: $padding;
+                    margin: $margin-tb;
+                    border-radius: $border-3;
+                    .certificado-title{
+                        text-align: center;
+                        color:$color-3;
+                        padding: $padding-tb;
+                    }
+                    .certificado-body{
+                        text-align: center;
+                    }
+                    .certificado-link{
+                        text-align: center;
+                        width: $width-t;
+                        a{
+                            @include link;
+                            &:hover{
+                                color:$color-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

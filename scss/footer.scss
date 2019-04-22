@@ -1,0 +1,44 @@
+.container{
+    .footer-nav{
+        @include oscuro;
+        padding: $padding;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li{
+                a{
+                    text-decoration: none;
+                    @include link;
+                }
+            }
+        }
+    }
+    .footer-1{
+        @include medio;
+        @include padding;
+        ul{
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    @include link;
+                }
+            }
+        }
+    }
+    .footer-2{
+        @include medio;
+    }
+    .footer-3{
+        @include medio;
+        @include padding;
+    }
+    .copy-right{
+        @include oscuro;
+        text-align: center;
+        p{
+            padding: $padding-tb;
+        }
+    }
+}

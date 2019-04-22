@@ -1,0 +1,27 @@
+.container{
+    .social{
+        width: $width-t;
+        margin: $margin-tb;
+        display:flex;
+        justify-content: space-between;
+        .social-item{
+            
+            a{
+                @include oscuro;
+                @include link;
+                display: block;
+                width: 70px;
+                height: 45px;
+                border-radius: $circle;                
+                text-align: center;
+                padding-top:20px;
+                margin:$margin-c;
+                text-decoration:none;
+                font-size: 1.5em;
+                &:hover{
+                    background-color:$color-2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.container{
+    .header{
+        .perfil{
+            width: 97%;
+            padding: $padding-l;
+            .name{
+                text-align: center;    
+                @include title-1;
+            }
+            .icon{
+                text-align: center;
+                font-size: 1.5em;
+                color:$color-4;
+            }
+            .descripcion{
+                text-align: center;
+                @include leyenda;
+                p{
+                }
+            }
+        }
+    }
+}

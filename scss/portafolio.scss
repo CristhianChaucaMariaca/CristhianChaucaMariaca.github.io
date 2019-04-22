@@ -1,0 +1,37 @@
+.container{
+    .body{
+        .section{
+            .proyecto{
+                width: $width-t;
+                @include flex;
+                .proyecto-item{
+                    width: 29%;
+                    padding: $padding;
+                    margin: $margin-tb;
+                    border-radius: $border-3;
+                    @include shadow;
+                    @include claro;
+                    .proyecto-title{
+                        text-align: center;
+                        color:$color-1;
+                        padding: $padding-tb;
+                    }
+                    .proyecto-body{
+                        text-align: justify;
+                    }
+                    .proyecto-link{
+                        text-align: right;
+                        width: $width-t;
+                        a{
+                            font-size: 1.5em;
+                            @include link;
+                            &:hover{
+                                color:$color-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

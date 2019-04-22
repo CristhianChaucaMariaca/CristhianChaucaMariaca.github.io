@@ -1,0 +1,39 @@
+//COLORES
+$color-1:#222831;
+$color-2:#393e46;
+$color-3:#00adb5;
+$color-4:#eeeeee;
+$color-font:black;
+
+//FUENTE
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+$font: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Anton");
+$font-title:'Anton', sans-serif;
+
+$text-spacing:0.1em;//Texto de title-2
+
+$font-title-2:2em;
+
+//TAMAÑOS
+$width-l: 97%;              //Ocupa casi todo el espacio, usar con padding-l
+$width-t:100%;
+
+//MARGENES
+$padding:15px;
+$padding-l: 1.5%;           //Usar con width-l
+$padding-t:15px;
+$padding-b:15px;
+$padding-tb: 15px 0 15px 0;
+$margin:1.5%;               //Total
+$margin-c: 0 auto;          //Center
+$margin-t:1.5%;             //Top
+$margin-b:1.5%;             //Bottom
+$margin-tb:10px 0 10px 0;   //Margen arriba , abajo
+
+//BORDES
+$circle: 50%;
+$border-3:4px;
+
+//EFECTOS
+$transition: 0.3s;

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+body{
+    color: $color-font;
+}
+.container{
+    .body{
+        .section{
+            .title{
+                text-align: center;
+                @include title-2;
+            }
+            .hr{
+                width: $width-t;
+                margin:$margin-c;
+                border:1px solid $color-3;
+            }
+        }
+    }
+}
