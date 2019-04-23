@@ -6,22 +6,31 @@
                 @include flex;
                 .proyecto-item{
                     width: 29%;
+                    height: 200px;
                     padding: $padding;
                     margin: $margin-tb;
                     border-radius: $border-3;
                     @include shadow;
                     @include claro;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+
                     .proyecto-title{
+                        width: $width-t;
                         text-align: center;
                         color:$color-1;
                         padding: $padding-tb;
+                        align-self: flex-start;
                     }
                     .proyecto-body{
-                        text-align: justify;
+                        width: $width-t;
+                        flex-grow: 1;
                     }
                     .proyecto-link{
                         text-align: right;
                         width: $width-t;
+                        align-self: flex-end;
                         a{
                             font-size: 1.5em;
                             @include link;
