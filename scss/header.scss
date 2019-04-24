@@ -4,8 +4,10 @@
             width: 97%;
             padding: $padding-l;
             .name{
-                text-align: center;    
+                text-align: center;
+                font-family: $font-extra;
                 @include title-1;
+                font-size:4em;
             }
             .icon{
                 text-align: center;

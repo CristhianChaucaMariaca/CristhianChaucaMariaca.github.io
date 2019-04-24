@@ -1,0 +1,32 @@
+.container{
+    .body{
+        .section{
+            .contacto{
+                .icon{
+                    text-align: center;
+                    font-size: 3em;
+                    color:$color-1;
+                    opacity: $opacity;
+                    margin-top: $margin-t;
+                }
+                .email{
+                    h4{
+                        font-size: 9em;
+                        @include text-extra;
+                    }
+                }
+                .cellphone{
+                    h4{
+                        font-size: 3em;
+                        @include text-extra;
+                        &:before{
+                            content: "(+591) - ";
+                            color:$color-1;
+                            opacity: $opacity;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
