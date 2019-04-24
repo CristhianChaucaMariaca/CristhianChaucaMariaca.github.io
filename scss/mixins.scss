@@ -42,3 +42,8 @@
 @mixin shadow {
     box-shadow: 2px 2px 10px rgba($color: #00000057, $alpha: .50)
 }
+@mixin text-extra{
+    font-family: $font-extra;
+    text-align: center;
+    color: $color-2,
+}

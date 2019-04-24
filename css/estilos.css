@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Stalemate");
 * {
   margin: 0;
   padding: 0;
@@ -107,7 +108,9 @@ body {
   padding: 1.5%; }
   .container .header .perfil .name {
     text-align: center;
-    color: #222831; }
+    font-family: "Stalemate", cursive;
+    color: #222831;
+    font-size: 4em; }
   .container .header .perfil .icon {
     text-align: center;
     font-size: 1.5em;
@@ -262,3 +265,26 @@ body {
           color: #eeeeee; }
         .container .body .section .certificado .certificado-item .certificado-link a:hover {
           color: #393e46; }
+
+.container .body .section .contacto .icon {
+  text-align: center;
+  font-size: 3em;
+  color: #222831;
+  opacity: 0.5;
+  margin-top: 1.5%; }
+
+.container .body .section .contacto .email h4 {
+  font-size: 9em;
+  font-family: "Stalemate", cursive;
+  text-align: center;
+  color: #393e46; }
+
+.container .body .section .contacto .cellphone h4 {
+  font-size: 3em;
+  font-family: "Stalemate", cursive;
+  text-align: center;
+  color: #393e46; }
+  .container .body .section .contacto .cellphone h4:before {
+    content: "(+591) - ";
+    color: #222831;
+    opacity: 0.5; }

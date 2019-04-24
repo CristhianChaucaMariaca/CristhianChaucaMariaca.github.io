@@ -5,11 +5,15 @@ $color-3:#00adb5;
 $color-4:#eeeeee;
 $color-font:black;
 
+$opacity:0.5;
+
 //FUENTE
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 $font: 'Roboto', sans-serif;
 @import url("https://fonts.googleapis.com/css?family=Anton");
 $font-title:'Anton', sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Stalemate");
+$font-extra: 'Stalemate', cursive;
 
 $text-spacing:0.1em;//Texto de title-2
 
