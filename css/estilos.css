@@ -234,6 +234,70 @@ body .inicio {
   .container .copy-right p {
     padding: 15px 0 15px 0; }
 
+body .container .body .section .habilidad {
+  margin: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  body .container .body .section .habilidad .habilidad-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 45%;
+    margin-top: 1.5%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    body .container .body .section .habilidad .habilidad-item .habilidad-title {
+      width: 25%; }
+      body .container .body .section .habilidad .habilidad-item .habilidad-title h4 {
+        color: #393e46; }
+    body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
+      width: 75%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje .habilidad-progress {
+        width: 90%;
+        height: 10px;
+        position: relative; }
+        body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje .habilidad-progress .habilidad-line-base {
+          width: 100%;
+          height: 10px;
+          background-color: #eeeeee;
+          z-index: 1;
+          border-radius: 4px;
+          position: absolute; }
+        body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje .habilidad-progress .habilidad-line-progress {
+          width: 0%;
+          height: 10px;
+          background-color: #00adb5;
+          z-index: 2;
+          border-radius: 4px;
+          position: absolute; }
+      body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje .habilidad-progress-number {
+        text-align: right;
+        width: 10%;
+        color: #393e46; }
+
 .container .body .section .proyecto {
   width: 100%;
   display: -webkit-box;
