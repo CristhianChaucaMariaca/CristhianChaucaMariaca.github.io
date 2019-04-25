@@ -1,0 +1,55 @@
+body{
+    .container{
+        .body{
+            .section{
+                .habilidad{
+                    margin: $margin-tb;
+                    @include flex;
+                    .habilidad-item{
+                        @include flex;
+                        width: 45%;
+                        margin-top:$margin-t;
+                        align-items: center;
+                        .habilidad-title{
+                            width: 25%;
+                            h4{
+                                color: $color-2;
+                            }
+                        }
+                        .habilidad-porcentaje{
+                            width: 75%;
+                            @include flex;
+                            align-items: center;
+                            .habilidad-progress{
+                                width: 90%;
+                                height: 10px;
+                                position: relative;
+                                .habilidad-line-base{
+                                    width: 100%;
+                                    height: 10px;
+                                    background-color: $color-4;
+                                    z-index: 1;
+                                    border-radius: $border-3;
+                                    position: absolute;
+                                }
+                                .habilidad-line-progress{
+                                    width: 0%;
+                                    height: 10px;
+                                    background-color: $color-3;
+                                    z-index:2;
+                                    border-radius: $border-3;
+                                    position: absolute;
+                                }
+                            }
+                            .habilidad-progress-number{
+                                text-align: right;
+                                width: 10%;
+                                color: $color-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
