@@ -20,6 +20,7 @@
         ul{
             list-style: none;
             li{
+                margin-bottom: 5px;
                 a{
                     text-decoration: none;
                     @include link;

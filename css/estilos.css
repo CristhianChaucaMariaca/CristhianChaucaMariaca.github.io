@@ -208,15 +208,17 @@ body .inicio {
   padding: 15px; }
   .container .footer-1 ul {
     list-style: none; }
-    .container .footer-1 ul li a {
-      text-decoration: none;
-      color: #00adb5;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      text-decoration: none; }
-      .container .footer-1 ul li a:hover {
-        color: #eeeeee; }
+    .container .footer-1 ul li {
+      margin-bottom: 5px; }
+      .container .footer-1 ul li a {
+        text-decoration: none;
+        color: #00adb5;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        text-decoration: none; }
+        .container .footer-1 ul li a:hover {
+          color: #eeeeee; }
 
 .container .footer-2 {
   color: #eeeeee;
