@@ -1,0 +1,10 @@
+@keyframes proyecto{
+    from{
+        transform: scale(0) rotateY(-180deg);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+    }
+}
