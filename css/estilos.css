@@ -220,7 +220,8 @@ body .inicio {
 
 .container .footer-2 {
   color: #eeeeee;
-  background-color: #393e46; }
+  background-color: #393e46;
+  padding: 15px; }
 
 .container .footer-3 {
   color: #eeeeee;

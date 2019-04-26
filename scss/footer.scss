@@ -29,6 +29,7 @@
     }
     .footer-2{
         @include medio;
+        @include padding;
     }
     .footer-3{
         @include medio;
