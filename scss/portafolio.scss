@@ -18,6 +18,7 @@
                         @include shadow;
                         @include claro;
                         overflow: hidden;
+                        animation: proyecto $time;
                         &:before{
                             content: "";
                             width: 330px;

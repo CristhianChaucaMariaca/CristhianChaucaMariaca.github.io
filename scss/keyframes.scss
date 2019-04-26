@@ -1,0 +1,21 @@
+@keyframes proyecto{
+    from{
+        transform: scale(0) rotateY(-180deg);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes texto{
+    from{
+        letter-spacing: -1em;
+        opacity: 0;
+    }
+    to{
+        letter-spacing: normal;
+        opacity:1;
+    }
+}

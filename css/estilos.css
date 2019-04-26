@@ -208,19 +208,22 @@ body .inicio {
   padding: 15px; }
   .container .footer-1 ul {
     list-style: none; }
-    .container .footer-1 ul li a {
-      text-decoration: none;
-      color: #00adb5;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      text-decoration: none; }
-      .container .footer-1 ul li a:hover {
-        color: #eeeeee; }
+    .container .footer-1 ul li {
+      margin-bottom: 5px; }
+      .container .footer-1 ul li a {
+        text-decoration: none;
+        color: #00adb5;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        text-decoration: none; }
+        .container .footer-1 ul li a:hover {
+          color: #eeeeee; }
 
 .container .footer-2 {
   color: #eeeeee;
-  background-color: #393e46; }
+  background-color: #393e46;
+  padding: 15px; }
 
 .container .footer-3 {
   color: #eeeeee;
@@ -322,7 +325,9 @@ body .container .body .section .habilidad {
       -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
       background-color: #eeeeee;
-      overflow: hidden; }
+      overflow: hidden;
+      -webkit-animation: proyecto 3s;
+      animation: proyecto 3s; }
       .container .body .section .proyecto a .proyecto-item:before {
         content: "";
         width: 330px;
@@ -441,14 +446,54 @@ body .container .body .section .habilidad {
   font-size: 9em;
   font-family: "Stalemate", cursive;
   text-align: center;
-  color: #393e46; }
+  color: #393e46;
+  -webkit-animation: texto 3s;
+  animation: texto 3s; }
 
 .container .body .section .contacto .cellphone h4 {
   font-size: 3em;
   font-family: "Stalemate", cursive;
   text-align: center;
-  color: #393e46; }
+  color: #393e46;
+  -webkit-animation: texto 3s;
+  animation: texto 3s; }
   .container .body .section .contacto .cellphone h4:before {
     content: "(+591) - ";
     color: #222831;
     opacity: 0.5; }
+
+@-webkit-keyframes proyecto {
+  from {
+    -webkit-transform: scale(0) rotateY(-180deg);
+    transform: scale(0) rotateY(-180deg);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1) rotateY(0deg);
+    transform: scale(1) rotateY(0deg);
+    opacity: 1; } }
+
+@keyframes proyecto {
+  from {
+    -webkit-transform: scale(0) rotateY(-180deg);
+    transform: scale(0) rotateY(-180deg);
+    opacity: 0; }
+  to {
+    -webkit-transform: scale(1) rotateY(0deg);
+    transform: scale(1) rotateY(0deg);
+    opacity: 1; } }
+
+@-webkit-keyframes texto {
+  from {
+    letter-spacing: -1em;
+    opacity: 0; }
+  to {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes texto {
+  from {
+    letter-spacing: -1em;
+    opacity: 0; }
+  to {
+    letter-spacing: normal;
+    opacity: 1; } }
