@@ -443,13 +443,17 @@ body .container .body .section .habilidad {
   font-size: 9em;
   font-family: "Stalemate", cursive;
   text-align: center;
-  color: #393e46; }
+  color: #393e46;
+  -webkit-animation: texto 3s;
+  animation: texto 3s; }
 
 .container .body .section .contacto .cellphone h4 {
   font-size: 3em;
   font-family: "Stalemate", cursive;
   text-align: center;
-  color: #393e46; }
+  color: #393e46;
+  -webkit-animation: texto 3s;
+  animation: texto 3s; }
   .container .body .section .contacto .cellphone h4:before {
     content: "(+591) - ";
     color: #222831;
@@ -473,4 +477,20 @@ body .container .body .section .habilidad {
   to {
     -webkit-transform: scale(1) rotateY(0deg);
     transform: scale(1) rotateY(0deg);
+    opacity: 1; } }
+
+@-webkit-keyframes texto {
+  from {
+    letter-spacing: -1em;
+    opacity: 0; }
+  to {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes texto {
+  from {
+    letter-spacing: -1em;
+    opacity: 0; }
+  to {
+    letter-spacing: normal;
     opacity: 1; } }

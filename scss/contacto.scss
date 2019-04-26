@@ -13,12 +13,14 @@
                     h4{
                         font-size: 9em;
                         @include text-extra;
+                        animation: texto 3s;
                     }
                 }
                 .cellphone{
                     h4{
                         font-size: 3em;
                         @include text-extra;
+                        animation: texto 3s;
                         &:before{
                             content: "(+591) - ";
                             color:$color-1;

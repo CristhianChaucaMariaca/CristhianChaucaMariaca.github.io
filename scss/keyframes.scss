@@ -8,3 +8,14 @@
         opacity: 1;
     }
 }
+
+@keyframes texto{
+    from{
+        letter-spacing: -1em;
+        opacity: 0;
+    }
+    to{
+        letter-spacing: normal;
+        opacity:1;
+    }
+}
