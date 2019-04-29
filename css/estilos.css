@@ -264,7 +264,8 @@ body .container .body .section .habilidad {
     body .container .body .section .habilidad .habilidad-item .habilidad-title {
       width: 25%; }
       body .container .body .section .habilidad .habilidad-item .habilidad-title h4 {
-        color: #393e46; }
+        color: #393e46;
+        text-transform: uppercase; }
     body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
       width: 75%;
       display: -webkit-box;
