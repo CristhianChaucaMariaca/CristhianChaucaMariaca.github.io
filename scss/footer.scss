@@ -17,7 +17,7 @@
     .footer-1{
         @include medio;
         @include padding;
-        ul{
+        .footer-ul{
             list-style: none;
             li{
                 margin-bottom: 5px;
