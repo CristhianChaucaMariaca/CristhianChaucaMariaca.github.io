@@ -93,6 +93,11 @@ body .inicio {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "nav        nav         nav" "social     social      social" "header     header      header" "body       body        body" "footer-nav footer-nav  footer-nav" "footer-1   footer-2    footer-3" "copy-right copy-right  copy-right"; }
+  .container .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: nav; }
   .container .social {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
@@ -206,18 +211,18 @@ body .inicio {
   color: #eeeeee;
   background-color: #393e46;
   padding: 15px; }
-  .container .footer-1 ul {
+  .container .footer-1 .footer-ul {
     list-style: none; }
-    .container .footer-1 ul li {
+    .container .footer-1 .footer-ul li {
       margin-bottom: 5px; }
-      .container .footer-1 ul li a {
+      .container .footer-1 .footer-ul li a {
         text-decoration: none;
         color: #00adb5;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
         text-decoration: none; }
-        .container .footer-1 ul li a:hover {
+        .container .footer-1 .footer-ul li a:hover {
           color: #eeeeee; }
 
 .container .footer-2 {
@@ -236,6 +241,48 @@ body .inicio {
   text-align: center; }
   .container .copy-right p {
     padding: 15px 0 15px 0; }
+
+nav ul {
+  list-style: none;
+  margin-bottom: 1.5%;
+  display: none; }
+  nav ul #saludo {
+    background-color: #222831;
+    color: #eeeeee;
+    font-weight: bold;
+    font-family: "Stalemate", cursive;
+    font-size: 2em; }
+  nav ul li {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee; }
+    nav ul li a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #00adb5;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      line-height: 3;
+      display: block;
+      font-weight: bold;
+      background-color: #00adb5;
+      color: #222831; }
+      nav ul li a:hover {
+        color: #eeeeee;
+        background-color: #393e46;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+
+nav #toggle-menu {
+  cursor: pointer;
+  line-height: 3;
+  text-align: center;
+  background-color: #00adb5;
+  color: #222831; }
 
 body .container .body .section .habilidad {
   margin: 10px 0 10px 0;
@@ -498,3 +545,20 @@ body .container .body .section .habilidad {
   to {
     letter-spacing: normal;
     opacity: 1; } }
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  nav #toggle-menu {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    nav ul #saludo {
+      border-radius: 0 0 15px 15px; }
+    nav ul li {
+      border-bottom: 0; }
+      nav ul li a {
+        border-radius: 4px;
+        background-color: white; } }

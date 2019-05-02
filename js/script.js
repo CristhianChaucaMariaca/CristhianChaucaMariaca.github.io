@@ -33,4 +33,9 @@ $(document).ready(function(){
 
     var securityvar = $("#securityvar-label").text();
     $("#securityvar").animate({'width':'0%'}).animate({"width":securityvar},2000);
+
+    $('#toggle-menu').click(function () { 
+        $(this).next().slideToggle();
+    });
+
 });
