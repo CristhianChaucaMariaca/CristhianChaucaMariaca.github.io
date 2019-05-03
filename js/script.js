@@ -37,5 +37,37 @@ $(document).ready(function(){
     $('#toggle-menu').click(function () { 
         $(this).next().slideToggle();
     });
+    
+    $('.link-inicio').click(function (){
+        $('html, body').animate({scrollTop:0},1000);
+    });
 
+    $('.link-certificaciones').click(function () { 
+        var offset = $('#certificaciones').offset();
+        var top = offset.top;
+        var left = offset.left;
+        
+        $('html, body').animate({scrollTop:top},1000);
+    });
+
+    $('.link-habilidades').click(function () { 
+        var offset = $('#habilidades').offset();
+        var top = offset.top;
+        var left = offset.left;
+        $('html , body').animate({scrollTop:top},1000);
+    });
+
+    $('.link-proyectos').click(function () { 
+        var offset = $('#proyectos').offset();
+        var top = offset.top;
+        var left = offset.left;
+        
+        $('html , body ').animate({scrollTop:top},1000);
+    });
+
+    $('.link-contacto').click(function  (){ 
+        var contacto = $('#contacto').offset();
+        var top = contacto.top-20;
+        $('html, body').animate({scrollTop:top}, 1000);        
+    });
 });
