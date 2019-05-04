@@ -1,19 +1,22 @@
 nav{
+    #toggle-menu{
+        display: none;
+    }
     ul{
         list-style: none;
         margin-bottom: $margin;
-        display: none;
+        display: flex;
         #saludo{
             background-color: $color-1;
             color: $color-4;
             font-weight: bold;
             font-family: $font-extra;
             font-size: 2em;
+            border-radius: 0 0 15px 15px;
         }
         li{
             flex:auto;
             text-align: center;
-            border-bottom: 1px solid $color-4;
             a{
                 text-transform: uppercase;
                 text-decoration: none;
@@ -22,8 +25,7 @@ nav{
                 line-height: 3;
                 display: block;
                 font-weight: bold;
-                background-color: $color-3;
-                color:$color-1;
+                
                 &:hover{
                     color: $color-4;
                     background-color: $color-2;
