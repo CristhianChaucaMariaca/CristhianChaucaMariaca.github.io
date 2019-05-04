@@ -242,22 +242,27 @@ body .inicio {
   .container .copy-right p {
     padding: 15px 0 15px 0; }
 
+nav #toggle-menu {
+  display: none; }
+
 nav ul {
   list-style: none;
   margin-bottom: 1.5%;
-  display: none; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   nav ul #saludo {
     background-color: #222831;
     color: #eeeeee;
     font-weight: bold;
     font-family: "Stalemate", cursive;
-    font-size: 2em; }
+    font-size: 2em;
+    border-radius: 0 0 15px 15px; }
   nav ul li {
     -webkit-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
-    text-align: center;
-    border-bottom: 1px solid #eeeeee; }
+    text-align: center; }
     nav ul li a {
       text-transform: uppercase;
       text-decoration: none;
@@ -267,9 +272,7 @@ nav ul {
       transition: 0.3s;
       line-height: 3;
       display: block;
-      font-weight: bold;
-      background-color: #00adb5;
-      color: #222831; }
+      font-weight: bold; }
       nav ul li a:hover {
         color: #eeeeee;
         background-color: #393e46;
@@ -490,13 +493,16 @@ body .container .body .section .habilidad {
   opacity: 0.5;
   margin-top: 1.5%; }
 
-.container .body .section .contacto .email h4 {
-  font-size: 9em;
-  font-family: "Stalemate", cursive;
-  text-align: center;
-  color: #393e46;
-  -webkit-animation: texto 3s;
-  animation: texto 3s; }
+.container .body .section .contacto .email {
+  width: 100%;
+  display: block; }
+  .container .body .section .contacto .email h4 {
+    font-size: 9em;
+    font-family: "Stalemate", cursive;
+    text-align: center;
+    color: #393e46;
+    -webkit-animation: texto 3s;
+    animation: texto 3s; }
 
 .container .body .section .contacto .cellphone h4 {
   font-size: 3em;
@@ -546,19 +552,76 @@ body .container .body .section .habilidad {
     letter-spacing: normal;
     opacity: 1; } }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   nav #toggle-menu {
-    display: none; } }
-
-@media screen and (min-width: 768px) {
+    display: block; }
   nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: none; }
     nav ul #saludo {
-      border-radius: 0 0 15px 15px; }
+      border-radius: 0; }
     nav ul li {
-      border-bottom: 0; }
+      border-bottom: 1px solid #eeeeee; }
       nav ul li a {
-        border-radius: 4px;
-        background-color: white; } }
+        background-color: #00adb5;
+        color: #222831; }
+  .container {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "social" "header" "body" "footer-nav" "footer-1" "footer-2" "footer-3" "copy-right"; }
+    .container .social {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .container .body .section .title {
+      text-align: center; }
+    .container .body .section .hr {
+      width: 90%; }
+    .container .body .section .habilidad {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .container .body .section .habilidad .habilidad-item {
+        width: 100% !important; }
+    .container .body .section .proyecto {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .container .body .section .contacto .email h4 {
+      font-size: 5em; }
+    .container .body .section .contacto .cellphone h4 {
+      font-size: 2em; }
+  .container .nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .container .social {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .container .header {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .container .body {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .container .footer-nav {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; }
+  .container .footer-1 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1; }
+  .container .footer-2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1; }
+  .container .footer-3 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1; }
+  .container .copy-right {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1; } }

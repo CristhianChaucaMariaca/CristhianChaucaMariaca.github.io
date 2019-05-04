@@ -1,22 +1,74 @@
-@media screen and( min-width: 768px){
+@media screen and( max-width: 768px){
     nav{
         #toggle-menu{
-            @media screen and( min-width: 768px){
-                display: none;
-            }
+            display: block;
         }
         ul{
-            display: flex;
+            display: none;
             #saludo{
-                border-radius: 0 0 15px 15px;
+                border-radius: 0;
             }
             li{
-                border-bottom: 0;
+                border-bottom: 1px solid $color-4;
                 a{  
-                    border-radius: $border-3;
-                    background-color: white;
+                    background-color: $color-3;
+                    color:$color-1;
                 }
             }
         }
     }
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "nav"
+                                "social"
+                                "header"
+                                "body"
+                                "footer-nav"
+                                "footer-1"
+                                "footer-2"
+                                "footer-3"
+                                "copy-right";
+        .social{
+            justify-content: space-around;
+        }
+        
+        .body{
+            .section{
+                .title{
+                    text-align: center;
+                }
+                .hr{
+                    width: 90%;
+                }
+                .habilidad{
+                    flex-direction: column;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    .habilidad-item{
+                        width: 100% !important;
+                    }
+                }
+                .proyecto{
+                    justify-content: space-around;
+                    a{
+
+                    }
+                }
+                .contacto{
+                    .email{
+                        h4{
+                            font-size: 5em;
+                        }
+                    }
+                    .cellphone{
+                        h4{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
