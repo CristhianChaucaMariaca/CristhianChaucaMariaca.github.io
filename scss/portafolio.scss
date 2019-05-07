@@ -19,6 +19,7 @@
                         @include claro;
                         overflow: hidden;
                         animation: proyecto $time;
+                        animation-play-state: paused;
                         &:before{
                             content: "";
                             width: 330px;
