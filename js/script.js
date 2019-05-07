@@ -1,7 +1,17 @@
 $(document).ready(function(){
     $(".inicio").delay('1000').fadeOut();
 
-    
+    // ANIMACIÓN DE LOS BOTONES DE REDES SOCIALES
+    $('#keyframe-uno').css('animation-play-state','running');
+    $('#keyframe-dos').css('animation-play-state','running');
+    $('#keyframe-tres').css('animation-play-state','running');
+    $('#keyframe-cuatro').css('animation-play-state','running');
+    $('#keyframe-cinco').css('animation-play-state','running');
+    $('#keyframe-seis').css('animation-play-state','running');
+
+    // %%%%%%%%%%%%%    ANIMACIONES GENERALES   %%%%%%%%%%%%%%%%%%%%%
+    $('.perfil').css('animation-play-state','running');
+    // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     $('#toggle-menu').click(function () { 
         $(this).next().slideToggle();

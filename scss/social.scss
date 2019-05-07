@@ -5,7 +5,30 @@
         display:flex;
         justify-content: space-between;
         .social-item{
-            
+            #keyframe-uno{
+                animation: key-in-uno 2s;
+                animation-play-state: paused;
+            }
+            #keyframe-dos{
+                animation: key-in-uno 2.3s;
+                animation-play-state: paused;
+            }
+            #keyframe-tres{
+                animation: key-in-uno 2.6s;
+                animation-play-state: paused;
+            }
+            #keyframe-cuatro{
+                animation: key-in-uno 2.9s;
+                animation-play-state: paused;
+            }
+            #keyframe-cinco{
+                animation: key-in-uno 3.2s;
+                animation-play-state: paused;
+            }
+            #keyframe-seis{
+                animation: key-in-uno 3.5s;
+                animation-play-state: paused;
+            }
             a{
                 @include oscuro;
                 @include link;
