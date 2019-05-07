@@ -346,7 +346,10 @@ body .container .body .section .habilidad {
           background-color: #00adb5;
           z-index: 2;
           border-radius: 4px;
-          position: absolute; }
+          position: absolute;
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s; }
       body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje .habilidad-progress-number {
         text-align: right;
         width: 10%;
@@ -378,7 +381,9 @@ body .container .body .section .habilidad {
       background-color: #eeeeee;
       overflow: hidden;
       -webkit-animation: proyecto 3s;
-      animation: proyecto 3s; }
+      animation: proyecto 3s;
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused; }
       .container .body .section .proyecto a .proyecto-item:before {
         content: "";
         width: 330px;
@@ -502,7 +507,9 @@ body .container .body .section .habilidad {
     text-align: center;
     color: #393e46;
     -webkit-animation: texto 3s;
-    animation: texto 3s; }
+    animation: texto 3s;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused; }
 
 .container .body .section .contacto .cellphone h4 {
   font-size: 3em;
@@ -510,7 +517,9 @@ body .container .body .section .habilidad {
   text-align: center;
   color: #393e46;
   -webkit-animation: texto 3s;
-  animation: texto 3s; }
+  animation: texto 3s;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
   .container .body .section .contacto .cellphone h4:before {
     content: "(+591) - ";
     color: #222831;
@@ -625,3 +634,7 @@ body .container .body .section .habilidad {
     -ms-grid-row: 9;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1; } }
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 100% !important; } }
