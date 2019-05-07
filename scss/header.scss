@@ -1,8 +1,10 @@
 .container{
     .header{
+
         .perfil{
             width: 97%;
             padding: $padding-l;
+            @include animation-pacity;
             .name{
                 text-align: center;
                 font-family: $font-extra;

@@ -47,3 +47,10 @@
     text-align: center;
     color: $color-2,
 }
+
+
+//Animaciones
+@mixin animation-pacity {
+    animation: opacity $t-opacity;
+    animation-play-state: paused;
+}
