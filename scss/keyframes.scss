@@ -45,3 +45,12 @@
         color:$color-3;
     }
 }
+@keyframes entrada {
+    0%, 70%{
+        top:-350px;
+    }
+    
+    100%{
+        top:0;
+    }
+}

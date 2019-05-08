@@ -9,6 +9,15 @@ $(document).ready(function(){
     $('#keyframe-cinco').css('animation-play-state','running');
     $('#keyframe-seis').css('animation-play-state','running');
 
+
+    // %%%%%%%%%%%%%%%%%%%%%%%% BANNER %%%%%%%%%%%%%%%%%%%%%%%%
+
+    $('.header .perfil .name').css({
+        'animation-play-state':'running'           
+    });
+
+    // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
     // %%%%%%%%%%%%%    ANIMACIONES GENERALES   %%%%%%%%%%%%%%%%%%%%%
     $('.perfil').css('animation-play-state','running');
     // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,6 +70,7 @@ $(document).ready(function(){
             $('.contacto .cellphone h4').css('animation-play-state','running');
         }
     });
+
 
     $(window).scroll(function () { 
         var winheight = $(window).scrollTop();

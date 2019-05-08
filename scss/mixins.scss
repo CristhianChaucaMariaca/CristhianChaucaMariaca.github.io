@@ -54,3 +54,7 @@
     animation: opacity $t-opacity;
     animation-play-state: paused;
 }
+@mixin entrada {
+    animation:entrada 4s;
+    animation-play-state: paused;
+}
