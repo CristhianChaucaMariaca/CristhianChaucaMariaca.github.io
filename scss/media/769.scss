@@ -49,11 +49,17 @@
                         width: 100% !important;
                     }
                 }
+                .certificado{
+                    .certificado-item{
+                        width: 80%;
+                        margin: $margin auto;
+                        .certificado-body{
+                            height: auto;
+                        }
+                    }
+                }
                 .proyecto{
                     justify-content: space-around;
-                    a{
-
-                    }
                 }
                 .contacto{
                     .email{
@@ -68,6 +74,32 @@
                     }
                 }
             }
+        }
+        .footer-nav{
+            ul{
+                flex-wrap: wrap;
+                li{
+                    width: 100%;
+                    text-align: center;
+                    border-bottom: solid 1px $color-3;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    &:last-child{
+                        border-bottom: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        @include link;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        @mixin footer {
+            border-top:solid
+        }
+        .footer-2{
+            @include oscuro;
         }
     }
     

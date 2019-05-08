@@ -10,18 +10,20 @@
                     padding: $padding;
                     margin: $margin-tb;
                     border-radius: $border-3;
+                    @include shadow;
                     .certificado-title{
                         text-align: center;
                         color:$color-3;
                         padding: $padding-tb;
                     }
                     .certificado-body{
-                        text-align: center;
+                        text-align: justify;
                         height: 130px;
                     }
                     .certificado-link{
                         text-align: center;
                         width: $width-t;
+                        margin-top: $margin;
                         a{
                             @include link;
                             &:hover{

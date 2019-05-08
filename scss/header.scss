@@ -60,9 +60,8 @@
                 }
             }
             .icon{
-                text-align: center;
-                font-size: 1.5em;
-                color:$color-4;
+                @include icon;
+                animation:key-in 2.5s;
                 z-index: 2;
                 position: relative;
             }
