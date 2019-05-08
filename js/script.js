@@ -10,16 +10,12 @@ $(document).ready(function(){
     $('#keyframe-seis').css('animation-play-state','running');
 
 
-    // %%%%%%%%%%%%%%%%%%%%%%%% BANNER %%%%%%%%%%%%%%%%%%%%%%%%
-
+    
+    // %%%%%%%%%%%%%    ANIMACIONES GENERALES   %%%%%%%%%%%%%%%%%%%%%
+    $('.perfil').css('animation-play-state','running');
     $('.header .perfil .name').css({
         'animation-play-state':'running'           
     });
-
-    // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-    // %%%%%%%%%%%%%    ANIMACIONES GENERALES   %%%%%%%%%%%%%%%%%%%%%
-    $('.perfil').css('animation-play-state','running');
     // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     $('#toggle-menu').click(function () { 
@@ -68,6 +64,7 @@ $(document).ready(function(){
         if (winheight >= top-200) {
             $('.contacto .email h4').css('animation-play-state', 'running');
             $('.contacto .cellphone h4').css('animation-play-state','running');
+            $('.contacto .icon').css('animation-play-state','running');
         }
     });
 

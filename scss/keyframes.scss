@@ -45,9 +45,29 @@
         color:$color-3;
     }
 }
+@keyframes key-in{
+    0%, 70%{
+        transform:scale(0);
+    }
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
 @keyframes entrada {
     0%, 70%{
         top:-350px;
+    }
+    
+    100%{
+        top:0;
+    }
+}
+@keyframes entrada-2 {
+    0%{
+        top:-400px;
     }
     
     100%{

@@ -10,6 +10,7 @@
                 a{
                     text-decoration: none;
                     @include link;
+                    text-transform: uppercase;
                 }
             }
         }

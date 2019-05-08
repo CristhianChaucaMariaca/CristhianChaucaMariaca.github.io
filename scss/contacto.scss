@@ -1,13 +1,53 @@
 .container{
     .body{
         .section{
+            padding-bottom: 0;
             .contacto{
+                background-image: url(../media/banner4.jpeg);
+                background-size: cover;
+                background-position: center 0;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                padding-bottom: $padding;
+                padding-top: $padding;
+                position: relative;
+                overflow: hidden;
+                height: 500px;
+                border-top:solid $border-marco $color-3;
+                border-radius: $border-3 $border-3 0 0;
+                &:after{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    left: 0;
+                    top:0;
+                    opacity: 0.8;
+                    position: absolute;
+                    background-color: $color-1;
+                    z-index: 1;   
+                }
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
                 .icon{
+                    width: 70px;
+                    height: 70px;
+                    line-height: 2;
+                    margin:0 auto;
+                    border-radius: $circle;
+                    border:solid 1px $color-4;
                     text-align: center;
-                    font-size: 3em;
-                    color:$color-1;
+                    font-size: 2em;
+                    color:$color-4;
                     opacity: $opacity;
                     margin-top: $margin-t;
+                    z-index: 2;
+                    position: relative;
+                    animation: key-in 2.5s;
+                    animation-play-state: paused;
+
+                    
                 }
                 .email{
                     width: 100%;
@@ -16,20 +56,27 @@
                         font-size: 9em;
                         @include text-extra;
                         animation: texto 3s;
-                        animation-play-state: paused;
+                        @include entrada-3;
+                        color:$color-3;
+                        position: relative;
                     }
+                    position: relative;
+                    z-index: 2;
                 }
                 .cellphone{
+                    width: 100%;
                     h4{
                         font-size: 3em;
                         @include text-extra;
-                        animation: texto 3s;
-                        animation-play-state: paused;
+                        @include entrada-2;
+                        color:$color-3;
                         &:before{
                             content: "(+591) - ";
-                            color:$color-1;
+                            color:$color-3;
                             opacity: $opacity;
                         }
+                        position: relative;
+                        z-index: 2;
                     }
                 }
             }

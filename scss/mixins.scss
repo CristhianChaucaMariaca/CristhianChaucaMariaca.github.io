@@ -48,7 +48,11 @@
     color: $color-2,
 }
 
-
+// BORDER
+@mixin border-top-bottom {
+    border-bottom: solid $border-marco $color-3;
+    border-top: solid $border-marco $color-3;
+}
 //Animaciones
 @mixin animation-pacity {
     animation: opacity $t-opacity;
@@ -56,5 +60,13 @@
 }
 @mixin entrada {
     animation:entrada 4s;
+    animation-play-state: paused;
+}
+@mixin entrada-2 {
+    animation:entrada-2 1s;
+    animation-play-state: paused;
+}
+@mixin entrada-3 {
+    animation:entrada-2 2s;
     animation-play-state: paused;
 }

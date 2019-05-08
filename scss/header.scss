@@ -11,6 +11,7 @@
         overflow: hidden;
         display: flex;
         align-items: center;
+        @include border-top-bottom;
         &:after{
             content: "";
             width: 100%;
