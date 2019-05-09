@@ -551,6 +551,54 @@ body .container .body .section .habilidad {
           opacity: 0.7;
           z-index: -1; }
 
+.container .body .section .icons-description {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .container .body .section .icons-description .item-icon {
+    border: solid 1px #00adb5;
+    border-radius: 50px;
+    width: 13%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 10px 10px 10px 0; }
+    .container .body .section .icons-description .item-icon p {
+      font-size: 0.8em;
+      width: 90px;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      color: #00adb5;
+      text-align: left;
+      margin-left: 10px; }
+    .container .body .section .icons-description .item-icon span {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      width: 40px;
+      background-color: #00adb5;
+      border-radius: 40px;
+      display: block;
+      text-align: center;
+      line-height: 2;
+      color: white; }
+
 .container .body .section .certificado {
   width: 100%;
   display: -webkit-box;
@@ -560,15 +608,39 @@ body .container .body .section .habilidad {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 0; }
   .container .body .section .certificado .certificado-item {
+    position: relative;
     width: 30%;
     padding: 10%;
     padding: 15px;
     margin: 10px 0 10px 0;
     border-radius: 4px;
+    background-color: white;
     -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
+    .container .body .section .certificado .certificado-item .certificado-icon {
+      position: absolute;
+      left: 10px;
+      top: 0;
+      color: #00adb5;
+      font-size: 2em;
+      -webkit-transform: scaleX(1.5);
+      -ms-transform: scaleX(1.5);
+      transform: scaleX(1.5); }
+    .container .body .section .certificado .certificado-item .destacado {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #00adb5;
+      display: block;
+      width: 50px;
+      border-radius: 40px 0 4px 0;
+      line-height: 3;
+      text-align: center;
+      color: white;
+      font-size: 1em; }
     .container .body .section .certificado .certificado-item .certificado-title {
       text-align: center;
       color: #00adb5;
@@ -576,7 +648,10 @@ body .container .body .section .habilidad {
       .container .body .section .certificado .certificado-item .certificado-title h4 {
         font-family: "Anton", sans-serif;
         letter-spacing: 1px;
-        color: #222831; }
+        color: #222831;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%; }
     .container .body .section .certificado .certificado-item .certificado-body {
       text-align: justify;
       height: 130px;
