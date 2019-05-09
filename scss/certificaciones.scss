@@ -15,10 +15,27 @@
                         text-align: center;
                         color:$color-3;
                         padding: $padding-tb;
+                        h4{
+                            font-family: $font-title;
+                            letter-spacing: 1px;
+                            color:$color-1;
+                        }
                     }
                     .certificado-body{
                         text-align: justify;
                         height: 130px;
+                        @include flex;
+                        justify-content: center;
+                        img.institucion{
+                            max-width: 50%;
+                            margin: 0 auto;
+                            align-self: flex-end;
+                            text-align: center;
+                            color: $color-3;
+                            width: 100%;
+                            display: block;
+                            margin: $margin-tb;
+                        }
                     }
                     .certificado-link{
                         text-align: center;

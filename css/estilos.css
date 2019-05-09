@@ -573,9 +573,34 @@ body .container .body .section .habilidad {
       text-align: center;
       color: #00adb5;
       padding: 15px 0 15px 0; }
+      .container .body .section .certificado .certificado-item .certificado-title h4 {
+        font-family: "Anton", sans-serif;
+        letter-spacing: 1px;
+        color: #222831; }
     .container .body .section .certificado .certificado-item .certificado-body {
       text-align: justify;
-      height: 130px; }
+      height: 130px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .container .body .section .certificado .certificado-item .certificado-body img.institucion {
+        max-width: 50%;
+        margin: 0 auto;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        text-align: center;
+        color: #00adb5;
+        width: 100%;
+        display: block;
+        margin: 10px 0 10px 0; }
     .container .body .section .certificado .certificado-item .certificado-link {
       text-align: center;
       width: 100%;
