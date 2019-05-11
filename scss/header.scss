@@ -28,8 +28,25 @@
         .perfil{
             width: 97%;
             padding: $padding-l;
-            // @include animation-pacity;
             position: relative;
+            .saludo{
+                color: $color-4;
+                font-family: $font-extra;
+                font-size: 3em;
+                position: relative;
+                z-index: 2;
+                text-align: center;
+                width: 100%;
+                display: block;
+                font-size: 3em;
+                line-height: 0.5;
+                &:after{
+                    content: 'my name is:';
+                    font-family: $font;
+                    font-size: 12pt;
+                    color:$color-3;
+                }
+            }
             .name{
                 text-align: center;
                 

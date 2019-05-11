@@ -236,6 +236,22 @@ body .inicio {
     width: 97%;
     padding: 1.5%;
     position: relative; }
+    .container .header .perfil .saludo {
+      color: #eeeeee;
+      font-family: "Stalemate", cursive;
+      font-size: 3em;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      display: block;
+      font-size: 3em;
+      line-height: 0.5; }
+      .container .header .perfil .saludo:after {
+        content: 'my name is:';
+        font-family: "Roboto", sans-serif;
+        font-size: 12pt;
+        color: #00adb5; }
     .container .header .perfil .name {
       text-align: center;
       color: #eeeeee;
@@ -567,7 +583,7 @@ body .container .body .section .habilidad {
   .container .body .section .icons-description .item-icon {
     border: solid 1px #00adb5;
     border-radius: 50px;
-    width: 13%;
+    width: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -694,6 +710,7 @@ body .container .body .section .habilidad {
 .container .body .section {
   padding-bottom: 0; }
   .container .body .section .contacto {
+    width: 100%;
     background-image: url(../media/banner4.jpeg);
     background-size: cover;
     background-position: center 0;
@@ -918,13 +935,27 @@ body .container .body .section .habilidad {
         background-color: #00adb5;
         color: #222831; }
   .container {
-    width: 100%;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "social" "header" "body" "footer-nav" "footer-1" "footer-2" "footer-3" "copy-right"; }
+    .container .header .perfil .name {
+      font-size: 2.5em; }
     .container .social {
       -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .container .social .social-item {
+        margin: 2px; }
+    .container .footer-1 .footer-ul li {
+      text-align: center; }
+      .container .footer-1 .footer-ul li a {
+        background-color: #222831;
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        padding-bottom: 7.5px;
+        padding-top: 7.5px; }
     .container .body .section .title {
       text-align: center; }
     .container .body .section .hr {
@@ -938,6 +969,8 @@ body .container .body .section .habilidad {
       padding-right: 15px; }
       .container .body .section .habilidad .habilidad-item {
         width: 100% !important; }
+    .container .body .section .icons-description .item-icon {
+      margin-left: 10px; }
     .container .body .section .certificado .certificado-item {
       width: 80%;
       margin: 1.5% auto; }
@@ -947,7 +980,7 @@ body .container .body .section .habilidad {
       -ms-flex-pack: distribute;
       justify-content: space-around; }
     .container .body .section .contacto .email h4 {
-      font-size: 5em; }
+      font-size: 3.5em; }
     .container .body .section .contacto .cellphone h4 {
       font-size: 2em; }
     .container .footer-nav ul {
