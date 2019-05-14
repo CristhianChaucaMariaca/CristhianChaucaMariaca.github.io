@@ -56,9 +56,8 @@ body .inicio {
     body .inicio #content-carga #carga {
       width: 100px;
       height: 100px;
-      border: solid 15px #00adb5;
+      border: solid 5px #00adb5;
       border-top-color: #393e46;
-      border-top-style: groove;
       border-radius: 100%;
       position: absolute;
       top: 0;
@@ -178,6 +177,11 @@ body .inicio {
     animation: key-in-uno 3.5s;
     -webkit-animation-play-state: paused;
     animation-play-state: paused; }
+  .container .social .social-item #keyframe-siete {
+    -webkit-animation: key-in-uno 3.8s;
+    animation: key-in-uno 3.8s;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused; }
   .container .social .social-item a {
     color: #00adb5;
     background-color: #222831;
@@ -245,7 +249,6 @@ body .inicio {
       text-align: center;
       width: 100%;
       display: block;
-      font-size: 3em;
       line-height: 0.5; }
       .container .header .perfil .saludo:after {
         content: 'my name is:';
@@ -367,7 +370,7 @@ nav ul {
   nav ul #saludo {
     background-color: #222831;
     color: #eeeeee;
-    font-weight: bold;
+    font-weight: normal;
     font-family: "Stalemate", cursive;
     font-size: 2em;
     border-radius: 0 0 15px 15px; }
@@ -778,7 +781,8 @@ body .container .body .section .habilidad {
         -webkit-animation-play-state: paused;
         animation-play-state: paused;
         color: #00adb5;
-        position: relative; }
+        position: relative;
+        font-weight: normal; }
     .container .body .section .contacto .cellphone {
       width: 100%; }
       .container .body .section .contacto .cellphone h4 {
@@ -790,13 +794,13 @@ body .container .body .section .habilidad {
         animation: entrada-2 1s;
         -webkit-animation-play-state: paused;
         animation-play-state: paused;
-        color: #00adb5;
+        color: #eeeeee;
+        font-weight: normal;
         position: relative;
         z-index: 2; }
         .container .body .section .contacto .cellphone h4:before {
           content: "(+591) - ";
-          color: #00adb5;
-          opacity: 0.5; }
+          color: #00adb5; }
 
 @-webkit-keyframes proyecto {
   from {
@@ -935,11 +939,14 @@ body .container .body .section .habilidad {
         background-color: #00adb5;
         color: #222831; }
   .container {
+    width: 100%;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "nav" "social" "header" "body" "footer-nav" "footer-1" "footer-2" "footer-3" "copy-right"; }
-    .container .header .perfil .name {
-      font-size: 2.5em; }
+    .container .header {
+      border-radius: 0; }
+      .container .header .perfil .name {
+        font-size: 2.5em; }
     .container .social {
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -979,10 +986,12 @@ body .container .body .section .habilidad {
     .container .body .section .proyecto {
       -ms-flex-pack: distribute;
       justify-content: space-around; }
-    .container .body .section .contacto .email h4 {
-      font-size: 3.5em; }
-    .container .body .section .contacto .cellphone h4 {
-      font-size: 2em; }
+    .container .body .section .contacto {
+      border-radius: 0; }
+      .container .body .section .contacto .email h4 {
+        font-size: 5.5em; }
+      .container .body .section .contacto .cellphone h4 {
+        font-size: 2em; }
     .container .footer-nav ul {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
@@ -1043,4 +1052,12 @@ body .container .body .section .habilidad {
 
 @media screen and (max-width: 360px) {
   .container {
-    width: 100% !important; } }
+    width: 100% !important; }
+    .container .body .section .habilidad .habilidad-item .habilidad-title {
+      width: 100% !important; }
+    .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
+      width: 100% !important; }
+    .container .body .section .contacto .email h4 {
+      font-size: 3em; }
+    .container .body .section .contacto .cellphone h4 {
+      font-size: 1.5em; } }

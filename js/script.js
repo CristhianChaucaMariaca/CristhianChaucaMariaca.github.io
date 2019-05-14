@@ -8,6 +8,7 @@ $(document).ready(function(){
     $('#keyframe-cuatro').css('animation-play-state','running');
     $('#keyframe-cinco').css('animation-play-state','running');
     $('#keyframe-seis').css('animation-play-state','running');
+    $('#keyframe-siete').css('animation-play-state','running');
 
 
     

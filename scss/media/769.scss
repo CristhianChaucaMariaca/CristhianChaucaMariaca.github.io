@@ -18,6 +18,7 @@
         }
     }
     .container{
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-areas:    "nav"
                                 "social"
@@ -29,6 +30,7 @@
                                 "footer-3"
                                 "copy-right";
         .header{
+            border-radius: 0;
             .perfil{
                 .name{
                     font-size: 2.5em;
@@ -91,10 +93,10 @@
                     justify-content: space-around;
                 }
                 .contacto{
-
+                    border-radius: 0;
                     .email{
                         h4{
-                            font-size: 3.5em;
+                            font-size: 5.5em;
                         }
                     }
                     .cellphone{
