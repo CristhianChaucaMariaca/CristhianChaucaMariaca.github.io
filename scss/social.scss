@@ -29,6 +29,10 @@
                 animation: key-in-uno 3.5s;
                 animation-play-state: paused;
             }
+            #keyframe-siete{
+                animation: key-in-uno 3.8s;
+                animation-play-state: paused;
+            }
             a{
                 @include oscuro;
                 @include link;

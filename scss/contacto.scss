@@ -51,6 +51,7 @@
                         @include entrada-3;
                         color:$color-3;
                         position: relative;
+                        font-weight: normal;
                     }
                     position: relative;
                     z-index: 2;
@@ -61,11 +62,11 @@
                         font-size: 3em;
                         @include text-extra;
                         @include entrada-2;
-                        color:$color-3;
+                        color:$color-4;
+                        font-weight: normal;
                         &:before{
                             content: "(+591) - ";
                             color:$color-3;
-                            opacity: $opacity;
                         }
                         position: relative;
                         z-index: 2;
