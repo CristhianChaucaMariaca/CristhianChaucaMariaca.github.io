@@ -110,6 +110,12 @@ $(document).ready(function(){
             var javavar = $("#javavar-label").text();
             $("#javavar").css({'width':javavar});
 
+            var phpvar = $("#phpvar-label").text();
+            $("#phpvar").css({'width':phpvar});
+
+            var laravelvar = $("#laravelvar-label").text();
+            $("#laravelvar").css({'width':laravelvar});
+
             var mysqlvar = $("#mysqlvar-label").text();
             $("#mysqlvar").css({'width':mysqlvar});
 
@@ -120,7 +126,16 @@ $(document).ready(function(){
             $("#gitvar").css({'width':gitvar});
 
             var securityvar = $("#securityvar-label").text();
-            $("#securityvar").css({'width':securityvar});        
+            $("#securityvar").css({'width':securityvar});
+
+            var linuxvar = $("#linuxvar-label").text();
+            $("#linuxvar").css({'width':linuxvar});  
+
+            var photoshopvar = $("#photoshopvar-label").text();
+            $("#photoshopvar").css({'width':photoshopvar});
+
+            var seovar = $("#seovar-label").text();
+            $("#seovar").css({'width':seovar});
         }
     })
     
