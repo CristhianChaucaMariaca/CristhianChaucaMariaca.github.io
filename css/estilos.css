@@ -545,7 +545,8 @@ body .container .body .section .habilidad {
           font-family: "Stalemate", cursive;
           padding: 0;
           margin: 0;
-          font-size: 3em; }
+          font-size: 3em;
+          font-weight: normal; }
       .container .body .section .proyecto a .proyecto-item .proyecto-body {
         width: 300px;
         height: 70px;
