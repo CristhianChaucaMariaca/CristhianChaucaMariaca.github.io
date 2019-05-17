@@ -21,7 +21,7 @@ body {
 .container .body .section .hr {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #00adb5; }
+  border: 1px solid #eeeeee; }
 
 body .inicio {
   width: 100%;
@@ -388,7 +388,8 @@ nav ul {
       transition: 0.3s;
       line-height: 3;
       display: block;
-      font-weight: bold; }
+      font-weight: bold;
+      border-radius: 4px; }
       nav ul li a:hover {
         color: #eeeeee;
         background-color: #393e46;
@@ -644,7 +645,7 @@ body .container .body .section .habilidad {
       position: absolute;
       left: 10px;
       top: 0;
-      color: #00adb5;
+      color: #393e46;
       font-size: 2em;
       -webkit-transform: scaleX(1.5);
       -ms-transform: scaleX(1.5);
@@ -709,6 +710,62 @@ body .container .body .section .habilidad {
         .container .body .section .certificado .certificado-item .certificado-link a:hover {
           color: #eeeeee; }
         .container .body .section .certificado .certificado-item .certificado-link a:hover {
+          color: #393e46; }
+
+body .container .body .section .experiencia .experiencia-item {
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px rgba(34, 40, 49, 0.3);
+  box-shadow: 1px 1px 5px rgba(34, 40, 49, 0.3);
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 1.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  body .container .body .section .experiencia .experiencia-item .experiencia-title {
+    width: 100%; }
+    body .container .body .section .experiencia .experiencia-item .experiencia-title h4 {
+      font-family: "Anton", sans-serif;
+      text-align: left;
+      letter-spacing: 0.1em;
+      color: #393e46;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-decoration: underline;
+      -webkit-text-decoration-color: #00adb5;
+      text-decoration-color: #00adb5; }
+      body .container .body .section .experiencia .experiencia-item .experiencia-title h4:before {
+        content: "X";
+        color: #00adb5; }
+  body .container .body .section .experiencia .experiencia-item .experiencia-description {
+    width: 60%; }
+    body .container .body .section .experiencia .experiencia-item .experiencia-description p {
+      text-align: justify;
+      margin-top: 1.5%; }
+  body .container .body .section .experiencia .experiencia-item .experiencia-dates {
+    width: 30%;
+    text-align: right;
+    padding-left: 1.5%;
+    border-left: 2px solid #eeeeee; }
+    body .container .body .section .experiencia .experiencia-item .experiencia-dates div:first-child {
+      margin-top: 0px; }
+    body .container .body .section .experiencia .experiencia-item .experiencia-dates div {
+      margin-top: 20px;
+      color: #393e46; }
+      body .container .body .section .experiencia .experiencia-item .experiencia-dates div .icon {
+        color: #00adb5;
+        border: 1px solid #00adb5;
+        border-radius: 50px;
+        padding: 5px; }
+      body .container .body .section .experiencia .experiencia-item .experiencia-dates div a {
+        text-decoration: none;
+        color: #00adb5; }
+        body .container .body .section .experiencia .experiencia-item .experiencia-dates div a:hover {
           color: #393e46; }
 
 .container .body .section {
@@ -802,6 +859,22 @@ body .container .body .section .habilidad {
         .container .body .section .contacto .cellphone h4:before {
           content: "(+591) - ";
           color: #00adb5; }
+
+body .container #experiencias h3:before {
+  content: "E";
+  color: #00adb5; }
+
+body .container #proyectos h3:before {
+  content: "P";
+  color: #00adb5; }
+
+body .container #habilidades h3:before {
+  content: "H";
+  color: #00adb5; }
+
+body .container #certificaciones h3:before {
+  content: "C";
+  color: #00adb5; }
 
 @-webkit-keyframes proyecto {
   from {
@@ -1058,6 +1131,21 @@ body .container .body .section .habilidad {
       width: 100% !important; }
     .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
       width: 100% !important; }
+    .container .body .section .experiencia .experiencia-item {
+      margin-left: 3%;
+      margin-right: 3%; }
+      .container .body .section .experiencia .experiencia-item .experiencia-description {
+        width: 100% !important; }
+      .container .body .section .experiencia .experiencia-item .experiencia-title h4 {
+        text-align: center !important; }
+      .container .body .section .experiencia .experiencia-item .experiencia-dates {
+        text-align: center !important;
+        width: 100% !important;
+        border-top: solid 2px #eeeeee;
+        border-left: none !important;
+        padding-left: 0;
+        margin-top: 1.5%;
+        padding-top: 15px; }
     .container .body .section .contacto .email h4 {
       font-size: 3em; }
     .container .body .section .contacto .cellphone h4 {

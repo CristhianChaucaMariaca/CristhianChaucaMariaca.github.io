@@ -50,6 +50,12 @@ $(document).ready(function(){
         $('html , body ').animate({scrollTop:top},1000);
     });
 
+    $('.link-experiencias').click(function  (){ 
+        var experiencias = $('#experiencias').offset();
+        var top = experiencias.top-20;
+        $('html, body').animate({scrollTop:top}, 1000);        
+    });
+
     $('.link-contacto').click(function  (){ 
         var contacto = $('#contacto').offset();
         var top = contacto.top-20;
