@@ -32,6 +32,29 @@
                             }
                         }
                     }
+                    .experiencia{
+                        .experiencia-item{
+                            margin-left: $margin*2;
+                            margin-right: $margin*2;
+                            .experiencia-description{
+                                width: 100% !important;
+                            }
+                            .experiencia-title{
+                                h4{
+                                    text-align: center !important;
+                                }
+                            }
+                            .experiencia-dates{
+                                text-align: center !important;
+                                width: 100% !important;
+                                border-top: solid 2px $color-4 ;
+                                border-left: none !important;
+                                padding-left: 0;
+                                margin-top: $margin;
+                                padding-top: $padding;
+                            }
+                        }
+                    }
                     .contacto{
                         .email{
                             h4{

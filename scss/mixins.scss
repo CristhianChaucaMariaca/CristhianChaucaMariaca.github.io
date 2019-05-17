@@ -26,6 +26,16 @@
 @mixin title-1 {
     color: $color-1;
 }
+@mixin sub-title {
+    font-family:$font-title;
+    text-align: left;
+    letter-spacing: $text-spacing;
+    color:$color-2;
+    font-size: $font-sub-title;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: $color-3;
+}
 @mixin title-2 {
     font-family: $font-title;
     font-size: $font-title-2;

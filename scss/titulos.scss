@@ -1,0 +1,39 @@
+@mixin title-decoration {
+    color:$color-3;
+}
+body{
+    .container{
+        #experiencias{
+            h3{
+                &:before{
+                    content: "E";
+                    @include title-decoration;
+                }
+            }
+        }
+        #proyectos{
+            h3{
+                &:before{
+                    content: "P";
+                    @include title-decoration;
+                }
+            }
+        }
+        #habilidades{
+            h3{
+                &:before{
+                    content: "H";
+                    @include title-decoration;
+                }
+            }
+        }
+        #certificaciones{
+            h3{
+                &:before{
+                    content: "C";
+                    @include title-decoration;
+                }
+            }
+        }
+    }
+}
