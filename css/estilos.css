@@ -729,7 +729,7 @@ body .container .body .section .experiencia .experiencia-item {
   flex-wrap: wrap; }
   body .container .body .section .experiencia .experiencia-item .experiencia-title {
     width: 100%; }
-    body .container .body .section .experiencia .experiencia-item .experiencia-title h4 {
+    body .container .body .section .experiencia .experiencia-item .experiencia-title h4#xcomp {
       font-family: "Anton", sans-serif;
       text-align: left;
       letter-spacing: 0.1em;
@@ -739,8 +739,21 @@ body .container .body .section .experiencia .experiencia-item {
       text-decoration: underline;
       -webkit-text-decoration-color: #00adb5;
       text-decoration-color: #00adb5; }
-      body .container .body .section .experiencia .experiencia-item .experiencia-title h4:before {
+      body .container .body .section .experiencia .experiencia-item .experiencia-title h4#xcomp:before {
         content: "X";
+        color: #00adb5; }
+    body .container .body .section .experiencia .experiencia-item .experiencia-title h4#celta {
+      font-family: "Anton", sans-serif;
+      text-align: left;
+      letter-spacing: 0.1em;
+      color: #393e46;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-decoration: underline;
+      -webkit-text-decoration-color: #00adb5;
+      text-decoration-color: #00adb5; }
+      body .container .body .section .experiencia .experiencia-item .experiencia-title h4#celta:before {
+        content: "C";
         color: #00adb5; }
   body .container .body .section .experiencia .experiencia-item .experiencia-description {
     width: 60%; }
