@@ -12,10 +12,17 @@ body{
                         @include flex;
                         .experiencia-title{
                             width: 100%;
-                            h4{
+                            h4#xcomp{
                                 @include sub-title;
                                 &:before{
                                     content: "X";
+                                    color:$color-3;
+                                }
+                            }
+                            h4#celta{
+                                @include sub-title;
+                                &:before{
+                                    content: "C";
                                     color:$color-3;
                                 }
                             }
