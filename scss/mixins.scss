@@ -38,11 +38,13 @@
 }
 @mixin title-2 {
     font-family: $font-title;
-    font-size: $font-title-2;
-    text-align: left;
+    font-size: $font-title-2*1.4;
+    text-align: center;
     letter-spacing: $text-spacing;
     text-transform: uppercase;
-    color:$color-2;
+    color:$color-3;
+    // text-decoration: underline;
+    // text-decoration-color: $color-white;
 }
 @mixin flex {
     display: flex;
@@ -61,7 +63,7 @@
 // BORDER
 @mixin border-top-bottom {
     border-bottom: solid $border-marco $color-3;
-    border-top: solid $border-marco $color-3;
+    // border-top: solid $border-marco $color-3;
 }
 //ICONS
 @mixin icon {

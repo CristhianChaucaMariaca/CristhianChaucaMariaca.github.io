@@ -7,7 +7,7 @@
         background-size: cover;
         background-attachment: fixed;
         position: relative;
-        border-radius: $border-3;
+        border-radius: 0 0 $border-3 $border-3;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -39,6 +39,7 @@
                 width: 100%;
                 display: block;
                 line-height: 0.5;
+                margin-bottom: $margin;
                 &:after{
                     content: 'my name is:';
                     font-family: $font;
@@ -87,6 +88,10 @@
                 position: relative;
                 z-index: 2;
                 p{
+                    width: 80%;
+                    margin:0 auto;
+                    color:$color-white;
+                    margin-top: $margin;
                 }
             }
         }

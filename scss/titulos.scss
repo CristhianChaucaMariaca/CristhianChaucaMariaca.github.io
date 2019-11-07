@@ -1,13 +1,23 @@
 @mixin title-decoration {
-    color:$color-3;
+    color:$color-white;
 }
 body{
     .container{
+        h3{
+            background-color: $color-1;
+            padding: $padding;
+            border-bottom: 20px solid $color-3;
+            border-radius: $border-3 $border-3 0 0;
+        }
+        @mixin size-title{
+            font-size: 1.4em !important;
+        }
         #experiencias{
             h3{
                 &:before{
                     content: "E";
                     @include title-decoration;
+                    @include size-title;
                 }
             }
         }
@@ -16,6 +26,7 @@ body{
                 &:before{
                     content: "P";
                     @include title-decoration;
+                    @include size-title;
                 }
             }
         }
@@ -24,6 +35,7 @@ body{
                 &:before{
                     content: "H";
                     @include title-decoration;
+                    @include size-title;
                 }
             }
         }
@@ -32,6 +44,7 @@ body{
                 &:before{
                     content: "C";
                     @include title-decoration;
+                    @include size-title;
                 }
             }
         }

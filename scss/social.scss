@@ -1,9 +1,12 @@
 .container{
     .social{
-        width: $width-t;
-        margin: $margin-tb;
         display:flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: $color-3;
+        padding: $padding*2;
+        position: relative;
+        border-radius: $border-3 $border-3 0 0;
         .social-item{
             #keyframe-uno{
                 animation: key-in-uno 2s;
@@ -34,7 +37,7 @@
                 animation-play-state: paused;
             }
             a{
-                @include oscuro;
+                background-color: $color-2;
                 @include link;
                 display: block;
                 width: 70px;
@@ -48,6 +51,7 @@
                 &:hover{
                     background-color:$color-2;
                     transform: scale(1.1);
+                    // border:1px $color-white solid;
                 }
             }
         }

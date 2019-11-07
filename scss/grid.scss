@@ -8,7 +8,7 @@
                             "header     header      header"
                             "body       body        body"
                             "footer-nav footer-nav  footer-nav"
-                            "footer-1   footer-2    footer-3"
+                            "footer-1   footer-1    footer-1"
                             "copy-right copy-right  copy-right";
     .nav{
         grid-area: nav;
@@ -28,12 +28,7 @@
     .footer-1{
         grid-area: footer-1;
     }
-    .footer-2{
-        grid-area: footer-2;
-    }
-    .footer-3{
-        grid-area: footer-3;
-    }
+
     .copy-right{
         grid-area: copy-right;
     }

@@ -20,22 +20,21 @@
         @include padding;
         .footer-ul{
             list-style: none;
-            li{
-                margin-bottom: 5px;
-                a{
-                    text-decoration: none;
-                    @include link;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            a{
+                text-decoration: none;
+                @include link;
+                text-align: center;
+                font-size: 2.5em;
+                margin: $margin;
+                &:hover{
+                    transform: scale(1.09);
                 }
             }
         }
-    }
-    .footer-2{
-        @include medio;
-        @include padding;
-    }
-    .footer-3{
-        @include medio;
-        @include padding;
     }
     .copy-right{
         @include oscuro;
