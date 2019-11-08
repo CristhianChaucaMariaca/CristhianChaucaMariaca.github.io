@@ -1158,7 +1158,7 @@ body .container #certificaciones h3:before {
     width: 100% !important; }
     .container h3 {
       border-radius: 0px !important;
-      font-size: 2em !important; }
+      font-size: 1.5em !important; }
     .container .body .section .habilidad .habilidad-item .habilidad-title {
       width: 100% !important; }
     .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
@@ -1186,4 +1186,8 @@ body .container #certificaciones h3:before {
     .container .certificado .certificado-item {
       margin-top: 7.5% !important; }
     .container .proyecto .proyecto-item {
-      margin-top: 7.5% !important; } }
+      margin-top: 7.5% !important; }
+  .nav ul #saludo {
+    border-radius: 0; }
+  .nav ul li {
+    border-bottom: 1px solid #222831; } }
