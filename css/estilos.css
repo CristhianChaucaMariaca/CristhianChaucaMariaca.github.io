@@ -1029,13 +1029,17 @@ body .container #certificaciones h3:before {
 
 @media screen and (max-width: 768px) {
   nav #toggle-menu {
-    display: block; }
+    display: block;
+    background-color: #222831;
+    color: #00adb5;
+    font-size: 1.5em;
+    text-align: center; }
   nav ul {
     display: none; }
     nav ul #saludo {
       border-radius: 0; }
     nav ul li {
-      border-bottom: 1px solid #eeeeee; }
+      border-bottom: 1px solid #222831; }
       nav ul li a {
         background-color: #00adb5;
         color: #222831; }
@@ -1149,13 +1153,17 @@ body .container #certificaciones h3:before {
 @media screen and (max-width: 360px) {
   .container {
     width: 100% !important; }
+    .container h3 {
+      border-radius: 0px !important;
+      font-size: 2em !important; }
     .container .body .section .habilidad .habilidad-item .habilidad-title {
       width: 100% !important; }
     .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
       width: 100% !important; }
     .container .body .section .experiencia .experiencia-item {
       margin-left: 3%;
-      margin-right: 3%; }
+      margin-right: 3%;
+      margin-top: 7.5% !important; }
       .container .body .section .experiencia .experiencia-item .experiencia-description {
         width: 100% !important; }
       .container .body .section .experiencia .experiencia-item .experiencia-title h4 {
@@ -1171,4 +1179,8 @@ body .container #certificaciones h3:before {
     .container .body .section .contacto .email h4 {
       font-size: 3em; }
     .container .body .section .contacto .cellphone h4 {
-      font-size: 1.5em; } }
+      font-size: 1.5em; }
+    .container .certificado .certificado-item {
+      margin-top: 7.5% !important; }
+    .container .proyecto .proyecto-item {
+      margin-top: 7.5% !important; } }

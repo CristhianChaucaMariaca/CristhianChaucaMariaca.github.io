@@ -2,6 +2,10 @@
     nav{
         #toggle-menu{
             display: block;
+            background-color: $color-1;
+            color:$color-3;
+            font-size: 1.5em;
+            text-align: center;
         }
         ul{
             display: none;
@@ -9,7 +13,7 @@
                 border-radius: 0;
             }
             li{
-                border-bottom: 1px solid $color-4;
+                border-bottom: 1px solid $color-1;
                 a{  
                     background-color: $color-3;
                     color:$color-1;
