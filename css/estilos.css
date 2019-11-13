@@ -446,7 +446,12 @@ body .container .body .section .habilidad {
       width: 25%; }
       body .container .body .section .habilidad .habilidad-item .habilidad-title h4 {
         color: #393e46;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-align: center; }
+      body .container .body .section .habilidad .habilidad-item .habilidad-title .habilidad-img {
+        text-align: center; }
+        body .container .body .section .habilidad .habilidad-item .habilidad-title .habilidad-img img {
+          max-width: 50%; }
     body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
       width: 75%;
       display: -webkit-box;
@@ -485,6 +490,8 @@ body .container .body .section .habilidad {
         text-align: right;
         width: 10%;
         color: #393e46; }
+      body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje .habilidad-description p {
+        text-align: justify; }
 
 .container .body .section .proyecto {
   width: 100%;
