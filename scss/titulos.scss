@@ -48,5 +48,14 @@ body{
                 }
             }
         }
+        #servicios{
+            h3{
+                &:before{
+                    content: "S";
+                    @include title-decoration;
+                    @include size-title;
+                }
+            }
+        }
     }
 }

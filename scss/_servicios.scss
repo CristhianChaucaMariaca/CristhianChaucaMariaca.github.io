@@ -1,0 +1,62 @@
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    .servicios-item{
+        width: 297px;
+        margin:$margin;
+        border: 1px solid $color-3;
+        padding: $padding;
+        background-color: $color-white;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        .servicio-title{
+            text-align: center;
+            color:$color-2;
+            text-transform: uppercase;
+        }
+        .servicios-items{
+            flex-grow: 1;
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: $margin*2;
+                    margin-bottom: $margin*2;
+                    color:$color-1;
+                }
+                .icon-checkmark2{
+                    color:$color-3;
+                    span{
+                        color:$color-1;
+                        margin-left: $margin*2;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .servicios-price{
+            position: relative;
+            h5{
+                font-size: 4em;
+                text-align: center;
+                color:$color-3;
+                &:after{
+                    content: " $";
+                    font-size: .5em;
+                }
+            }
+            a.voltear{
+                position: absolute;
+                text-decoration: none;
+                right: 0;
+                font-size: 2em;
+                bottom: 0;
+                color:$color-3;
+                transition: $transition;
+                &:hover{
+                    color:$color-1;
+                }
+            }
+        }
+    }
+}
