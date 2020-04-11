@@ -1,5 +1,14 @@
 @import "includes/variables";
+
+// MIXINS /############## 
+@import "includes/mixins/text";
+@import "includes/mixins/buttons";
+@import "includes/mixins/grid";
+
+// INCLUDES #############
 @import "includes/mixins";
+@import "includes/text";
+@import "includes/buttons";
 @import "includes/general";
 @import "includes/inicio";
 @import "includes/grid";
@@ -13,6 +22,8 @@
 @import "includes/servicios";
 @import "includes/experiencia";
 @import "includes/contacto";
+@import "includes/mixins/text";
 @import "includes/titulos";
 @import "includes/keyframes";
 @import "includes/media/media";
+@import "includes/cards";

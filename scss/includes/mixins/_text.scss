@@ -1,0 +1,22 @@
+@mixin padding_l_r {
+    padding-left: $space;
+    padding-right: $space;
+}
+@mixin margin_l_r {
+    margin-left: $space;
+    margin-right: $space;
+}
+@mixin padding_t_b {
+    padding-top: $space;
+    padding-bottom: $space;
+}
+@mixin margin_t_b {
+    margin-top: $space;
+    margin-bottom: $space;
+}
+@mixin format_text {
+    text-align: justify;
+}
+@mixin t_a_c {
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+.cards{
+    @include flex_row;
+    .card{
+        width: 350px;
+        @include shadow;
+        padding: 5px;
+        margin:$margin;
+        .img-card{
+            img{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        .title-card{
+            h3{
+                text-align: left;
+            }
+        }
+        .description-card{
+            p{
+                @include margin_l_r;
+                @include format_text;
+            }
+        }
+        .tecnologis-card{
+            @include margin_l_r;
+            p{
+                text-align: justify;
+            }
+            .tecnologis-img-card{
+                width: 100%;
+                text-align: center;
+                img{
+                    margin: 5px;
+                }
+            }
+        }
+        .link-card{
+            @include padding_l_r;
+            @include padding_t_b;
+            span{
+                color:$color-2;
+                margin-right: 10px;
+                opacity: .8;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin btn{
+    position: relative;
+    padding:$padding;
+    background-color: red;
+}
+@mixin link_p {
+    color: $color-3;
+    &:hover{
+        color: $color-1;
+        text-decoration: underline!important;
+        transition: $transition;
+    }
+}
