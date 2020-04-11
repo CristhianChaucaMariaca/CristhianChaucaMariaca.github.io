@@ -1,13 +1,12 @@
 @mixin title-decoration {
-    color:$color-white;
+    color:$color-3;
 }
 body{
     .container{
         h3{
-            background-color: $color-1;
             padding: $padding;
-            border-bottom: 20px solid $color-3;
-            border-radius: $border-3 $border-3 0 0;
+            color: $color-2;
+            text-align: left;
         }
         @mixin size-title{
             font-size: 1.4em !important;

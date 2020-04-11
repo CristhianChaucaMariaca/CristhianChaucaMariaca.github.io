@@ -1,5 +1,5 @@
 .container{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -10,6 +10,10 @@
                             "footer-nav footer-nav  footer-nav"
                             "footer-1   footer-1    footer-1"
                             "copy-right copy-right  copy-right";
+    .row{
+        width: 80%;
+        margin: auto;
+    }
     .nav{
         grid-area: nav;
     }

@@ -39,10 +39,10 @@
 @mixin title-2 {
     font-family: $font-title;
     font-size: $font-title-2*1.4;
-    text-align: center;
+    text-align: left;
     letter-spacing: $text-spacing;
     text-transform: uppercase;
-    color:$color-3;
+    color:$color-1;
     // text-decoration: underline;
     // text-decoration-color: $color-white;
 }
