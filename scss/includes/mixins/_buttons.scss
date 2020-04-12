@@ -2,6 +2,23 @@
     position: relative;
     padding:$padding;
     background-color: red;
+    text-decoration: none;
+    border-radius: $radius;
+    margin: 5px;
+    font-weight: 700;
+    text-align: center;
+}
+@mixin primary {
+    background-color: $color-1;
+    color:$color-3;
+    transition: $transition;
+    &:hover{
+        @include primary-hover;
+    }
+}
+@mixin primary-hover {
+    background-color: $color-2;
+    color: $color-4;
 }
 @mixin link_p {
     color: $color-3;

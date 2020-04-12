@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".inicio").delay('1000').fadeOut();
+    $(".inicio").delay('300').fadeOut();
 
     // ANIMACIÓN DE LOS BOTONES DE REDES SOCIALES
     $('#keyframe-uno').css('animation-play-state','running');

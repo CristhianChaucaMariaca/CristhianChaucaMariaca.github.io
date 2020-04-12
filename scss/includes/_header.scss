@@ -1,17 +1,16 @@
 .container{
     .header{
-        height: 500px;
+        height: 650px;
         background-image: url(../media/banner3.jpg);
         background-repeat: no-repeat;
         background-position: center 0;
         background-size: cover;
         background-attachment: fixed;
         position: relative;
-        border-radius: 0 0 $border-3 $border-3;
         overflow: hidden;
         display: flex;
         align-items: center;
-        @include border-top-bottom;
+        @include border-bottom;
         &:after{
             content: "";
             width: 100%;
@@ -49,7 +48,6 @@
             }
             .name{
                 text-align: center;
-                
                 color:$color-4;
                 font-size:4em;
                 z-index: 2;
@@ -78,7 +76,7 @@
             }
             .icon{
                 @include icon;
-                animation:key-in 2.5s;
+                animation:key-in 1.5s;
                 z-index: 2;
                 position: relative;
             }
