@@ -15,13 +15,13 @@ body{
             .title{
                 @include title-2;
             }
-            .hr{
-                width: $width-t;
-                margin:$margin-c;
-                border:1px solid $color-4;
-                @include margin_t_b;
-            }
         }
+    }
+    .hr{
+        width: $width-t;
+        margin:$margin-c;
+        border:1px solid $color-4;
+        @include margin_t_b;
     }
 }
 // Scroll personalizado

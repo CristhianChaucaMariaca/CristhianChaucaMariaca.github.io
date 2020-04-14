@@ -1,86 +1,13 @@
 .row
     //- Inlcuimos los MIXINS - PORTAFOLIO
     include mixins/portafolio
+    //- Incluimos archivo de configuración para el llenado de datos
+    include ../config/portafolio
     
     section.section#proyectos
         h3.title ortafolio
         .hr
         section.proyecto
             .cards
-                .card
-                    .img-card
-                        img(src="media/laravel.jpg", alt="")
-                    .title-card
-                        h3 Crud con Laravel
-                    .description-card
-                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, molestiae asperiores? Dolorum laborum temporibus tenetur!
-                    .tecnologis-card
-                        p El proyecto fue desarrollado con:
-                        .tecnologis-img-card
-                            img(src="media/icons/laravel-icon.png", alt="", srcset="")
-                            img(src="media/icons/bootstrap-icon.png", alt="", srcset="")
-                    .link-card.t-a-c
-                        span.icon-link
-                        a(href="#").link-p Ver proyecto
-                .card
-                    .img-card
-                        img(src="media/laravel.jpg", alt="")
-                    .title-card
-                        h3 Crud con Laravel
-                    .description-card
-                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, molestiae asperiores? Dolorum laborum temporibus tenetur!
-                    .tecnologis-card
-                        p El proyecto fue desarrollado con:
-                        .tecnologis-img-card
-                            img(src="media/icons/laravel-icon.png", alt="", srcset="")
-                            img(src="media/icons/bootstrap-icon.png", alt="", srcset="")
-                    .link-card.t-a-c
-                        span.icon-link
-                        a(href="#").link-p Ver proyecto
-                .card
-                    .img-card
-                        img(src="media/laravel.jpg", alt="")
-                    .title-card
-                        h3 Crud con Laravel
-                    .description-card
-                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, molestiae asperiores? Dolorum laborum temporibus tenetur!
-                    .tecnologis-card
-                        p El proyecto fue desarrollado con:
-                        .tecnologis-img-card
-                            img(src="media/icons/laravel-icon.png", alt="", srcset="")
-                            img(src="media/icons/bootstrap-icon.png", alt="", srcset="")
-                    .link-card.t-a-c
-                        span.icon-link
-                        a(href="#").link-p Ver proyecto
-                .card
-                    .img-card
-                        img(src="media/laravel.jpg", alt="")
-                    .title-card
-                        h3 Crud con Laravel
-                    .description-card
-                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, molestiae asperiores? Dolorum laborum temporibus tenetur!
-                    .tecnologis-card
-                        p El proyecto fue desarrollado con:
-                        .tecnologis-img-card
-                            img(src="media/icons/laravel-icon.png", alt="", srcset="")
-                            img(src="media/icons/bootstrap-icon.png", alt="", srcset="")
-                    .link-card.t-a-c
-                        span.icon-link
-                        a(href="#").link-p Ver proyecto
-                .card
-                    .img-card
-                        img(src="media/laravel.jpg", alt="")
-                    .title-card
-                        h3 Crud con Laravel
-                    .description-card
-                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, molestiae asperiores? Dolorum laborum temporibus tenetur!
-                    .tecnologis-card
-                        p El proyecto fue desarrollado con:
-                        .tecnologis-img-card
-                            img(src="media/icons/laravel-icon.png", alt="", srcset="")
-                            img(src="media/icons/bootstrap-icon.png", alt="", srcset="")
-                    .link-card.t-a-c
-                        span.icon-link
-                        a(href="#").link-p Ver proyecto
-
-                        
+                each project in portafolio
+                    +portafolio(project.img,project.title,project.description,project.technologys,project.link)

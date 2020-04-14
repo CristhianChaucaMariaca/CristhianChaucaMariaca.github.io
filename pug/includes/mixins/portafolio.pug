@@ -1,1 +1,17 @@
-//- TODO: Trabajar en esto.
+
+mixin portafolio(img_project,title_project,description_project,technologys,link_project)
+    .card
+        .img-card
+            img(src="media/"+img_project+".jpg", alt=title_project, title=title_project)
+        .title-card
+            h3= title_project
+        .description-card
+            p= description_project
+        .tecnologis-card
+            p El proyecto fue desarrollado con:
+            .tecnologis-img-card
+                each technology in technologys
+                    img(src="media/icons/"+technology+"-icon.png", alt=technology, title=technology)
+        .link-card.t-a-c
+            span.icon-link
+            a(href=link_project, target="_blank").link-p Ver proyecto

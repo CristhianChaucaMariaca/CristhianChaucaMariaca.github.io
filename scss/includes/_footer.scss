@@ -16,7 +16,7 @@
         }
     }
     .footer-1{
-        @include medio;
+        @include oscuro;
         @include padding;
         .footer-ul{
             list-style: none;
@@ -39,6 +39,10 @@
     .copy-right{
         @include oscuro;
         text-align: center;
+        .hr{
+            border-color: $color-2;
+            width: 90%;
+        }
         p{
             padding: $padding-tb;
         }

@@ -50,7 +50,7 @@ body {
   text-transform: uppercase;
   color: #222831; }
 
-.container .body .section .hr {
+.container .hr {
   width: 100%;
   margin: 0 auto;
   border: 1px solid #eeeeee;
@@ -373,8 +373,8 @@ body .inicio {
         color: #eeeeee; }
 
 .container .footer-1 {
-  color: #eeeeee;
-  background-color: #393e46;
+  color: #00adb5;
+  background-color: #222831;
   padding: 15px; }
   .container .footer-1 .footer-ul {
     list-style: none;
@@ -407,6 +407,9 @@ body .inicio {
   color: #00adb5;
   background-color: #222831;
   text-align: center; }
+  .container .copy-right .hr {
+    border-color: #393e46;
+    width: 90%; }
   .container .copy-right p {
     padding: 15px 0 15px 0; }
 
@@ -1102,7 +1105,8 @@ body .container #servicios h3:before {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100%; }
   .cards .card {
     width: 350px;
     -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);

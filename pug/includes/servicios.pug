@@ -1,17 +1,16 @@
 //- Incluimos el mixin de servicios
 include mixins/servicios
 
+//- importamos el archivo de configuración de SERVICIOS con los datos necesarios
+include ../config/servicios
 //- Creamos un array para enviar los datos a cada servicio
-- var android = ['Diseño de bases de datos','Diseño de bases de datos','Diseño de bases de datos','Diseño de bases de datos'];
 
 .row
     section.section#servicios
         h3.title ervicios
         .hr
         section.servicios
-            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
-            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
-            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
-            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
+            each service in services
+                +servicio(service.name,service.items,service.link)
             
 

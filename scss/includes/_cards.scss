@@ -1,5 +1,6 @@
 .cards{
     @include flex_row;
+    width: 100%;
     .card{
         width: 350px;
         @include shadow;
