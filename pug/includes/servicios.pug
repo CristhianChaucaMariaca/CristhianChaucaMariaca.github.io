@@ -1,0 +1,17 @@
+//- Incluimos el mixin de servicios
+include mixins/servicios
+
+//- Creamos un array para enviar los datos a cada servicio
+- var android = ['Diseño de bases de datos','Diseño de bases de datos','Diseño de bases de datos','Diseño de bases de datos'];
+
+.row
+    section.section#servicios
+        h3.title ervicios
+        .hr
+        section.servicios
+            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
+            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
+            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
+            +servicio('https://www.youtube.com','Desarrollo de Aplicaciones Android',android)
+            
+

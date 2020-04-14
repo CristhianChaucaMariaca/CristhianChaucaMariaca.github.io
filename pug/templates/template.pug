@@ -11,18 +11,15 @@ html(lang="es")
         title Cristhian C. Chauca Mariaca
     body
         .container
-            //- include nav.pug
-            //- include social.pug
-            include header.pug
+            //- include nav
+            //- include social
+            block header
+                include ../includes/header
             main.body
-                //- include certificaciones.pug                           
-                include habilidades.pug
-                include portafolio.pug
-                include experiencia.pug
-                include servicios.pug
-                include contacto.pug
+                block main
                 
-            include footer.pug
+            block footer    
+                include ../includes/footer
         .inicio
             #content-carga
                 .icon-embed2

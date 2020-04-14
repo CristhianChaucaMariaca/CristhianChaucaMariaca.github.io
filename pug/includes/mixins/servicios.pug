@@ -1,0 +1,11 @@
+mixin servicio(link,name, servicios)
+    article.servicios-item
+        h4.servicio-title= name
+        .hr
+        article.servicios-items
+            each servicio in servicios
+                .service-li
+                    span.icon.icon-checkmark2
+                    span= servicio
+        .service-link
+            a.btn.btn-primary(href=link, target="_blank") Consultar

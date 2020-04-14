@@ -1,2 +1,5 @@
 #Excluimos el archivo de prepros-6.config
 *.config
+
+# Exclución de carpetas inecesarios o que se crearon por accidente
+html/
