@@ -2,18 +2,7 @@
     .footer-nav{
         @include oscuro;
         padding: $padding;
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            li{
-                a{
-                    text-decoration: none;
-                    @include link;
-                    text-transform: uppercase;
-                }
-            }
-        }
+        
     }
     .footer-1{
         @include oscuro;

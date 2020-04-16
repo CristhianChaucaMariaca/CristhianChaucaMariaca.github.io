@@ -3,9 +3,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-areas:    "nav        nav         nav"
-                            "social     social      social"
-                            "header     header      header"
+    grid-template-areas:    "header     header      header"
                             "body       body        body"
                             "footer-nav footer-nav  footer-nav"
                             "footer-1   footer-1    footer-1"

@@ -13,19 +13,9 @@ footer.footer-1
 footer.footer-nav
     //- TODO: Optimizar el agregado de la navegación de la página con mixins e includes y lo que se pueda
     //-  para un mejor agregado de nuevas secciones en la página.
-    ul
-        li
-            a(href="#").link-inicio INICIO
-        li
-            a(href="#").link-certificaciones CERTIFICACIONES
-        li
-            a(href="#").link-habilidades HABILIDADES
-        li
-            a(href="#").link-proyectos PROYECTOS
-        li
-            a(href="#").link-experiencias Experiencia
-        li
-            a(href="#").link-contacto CONTACTO
+
+    //- include nav_in_page
+    include nav_in_page
 footer.copy-right
     .hr
     p Cristhian Chauca @ 2019

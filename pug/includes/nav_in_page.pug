@@ -1,0 +1,6 @@
+include mixins/nav_in_page
+include ../config/nav_in_page
+.nav-in-page
+    ul
+        each item in navpage
+            +nav_pages(item.text)(class="link-"+item.class) 

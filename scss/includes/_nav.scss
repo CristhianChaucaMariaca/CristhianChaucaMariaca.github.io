@@ -42,3 +42,21 @@ nav{
         color:$color-1;
     }
 }
+.nav-in-page{
+    width: 100%;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li{
+            margin: 20px;
+            a{
+                @include link;
+                text-transform: uppercase;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
