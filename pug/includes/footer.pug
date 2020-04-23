@@ -1,20 +1,8 @@
 footer.footer-1
     .footer-ul
-
-        //- Incluimos MIXIN - SOCIAL
-        include mixins/social
-        +social('https://www.facebook.com/cristhiancarlos.chaucamariaca.1')(class="icon-facebook2")
-        +social('https://twitter.com/cris_chauca')(class="icon-twitter")
-        +social('https://github.com/CristhianChaucaMariaca?tab=repositories')(class='icon-github')
-        +social('https://hdesks.blogspot.com/')(class='icon-blogger')
-        +social('https://www.youtube.com/channel/UCa3NCItYc3T2puwjFcy4o0Q?disable_polymer=true')(class='icon-youtube')
-        +social('https://www.linkedin.com/in/cristhian-carlos-chauca-mariaca')(class='icon-linkedin')
-        +social('https://wa.me/59172087907')(class='icon-whatsapp')
+        //- Incluimos social.pug para utilizar los enlaces
+        include social
 footer.footer-nav
-    //- TODO: Optimizar el agregado de la navegación de la página con mixins e includes y lo que se pueda
-    //-  para un mejor agregado de nuevas secciones en la página.
-
-    //- include nav_in_page
     include nav_in_page
 footer.copy-right
     .hr
