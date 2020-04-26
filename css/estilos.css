@@ -75,7 +75,7 @@ p {
 body .inicio {
   width: 100%;
   height: 100vh;
-  display: block;
+  display: none;
   position: fixed;
   background-color: #eeeeee;
   top: 0;
@@ -415,7 +415,9 @@ nav ul {
   margin-bottom: 1.5%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   nav ul #saludo {
     background-color: #222831;
     color: #eeeeee;
@@ -950,25 +952,64 @@ body .container #servicios h3:before {
   100% {
     top: 0; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .container h3 {
     border-radius: 0px !important;
     font-size: 2em !important; }
-  nav #toggle-menu {
-    display: block;
+  .mostrar-menu {
+    -webkit-clip-path: circle(150% at 100vw 100vh) !important;
+    clip-path: circle(150% at 100vw 100vh) !important; }
+  nav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
     background-color: #222831;
-    color: #00adb5;
-    font-size: 1.5em;
-    text-align: center; }
-  nav ul {
-    display: none; }
-    nav ul #saludo {
-      border-radius: 0; }
-    nav ul li {
-      border-bottom: 1px solid #222831; }
+    -webkit-clip-path: circle(80px at 100vw 100vh);
+    clip-path: circle(80px at 100vw 100vh);
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    nav #toggle-menu.icon-menu {
+      background-color: #222831;
+      display: block;
+      color: #00adb5;
+      font-size: 1.5em;
+      text-align: center;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      line-height: 1 !important;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+    nav ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      nav ul #saludo {
+        border-radius: 0;
+        margin-bottom: 20px; }
       nav ul li a {
-        background-color: #00adb5;
-        color: #222831; }
+        background-color: #393e46;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #00adb5; }
   .container {
     width: 100%;
     -ms-grid-columns: 1fr;

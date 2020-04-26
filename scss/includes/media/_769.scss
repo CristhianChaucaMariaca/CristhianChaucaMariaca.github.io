@@ -1,28 +1,53 @@
-@media screen and( max-width: 768px){
+@media screen and( max-width: 780px){
     .container{
         h3{
             border-radius: 0px!important;
             font-size: 2em!important;
         }
     }
+    .mostrar-menu{
+        clip-path: circle(150% at 100vw 100vh) !important;
+    }
     nav{
-        #toggle-menu{
-            display: block;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        background-color: $color-1;
+        clip-path: circle(80px at 100vw 100vh);
+        transition: .4s ease all;
+        #toggle-menu.icon-menu{
             background-color: $color-1;
+            display: block;
             color:$color-3;
             font-size: 1.5em;
             text-align: center;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            line-height: 1 !important;
+            transition: .3s;
         }
+        display: flex;
+        align-items: center;
+        justify-content: center;
         ul{
-            display: none;
+            flex-direction: column;
             #saludo{
                 border-radius: 0;
+                margin-bottom: 20px;
             }
             li{
-                border-bottom: 1px solid $color-1;
                 a{  
-                    background-color: $color-3;
-                    color:$color-1;
+                    background-color: $color-2;
+                    margin-bottom: 10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color:$color-3;
                 }
             }
         }

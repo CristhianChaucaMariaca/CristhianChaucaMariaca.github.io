@@ -6,6 +6,7 @@ nav{
         list-style: none;
         margin-bottom: $margin;
         display: flex;
+        flex-wrap: wrap;
         #saludo{
             background-color: $color-1;
             color: $color-4;
