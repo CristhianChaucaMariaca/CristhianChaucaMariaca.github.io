@@ -407,53 +407,53 @@ body .inicio {
   .container .copy-right p {
     padding: 15px 0 15px 0; }
 
-nav #toggle-menu {
+nav {
   display: none; }
-
-nav ul {
-  list-style: none;
-  margin-bottom: 1.5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  nav ul #saludo {
-    background-color: #222831;
-    color: #eeeeee;
-    font-weight: normal;
-    font-family: "Stalemate", cursive;
-    font-size: 2em;
-    border-radius: 0 0 15px 15px; }
-  nav ul li {
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
-    flex: auto;
-    text-align: center; }
-    nav ul li a {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #00adb5;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      line-height: 3;
-      display: block;
-      font-weight: bold;
-      border-radius: 4px; }
-      nav ul li a:hover {
-        color: #eeeeee;
-        background-color: #393e46;
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9); }
-
-nav #toggle-menu {
-  cursor: pointer;
-  line-height: 3;
-  text-align: center;
-  background-color: #00adb5;
-  color: #222831; }
+  nav #toggle-menu {
+    display: none; }
+  nav ul {
+    list-style: none;
+    margin-bottom: 1.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    nav ul #saludo {
+      background-color: #222831;
+      color: #eeeeee;
+      font-weight: normal;
+      font-family: "Stalemate", cursive;
+      font-size: 2em;
+      border-radius: 0 0 15px 15px; }
+    nav ul li {
+      -webkit-box-flex: 1;
+      -ms-flex: auto;
+      flex: auto;
+      text-align: center; }
+      nav ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #00adb5;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        line-height: 3;
+        display: block;
+        font-weight: bold;
+        border-radius: 4px; }
+        nav ul li a:hover {
+          color: #eeeeee;
+          background-color: #393e46;
+          -webkit-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9); }
+  nav #toggle-menu {
+    cursor: pointer;
+    line-height: 3;
+    text-align: center;
+    background-color: #00adb5;
+    color: #222831; }
 
 .nav-in-page {
   width: 100%; }
