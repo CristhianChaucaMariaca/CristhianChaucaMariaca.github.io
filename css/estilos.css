@@ -75,7 +75,6 @@ p {
 body .inicio {
   width: 100%;
   height: 100vh;
-  display: none;
   position: fixed;
   background-color: #eeeeee;
   top: 0;
@@ -407,30 +406,87 @@ body .inicio {
   .container .copy-right p {
     padding: 15px 0 15px 0; }
 
+.mostrar-menu-desk {
+  opacity: 1;
+  visibility: visible; }
+
 nav {
-  display: none; }
+  position: fixed;
+  z-index: 20;
+  bottom: 30px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 300px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   nav #toggle-menu {
     display: none; }
+  nav #togle-menu2.icon-home {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    background-color: #222831;
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #eeeeee;
+    cursor: pointer;
+    border: solid 1px #eeeeee;
+    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
   nav ul {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border-radius: 20px;
+    border: solid 1px #00adb5;
     list-style: none;
-    margin-bottom: 1.5%;
+    margin-bottom: 4.5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
     nav ul #saludo {
-      background-color: #222831;
-      color: #eeeeee;
+      color: #00adb5;
       font-weight: normal;
       font-family: "Stalemate", cursive;
       font-size: 2em;
-      border-radius: 0 0 15px 15px; }
+      background-color: #222831;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-width: 1px;
+      border-bottom-color: #00adb5;
+      border-bottom-style: solid; }
     nav ul li {
+      opacity: .9;
+      background-color: #222831;
       -webkit-box-flex: 1;
       -ms-flex: auto;
       flex: auto;
-      text-align: center; }
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      nav ul li:last-child {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px; }
       nav ul li a {
         text-transform: uppercase;
         text-decoration: none;
@@ -975,12 +1031,16 @@ body .container #servicios h3:before {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
     nav #toggle-menu.icon-menu {
       background-color: #222831;
       display: block;
@@ -996,20 +1056,35 @@ body .container #servicios h3:before {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
+    nav #togle-menu2.icon-home {
+      display: none; }
     nav ul {
+      border: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      opacity: 1;
+      visibility: visible;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
       nav ul #saludo {
         border-radius: 0;
         margin-bottom: 20px; }
-      nav ul li a {
-        background-color: #393e46;
-        margin-bottom: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: #00adb5; }
+      nav ul li {
+        width: 80% !important;
+        opacity: 1; }
+        nav ul li a {
+          margin-bottom: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          color: #00adb5; }
   .container {
     width: 100%;
     -ms-grid-columns: 1fr;

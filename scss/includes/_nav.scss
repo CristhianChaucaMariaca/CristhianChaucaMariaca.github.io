@@ -1,24 +1,69 @@
+.mostrar-menu-desk{
+    opacity: 1;
+    visibility: visible;
+}
 nav{
-    display: none;
+    position: fixed;
+    z-index: 20;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: flex-end;
     #toggle-menu{
         display: none;
     }
+    #togle-menu2.icon-home{
+        order: 2;
+        background-color: $color-1;
+        padding: 10px;
+        border-radius: 100%;
+        font-size: 2em;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color:$color-4;
+        cursor: pointer;
+        border: solid 1px $color-4;
+        @include shadow;
+    }
     ul{
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s;
+        border-radius: 20px;
+        border: solid 1px $color-3;
         list-style: none;
-        margin-bottom: $margin;
+        margin-bottom: $margin*3;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        @include shadow;
         #saludo{
-            background-color: $color-1;
-            color: $color-4;
+            color: $color-3;
             font-weight: normal;
             font-family: $font-extra;
             font-size: 2em;
-            border-radius: 0 0 15px 15px;
+            background-color: $color-1;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-width: 1px;
+            border-bottom-color: $color-3;
+            border-bottom-style: solid;
         }
         li{
+            opacity: .9;
+            &:last-child{
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            background-color: $color-1;
             flex:auto;
             text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
             a{
                 text-transform: uppercase;
                 text-decoration: none;
