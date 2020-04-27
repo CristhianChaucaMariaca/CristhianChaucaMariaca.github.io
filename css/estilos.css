@@ -1283,6 +1283,16 @@ body .container #servicios h3:before {
         color: #393e46;
         margin-right: 10px;
         opacity: .8; }
+      .cards .card .link-card:hover span {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        -webkit-transition: -webkit-transform .3s ease-in-out;
+        transition: -webkit-transform .3s ease-in-out;
+        -o-transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        display: inline-block; }
 
 /* Margin */
 .m-1 {
