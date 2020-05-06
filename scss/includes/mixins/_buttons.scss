@@ -1,7 +1,6 @@
 @mixin btn{
     position: relative;
     padding:$padding;
-    background-color: red;
     text-decoration: none;
     border-radius: $radius;
     margin: 5px;
@@ -14,6 +13,15 @@
     transition: $transition;
     &:hover{
         @include primary-hover;
+    }
+}
+@mixin secondary {
+    border: 1px solid $color-3;
+    color:$color-3;
+    &:hover{
+        background-color: $color-3;
+        color:$color-1;
+        transition: .3s;
     }
 }
 @mixin primary-hover {

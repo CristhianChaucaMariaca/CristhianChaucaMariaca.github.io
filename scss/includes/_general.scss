@@ -4,6 +4,9 @@
     font-family: $font;
     // box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     color: $color-font;
     font-weight: 300;

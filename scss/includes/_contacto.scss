@@ -9,11 +9,11 @@
                 background-position: center 0;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                padding-bottom: $padding;
-                padding-top: $padding;
+                padding-bottom: $padding*5;
+                padding-top: $padding*5;
                 position: relative;
                 overflow: hidden;
-                height: 500px;
+                height: auto;
                 border-top:solid $border-marco $color-3;
                 border-radius: $border-3 $border-3 0 0;
                 &:after{
@@ -23,7 +23,7 @@
                     display: block;
                     left: 0;
                     top:0;
-                    opacity: 0.8;
+                    opacity: 0.9;
                     position: absolute;
                     background-color: $color-1;
                     z-index: 1;   
@@ -31,27 +31,21 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
-                .icon{
-                    @include icon;
-                    margin-top: $margin-t;
-                    z-index: 2;
-                    position: relative;
-                    animation: key-in 2.5s;
-                    animation-play-state: paused;
-
-                    
-                }
                 .email{
                     width: 100%;
                     display: block;
                     h4{
-                        font-size: 9em;
+                        font-size: 4em;
                         @include text-extra;
-                        animation: texto 3s;
-                        @include entrada-3;
                         color:$color-3;
                         position: relative;
-                        font-weight: normal;
+                        font-weight: 900;
+                        &:after{
+                            content: "@gmail.com";
+                            color: $color-white;
+                            font-size: .5em;
+                            font-weight: 300;
+                        }
                     }
                     position: relative;
                     z-index: 2;
@@ -61,12 +55,13 @@
                     h4{
                         font-size: 3em;
                         @include text-extra;
-                        @include entrada-2;
                         color:$color-4;
-                        font-weight: normal;
+                        font-weight: 900;
                         &:before{
                             content: "(+591) - ";
                             color:$color-3;
+                            font-size: .5em;
+                            font-weight: 300;
                         }
                         position: relative;
                         z-index: 2;

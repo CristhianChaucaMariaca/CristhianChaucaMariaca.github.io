@@ -37,10 +37,11 @@
     text-decoration-color: $color-3;
 }
 @mixin title-2 {
-    font-family: $font-title;
+    font-family: $font;
     font-size: $font-title-2*1.4;
     text-align: left;
-    letter-spacing: $text-spacing;
+    // letter-spacing: $text-spacing;
+    font-weight: 300;
     text-transform: uppercase;
     color:$color-1;
     // text-decoration: underline;
@@ -60,7 +61,7 @@
     box-shadow: 3px 3px 11px -3px rgba(0,0,0,0.42);
 }
 @mixin text-extra{
-    font-family: $font-extra;
+    font-family: $font;
     text-align: center;
     color: $color-2,
 }

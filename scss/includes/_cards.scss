@@ -2,7 +2,7 @@
     @include flex_row;
     width: 100%;
     .card{
-        width: 350px;
+        width: 300px;
         @include shadow;
         padding: 5px;
         margin:$margin;

@@ -4,6 +4,9 @@
 .btn-primary{
     @include primary;
 }
+.btn-secondary{
+    @include secondary;
+}
 .link-p{
     @include link_p;
 }

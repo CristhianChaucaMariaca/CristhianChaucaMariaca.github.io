@@ -1,5 +1,7 @@
 @mixin title-decoration {
     color:$color-3;
+    font-weight:900 !important;
+    border-bottom: 2px solid $color-1;
 }
 body{
     .container{
@@ -22,6 +24,7 @@ body{
         }
         #proyectos{
             h3.title{
+                font-style: $font-extra !important;
                 &:before{
                     content: "P";
                     @include title-decoration;

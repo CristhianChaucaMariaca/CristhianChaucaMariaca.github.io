@@ -6,6 +6,6 @@ mixin servicio(name,items, link)
             each item in items
                 .service-li
                     span.icon.icon-checkmark2
-                    span= item
+                    span #{item}
         .service-link
             a.btn.btn-primary(href=link, target="_blank") Consultar
