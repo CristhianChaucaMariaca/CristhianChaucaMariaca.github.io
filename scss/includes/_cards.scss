@@ -13,26 +13,26 @@
                 }
             }
         }
-        .img-card{
+        &__thumbnail{
             overflow: hidden;
-            img{
-                max-width: 100%;
-                width: 100%;
-                transition: transform 2s ease-in-out;
-            }
         }
-        .title-card{
+        &__img{
+            max-width: 100%;
+            width: 100%;
+            transition: transform 2s ease-in-out;
+        }
+        &__title{
             h3{
                 text-align: left;
             }
         }
-        .description-card{
+        &__description{
             p{
                 @include margin_l_r;
                 @include format_text;
             }
         }
-        .tecnologis-card{
+        &__technologis{
             @include margin_l_r;
             p{
                 text-align: justify;
@@ -45,7 +45,7 @@
                 }
             }
         }
-        .link-card{
+        &__link{
             @include padding_l_r;
             @include padding_t_b;
             span{

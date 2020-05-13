@@ -7,46 +7,15 @@
         padding: $padding*2;
         position: relative;
         border-radius: $border-3 $border-3 0 0;
-        .social-item{
-            #keyframe-uno{
-                animation: key-in-uno 2s;
-                animation-play-state: paused;
-            }
-            #keyframe-dos{
-                animation: key-in-uno 2.3s;
-                animation-play-state: paused;
-            }
-            #keyframe-tres{
-                animation: key-in-uno 2.6s;
-                animation-play-state: paused;
-            }
-            #keyframe-cuatro{
-                animation: key-in-uno 2.9s;
-                animation-play-state: paused;
-            }
-            #keyframe-cinco{
-                animation: key-in-uno 3.2s;
-                animation-play-state: paused;
-            }
-            #keyframe-seis{
-                animation: key-in-uno 3.5s;
-                animation-play-state: paused;
-            }
-            #keyframe-siete{
-                animation: key-in-uno 3.8s;
-                animation-play-state: paused;
-            }
+        opacity: .5;
+        margin: 0 auto;
+        &__item{
             a{
-                background-color: $color-2;
+                margin-left: 15px;
+                margin-right: 15px;
+                text-decoration: none !important;
                 @include link;
-                display: block;
-                width: 70px;
-                height: 45px;
-                border-radius: $circle;                
                 text-align: center;
-                padding-top:20px;
-                margin:$margin-c;
-                text-decoration:none;
                 font-size: 1.5em;
                 &:hover{
                     background-color:$color-2;

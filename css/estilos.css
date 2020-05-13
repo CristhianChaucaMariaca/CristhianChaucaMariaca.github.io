@@ -5,13 +5,13 @@
   text-align: center; }
 
 .btn {
-  position: relative;
   padding: 15px;
   text-decoration: none;
   border-radius: 5px;
   margin: 5px;
   font-weight: 700;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
 
 .btn-primary {
   background-color: #222831;
@@ -55,20 +55,25 @@ body {
   font-weight: 300;
   background-color: white; }
 
-.container .body .section .title {
-  font-family: "Roboto", sans-serif;
-  font-size: 2.8em;
-  text-align: left;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #222831; }
+.container .body .section {
+  margin-top: 50px; }
+  .container .body .section .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.8em;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #222831; }
 
 .container .hr {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #eeeeee;
+  height: 1px;
+  background-color: #00adb5;
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative;
+  opacity: .3; }
 
 body::-webkit-scrollbar {
   background-color: #222831;
@@ -198,61 +203,23 @@ body .inicio {
   justify-content: space-around;
   padding: 30px;
   position: relative;
-  border-radius: 4px 4px 0 0; }
-  .container .social .social-item #keyframe-uno {
-    -webkit-animation: key-in-uno 2s;
-    animation: key-in-uno 2s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item #keyframe-dos {
-    -webkit-animation: key-in-uno 2.3s;
-    animation: key-in-uno 2.3s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item #keyframe-tres {
-    -webkit-animation: key-in-uno 2.6s;
-    animation: key-in-uno 2.6s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item #keyframe-cuatro {
-    -webkit-animation: key-in-uno 2.9s;
-    animation: key-in-uno 2.9s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item #keyframe-cinco {
-    -webkit-animation: key-in-uno 3.2s;
-    animation: key-in-uno 3.2s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item #keyframe-seis {
-    -webkit-animation: key-in-uno 3.5s;
-    animation: key-in-uno 3.5s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item #keyframe-siete {
-    -webkit-animation: key-in-uno 3.8s;
-    animation: key-in-uno 3.8s;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused; }
-  .container .social .social-item a {
-    background-color: #393e46;
+  border-radius: 4px 4px 0 0;
+  opacity: .5;
+  margin: 0 auto; }
+  .container .social__item a {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none !important;
     color: #00adb5;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     text-decoration: none;
-    display: block;
-    width: 70px;
-    height: 45px;
-    border-radius: 50%;
     text-align: center;
-    padding-top: 20px;
-    margin: 0 auto;
-    text-decoration: none;
     font-size: 1.5em; }
-    .container .social .social-item a:hover {
+    .container .social__item a:hover {
       color: #eeeeee; }
-    .container .social .social-item a:hover {
+    .container .social__item a:hover {
       background-color: #393e46;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -268,7 +235,10 @@ body .inicio {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .container .header video {
     min-width: 100%;
     z-index: -1;
@@ -312,29 +282,22 @@ body .inicio {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
-    .container .header .perfil .saludo {
-      color: #eeeeee;
-      font-family: "Stalemate", cursive;
-      font-size: 3em;
-      position: relative;
-      z-index: 2;
-      text-align: left;
-      width: 100%;
-      display: block;
-      line-height: 0.5;
-      margin-bottom: 1.5%; }
-      .container .header .perfil .saludo:after {
-        content: 'my name is:';
-        font-family: "Roboto", sans-serif;
-        font-size: 12pt;
-        color: #00adb5; }
     .container .header .perfil .name {
+      margin: 0 auto;
       text-align: left;
       color: #eeeeee;
-      font-size: 4em;
+      font-size: 3.2em;
       z-index: 2;
       position: relative;
       line-height: .9; }
+      .container .header .perfil .name:before {
+        content: 'my name is:';
+        font-family: "Roboto", sans-serif;
+        font-size: 15pt;
+        color: #00adb5;
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 100; }
       .container .header .perfil .name .x {
         font-family: "Anton", sans-serif;
         letter-spacing: 3px;
@@ -362,14 +325,13 @@ body .inicio {
         font-weight: 300 !important;
         margin: 0 !important; }
   .container .header .words {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+    z-index: 3;
+    margin: 0 auto;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: static;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -377,15 +339,14 @@ body .inicio {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: right;
-    text-transform: uppercase;
-    z-index: 2; }
+    text-transform: uppercase; }
     .container .header .words span {
       font-weight: 300;
       line-height: .7;
       color: white;
-      font-size: 6em; }
+      font-size: 3em; }
       .container .header .words span:nth-child(2n+1) {
-        font-size: 9em;
+        font-size: 8em;
         font-weight: 900;
         color: #00adb5; }
 
@@ -409,23 +370,6 @@ body .inicio {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .container .footer-1 .footer-ul a {
-      margin-left: 15px;
-      margin-right: 15px;
-      text-decoration: none;
-      color: #00adb5;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      text-decoration: none;
-      text-align: center;
-      font-size: 1.5em; }
-      .container .footer-1 .footer-ul a:hover {
-        color: #eeeeee; }
-      .container .footer-1 .footer-ul a:hover {
-        -webkit-transform: scale(1.09);
-        -ms-transform: scale(1.09);
-        transform: scale(1.09); }
 
 .container .copy-right {
   color: #00adb5;
@@ -884,7 +828,6 @@ body .container #experiencias h3:before {
   content: "E";
   color: #00adb5;
   font-weight: 900 !important;
-  border-bottom: 2px solid #222831;
   font-size: 1.4em !important; }
 
 body .container #proyectos h3.title {
@@ -893,28 +836,24 @@ body .container #proyectos h3.title {
     content: "P";
     color: #00adb5;
     font-weight: 900 !important;
-    border-bottom: 2px solid #222831;
     font-size: 1.4em !important; }
 
 body .container #habilidades h3:before {
   content: "H";
   color: #00adb5;
   font-weight: 900 !important;
-  border-bottom: 2px solid #222831;
   font-size: 1.4em !important; }
 
 body .container #certificaciones h3:before {
   content: "C";
   color: #00adb5;
   font-weight: 900 !important;
-  border-bottom: 2px solid #222831;
   font-size: 1.4em !important; }
 
 body .container #servicios h3:before {
   content: "S";
   color: #00adb5;
   font-weight: 900 !important;
-  border-bottom: 2px solid #222831;
   font-size: 1.4em !important; }
 
 @-webkit-keyframes proyecto {
@@ -1285,42 +1224,42 @@ body .container #servicios h3:before {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
-    .cards .card .img-card {
+    .cards .card__thumbnail {
       overflow: hidden; }
-      .cards .card .img-card img {
-        max-width: 100%;
-        width: 100%;
-        -webkit-transition: -webkit-transform 2s ease-in-out;
-        transition: -webkit-transform 2s ease-in-out;
-        -o-transition: transform 2s ease-in-out;
-        transition: transform 2s ease-in-out;
-        transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out; }
-    .cards .card .title-card h3 {
+    .cards .card__img {
+      max-width: 100%;
+      width: 100%;
+      -webkit-transition: -webkit-transform 2s ease-in-out;
+      transition: -webkit-transform 2s ease-in-out;
+      -o-transition: transform 2s ease-in-out;
+      transition: transform 2s ease-in-out;
+      transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out; }
+    .cards .card__title h3 {
       text-align: left; }
-    .cards .card .description-card p {
+    .cards .card__description p {
       margin-left: 15px;
       margin-right: 15px;
       text-align: justify; }
-    .cards .card .tecnologis-card {
+    .cards .card__technologis {
       margin-left: 15px;
       margin-right: 15px; }
-      .cards .card .tecnologis-card p {
+      .cards .card__technologis p {
         text-align: justify; }
-      .cards .card .tecnologis-card .tecnologis-img-card {
+      .cards .card__technologis .tecnologis-img-card {
         width: 100%;
         text-align: center; }
-        .cards .card .tecnologis-card .tecnologis-img-card img {
+        .cards .card__technologis .tecnologis-img-card img {
           margin: 5px; }
-    .cards .card .link-card {
+    .cards .card__link {
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 15px;
       padding-bottom: 15px; }
-      .cards .card .link-card span {
+      .cards .card__link span {
         color: #393e46;
         margin-right: 10px;
         opacity: .8; }
-      .cards .card .link-card:hover span {
+      .cards .card__link:hover span {
         -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
         transform: rotate(-90deg);

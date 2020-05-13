@@ -1,5 +1,6 @@
 //- Incluimos el mixin SOCIAL.PUG
 include mixins/social
 include ../config/social
-each social in socials
-    +social(social.enlace)(class=social.class)  
+.social
+    each social in socials
+        +social(social.enlace)(class=social.class)  

@@ -13,17 +13,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            a{
-                margin-left: 15px;
-                margin-right: 15px;
-                text-decoration: none;
-                @include link;
-                text-align: center;
-                font-size: 1.5em;
-                &:hover{
-                    transform: scale(1.09);
-                }
-            }
         }
     }
     .copy-right{

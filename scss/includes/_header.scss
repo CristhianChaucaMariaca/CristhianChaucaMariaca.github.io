@@ -4,7 +4,6 @@
         width: 100%;
         overflow: hidden;
         position: relative;
-        // @include border-bottom;
         video{
             min-width: 100%;
             z-index: -1;
@@ -26,6 +25,7 @@
         }
         display: flex;
         align-items: center;
+        justify-content: center;
         .perfil{
             margin-left: 20px;
             width: 50%;
@@ -39,28 +39,20 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            .saludo{
-                color: $color-4;
-                font-family: $font-extra;
-                font-size: 3em;
-                position: relative;
-                z-index: 2;
-                text-align: left;
-                width: 100%;
-                display: block;
-                line-height: 0.5;
-                margin-bottom: $margin;
-                &:after{
+            .name{
+                &:before{
                     content: 'my name is:';
                     font-family: $font;
-                    font-size: 12pt;
+                    font-size: 15pt;
                     color:$color-3;
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: 100;
                 }
-            }
-            .name{
+                margin: 0 auto;
                 text-align: left;
                 color:$color-4;
-                font-size:4em;
+                font-size:3.2em;
                 z-index: 2;
                 position: relative;
                 line-height: .9;
@@ -101,25 +93,22 @@
             }
         }
         .words{
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 2;
+            z-index: 3;
+            margin: 0 auto;
             height: 100%;
             display: flex;
+            position: static;
             flex-wrap: wrap;
             flex-direction: column;
             text-align: right;
             text-transform: uppercase;
-            z-index: 2;
-            // opacity: .9;
             span{
                 font-weight: 300;
                 line-height: .7;
                 color: $color-white;
-                font-size: 6em;
+                font-size: 3em;
                 &:nth-child(2n+1){
-                    font-size: 9em;
+                    font-size: 8em;
                     font-weight: 900;
                     color:$color-3;
                 }

@@ -1,11 +1,11 @@
 @mixin btn{
-    position: relative;
     padding:$padding;
     text-decoration: none;
     border-radius: $radius;
     margin: 5px;
     font-weight: 700;
     text-align: center;
+    display: inline-block;
 }
 @mixin primary {
     background-color: $color-1;

@@ -1,7 +1,6 @@
 @mixin title-decoration {
     color:$color-3;
     font-weight:900 !important;
-    border-bottom: 2px solid $color-1;
 }
 body{
     .container{

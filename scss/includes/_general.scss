@@ -16,16 +16,20 @@ body{
     .body{
         
         .section{
+            margin-top: 50px;
             .title{
                 @include title-2;
             }
         }
     }
     .hr{
-        width: $width-t;
-        margin:$margin-c;
-        border:1px solid $color-4;
+        width: 100%;
+        margin:0 auto;
+        height: 1px;
+        background-color: $color-3;
         @include margin_t_b;
+        position: relative;
+        opacity: .3;
     }
 }
 // Scroll personalizado
