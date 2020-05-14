@@ -7,6 +7,9 @@
     }
     .mostrar-menu{
         clip-path: circle(150% at 100vw 100vh) !important;
+        ul{
+            display: flex;
+        }
     }
     nav{
         width: 100vw;

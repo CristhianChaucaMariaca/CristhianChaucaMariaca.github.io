@@ -1,6 +1,9 @@
 @media screen and (max-width:650px){
      body{
          .container{
+             .row{
+                 width: 100%;
+             }
              header.header{
                  .perfil{
                      font-size: 7pt;
@@ -14,6 +17,16 @@
          .social{
              padding-top: 0 !important;
              padding-bottom: 0 !important;
+         }
+         .cards{
+             .card{
+                 width: 90%;
+             }
+         }
+         .servicios{
+             .servicios-item{
+                 width: 90%;
+             }
          }
      }
 }

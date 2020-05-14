@@ -220,7 +220,6 @@ body .inicio {
     .container .social__item a:hover {
       color: #eeeeee; }
     .container .social__item a:hover {
-      background-color: #393e46;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
@@ -257,7 +256,7 @@ body .inicio {
     z-index: 1; }
   .container .header .perfil {
     margin-left: 20px;
-    width: 50%;
+    width: 80%;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
@@ -383,7 +382,10 @@ body .inicio {
 
 .mostrar-menu-desk {
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 nav {
   position: fixed;
@@ -427,9 +429,7 @@ nav {
     border: solid 1px #00adb5;
     list-style: none;
     margin-bottom: 4.5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -983,6 +983,10 @@ body .container #servicios h3:before {
   .mostrar-menu {
     -webkit-clip-path: circle(150% at 100vw 100vh) !important;
     clip-path: circle(150% at 100vw 100vh) !important; }
+    .mostrar-menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   nav {
     width: 100vw;
     height: 100vh;
@@ -1179,6 +1183,8 @@ body .container #servicios h3:before {
     -ms-grid-column-span: 1; } }
 
 @media screen and (max-width: 650px) {
+  body .container .row {
+    width: 100%; }
   body .container header.header .perfil {
     font-size: 7pt;
     padding-bottom: 0px !important; }
@@ -1186,7 +1192,11 @@ body .container #servicios h3:before {
       margin-bottom: 0px; }
   body .social {
     padding-top: 0 !important;
-    padding-bottom: 0 !important; } }
+    padding-bottom: 0 !important; }
+  body .cards .card {
+    width: 90%; }
+  body .servicios .servicios-item {
+    width: 90%; } }
 
 @media screen and (max-width: 360px) {
   body .container {
@@ -1203,15 +1213,15 @@ body .container #servicios h3:before {
       body .container header.header video {
         display: none; }
       body .container header.header .perfil {
-        width: 100%;
+        width: 90% !important;
         padding: 10px; }
         body .container header.header .perfil .name {
-          font-size: 2em;
+          font-size: 3.5em;
           line-height: 1; }
       body .container header.header .words span {
-        font-size: 1.5em; }
+        font-size: 2em; }
         body .container header.header .words span:nth-child(2n+1) {
-          font-size: 3.5em; }
+          font-size: 5em; }
     body .container .body .section .habilidad .habilidad-item .habilidad-title {
       width: 100% !important; }
     body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
@@ -1245,9 +1255,12 @@ body .container #servicios h3:before {
   body .nav ul li {
     border-bottom: 1px solid #222831; }
   body .social {
+    margin-top: 30px !important;
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
-    justify-content: center !important; } }
+    justify-content: center !important; }
+    body .social__item a {
+      font-size: 2.5em !important; } }
 
 .cards {
   display: -webkit-box;

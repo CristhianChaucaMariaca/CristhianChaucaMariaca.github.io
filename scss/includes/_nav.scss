@@ -1,6 +1,7 @@
 .mostrar-menu-desk{
     opacity: 1;
     visibility: visible;
+    display: flex;
 }
 nav{
     position: fixed;
@@ -36,7 +37,7 @@ nav{
         border: solid 1px $color-3;
         list-style: none;
         margin-bottom: $margin*3;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;

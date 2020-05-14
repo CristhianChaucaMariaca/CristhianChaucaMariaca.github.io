@@ -17,18 +17,18 @@
                     display: none;
                 }
                 .perfil{
-                    width: 100%;
+                    width: 90% !important;
                     padding: 10px;
                     .name{
-                        font-size: 2em;
+                        font-size: 3.5em;
                         line-height: 1;
                     }
                 }
                 .words{
                     span{
-                        font-size: 1.5em;
+                        font-size: 2em;
                         &:nth-child(2n+1){
-                            font-size: 3.5em;
+                            font-size: 5em;
                         }
                     }
                 }
@@ -123,10 +123,11 @@
             }
         }
         .social{
+            margin-top: 30px !important;
             justify-content: center !important;
             &__item{
                 a{
-                    
+                    font-size: 2.5em !important;
                 }
             }
         }
