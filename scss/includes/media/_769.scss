@@ -78,13 +78,14 @@
         .header{
             border-radius: 0;
             justify-content: center;
+            align-items: center;
             .perfil{
-                width: 70%;
+                width: 100% !important;
                 margin: 0 auto;
                 .name{
                     font-size: 2.5em;
                     text-align: center;
-                    font-size: 4em;
+                    font-size: 2.5em;
                     margin-bottom: 20px;
                 }
                 a{
@@ -92,14 +93,19 @@
                 }
             }
             .words{
-                display: none;
+                span{
+                    font-size: 2em;
+                    &:nth-child(2n+1){
+                        font-size: 6em;
+                    }
+                }
             }
         }
         .social{
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
-            .social-item{
-                margin: 2px;
+            &__item{
+                margin: 10px;
             }
         }
         .footer-1{

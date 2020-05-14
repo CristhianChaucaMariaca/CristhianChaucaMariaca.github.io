@@ -1,0 +1,19 @@
+@media screen and (max-width:650px){
+     body{
+         .container{
+             header.header{
+                 .perfil{
+                     font-size: 7pt;
+                     padding-bottom: 0px !important;
+                     .name{
+                         margin-bottom: 0px;
+                     }
+                 }
+             }
+         }
+         .social{
+             padding-top: 0 !important;
+             padding-bottom: 0 !important;
+         }
+     }
+}

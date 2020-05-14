@@ -6,15 +6,13 @@
         @include shadow;
         padding: 5px;
         margin:$margin;
-        &:hover {
-            .img-card{
-                img{
-                    transform: scale(1.2);
-                }
-            }
+        &:hover img{
+            transform: scale(1.2);
         }
         &__thumbnail{
             overflow: hidden;
+            // FIXME: Revisar el marco y el alto del thumbnail
+            // border: 1px solid #e6e6e6;
         }
         &__img{
             max-width: 100%;
@@ -36,11 +34,13 @@
             @include margin_l_r;
             p{
                 text-align: justify;
+                color: #9b9b9b;
             }
             .tecnologis-img-card{
                 width: 100%;
                 text-align: center;
                 img{
+                    width: 20px;
                     margin: 5px;
                 }
             }

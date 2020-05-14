@@ -52,8 +52,7 @@ html {
 
 body {
   color: black;
-  font-weight: 300;
-  background-color: white; }
+  font-weight: 300; }
 
 .container .body .section {
   margin-top: 50px; }
@@ -151,6 +150,7 @@ body .inicio {
 
 .container {
   width: 100%;
+  max-width: 1366px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -968,6 +968,14 @@ body .container #servicios h3:before {
   100% {
     top: 0; } }
 
+@media screen and (max-width: 1280px) {
+  body .container header.header .perfil {
+    width: 80% !important; } }
+
+@media screen and (max-width: 1080px) {
+  body .container header.header .perfil {
+    width: 100% !important; } }
+
 @media screen and (max-width: 780px) {
   .container h3 {
     border-radius: 0px !important;
@@ -1054,26 +1062,32 @@ body .container #servicios h3:before {
       border-radius: 0;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .container .header .perfil {
-        width: 70%;
+        width: 100% !important;
         margin: 0 auto; }
         .container .header .perfil .name {
           font-size: 2.5em;
           text-align: center;
-          font-size: 4em;
+          font-size: 2.5em;
           margin-bottom: 20px; }
         .container .header .perfil a {
           margin: 0 auto; }
-      .container .header .words {
-        display: none; }
+      .container .header .words span {
+        font-size: 2em; }
+        .container .header .words span:nth-child(2n+1) {
+          font-size: 6em; }
     .container .social {
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      .container .social .social-item {
-        margin: 2px; }
+      .container .social__item {
+        margin: 10px; }
     .container .footer-1 .footer-ul li {
       text-align: center; }
       .container .footer-1 .footer-ul li a {
@@ -1164,14 +1178,40 @@ body .container #servicios h3:before {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1; } }
 
+@media screen and (max-width: 650px) {
+  body .container header.header .perfil {
+    font-size: 7pt;
+    padding-bottom: 0px !important; }
+    body .container header.header .perfil .name {
+      margin-bottom: 0px; }
+  body .social {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; } }
+
 @media screen and (max-width: 360px) {
   body .container {
     width: 100% !important; }
     body .container h3 {
       border-radius: 0px !important;
       font-size: 1.5em !important; }
-    body .container header.header .perfil .name {
-      font-size: 2.5em; }
+    body .container header.header {
+      height: 100vh;
+      background-image: url(../media/banner3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left; }
+      body .container header.header video {
+        display: none; }
+      body .container header.header .perfil {
+        width: 100%;
+        padding: 10px; }
+        body .container header.header .perfil .name {
+          font-size: 2em;
+          line-height: 1; }
+      body .container header.header .words span {
+        font-size: 1.5em; }
+        body .container header.header .words span:nth-child(2n+1) {
+          font-size: 3.5em; }
     body .container .body .section .habilidad .habilidad-item .habilidad-title {
       width: 100% !important; }
     body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje {
@@ -1203,7 +1243,11 @@ body .container #servicios h3:before {
   body .nav ul #saludo {
     border-radius: 0; }
   body .nav ul li {
-    border-bottom: 1px solid #222831; } }
+    border-bottom: 1px solid #222831; }
+  body .social {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important; } }
 
 .cards {
   display: -webkit-box;
@@ -1220,7 +1264,7 @@ body .container #servicios h3:before {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     padding: 5px;
     margin: 1.5%; }
-    .cards .card:hover .img-card img {
+    .cards .card:hover img {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
@@ -1244,11 +1288,13 @@ body .container #servicios h3:before {
       margin-left: 15px;
       margin-right: 15px; }
       .cards .card__technologis p {
-        text-align: justify; }
+        text-align: justify;
+        color: #9b9b9b; }
       .cards .card__technologis .tecnologis-img-card {
         width: 100%;
         text-align: center; }
         .cards .card__technologis .tecnologis-img-card img {
+          width: 20px;
           margin: 5px; }
     .cards .card__link {
       padding-left: 15px;

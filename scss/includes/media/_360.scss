@@ -8,9 +8,28 @@
                 font-size: 1.5em!important;
             }
             header.header{
+                height: 100vh;
+                background-image: url(../media/banner3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: left;
+                video{
+                    display: none;
+                }
                 .perfil{
+                    width: 100%;
+                    padding: 10px;
                     .name{
-                        font-size: 2.5em;
+                        font-size: 2em;
+                        line-height: 1;
+                    }
+                }
+                .words{
+                    span{
+                        font-size: 1.5em;
+                        &:nth-child(2n+1){
+                            font-size: 3.5em;
+                        }
                     }
                 }
             }
@@ -81,15 +100,6 @@
                     }
                 }
             }
-            .social{
-                .social-item{
-                    a{
-                        // font-size: 1em;
-                        // width: 40px;
-                        // height: 30px;
-                    }
-                }
-            }
             .certificado{
                 .certificado-item{
                     margin-top: $margin*5!important;
@@ -109,6 +119,14 @@
                 }
                 li{
                     border-bottom: 1px solid $color-1;
+                }
+            }
+        }
+        .social{
+            justify-content: center !important;
+            &__item{
+                a{
+                    
                 }
             }
         }

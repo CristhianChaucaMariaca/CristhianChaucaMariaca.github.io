@@ -8,6 +8,7 @@
         h3.title ortafolio
         .hr
         section.proyecto
+            include busqueda
             .cards
                 each project in portafolio
                     +portafolio(project.img,project.title,project.description,project.technologys,project.link)
