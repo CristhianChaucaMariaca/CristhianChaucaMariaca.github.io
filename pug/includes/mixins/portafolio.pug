@@ -2,7 +2,7 @@
 mixin portafolio(img_project,title_project,description_project,technologys,link_project)
     .card
         .card__thumbnail
-            img(src="media/proyectos/"+img_project+".jpg", class="card__img" alt=title_project, title=title_project)
+            img(src="media/proyectos/"+img_project+".jpg", loading="lazy", class="card__img" alt=title_project, title=title_project)
         .card__title
             h3= title_project
         .card__description
@@ -11,7 +11,7 @@ mixin portafolio(img_project,title_project,description_project,technologys,link_
             p El proyecto fue desarrollado con:
             .tecnologis-img-card
                 each technology in technologys
-                    img(src="media/icons/"+technology+"-icon.png", alt=technology, title=technology)
+                    img(src="media/icons/"+technology+"-icon.png", loading="lazy", alt=technology, title=technology)
         .card__link.t-a-c
             span.icon-link
             a(href=link_project, target="_blank").link-p Ver proyecto
