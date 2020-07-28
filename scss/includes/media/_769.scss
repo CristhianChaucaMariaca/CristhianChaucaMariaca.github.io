@@ -54,6 +54,8 @@
             #saludo{
                 border-radius: 0;
                 margin-bottom: 20px;
+                position: relative;
+                order: 0 !important;
             }
             li{
                 width: 80% !important;

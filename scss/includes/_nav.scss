@@ -1,83 +1,55 @@
 .mostrar-menu-desk{
-    opacity: 1;
-    visibility: visible;
-    display: flex;
+    
 }
 nav{
     position: fixed;
     z-index: 20;
-    bottom: 30px;
-    right: 30px;
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
     justify-content: flex-end;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-1;
+    border-bottom: 1px solid $color-3;
+    @include shadow;
     #toggle-menu{
         display: none;
-    }
-    #togle-menu2.icon-home{
-        order: 2;
-        background-color: $color-1;
-        padding: 10px;
-        border-radius: 100%;
-        font-size: 2em;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        color:$color-4;
-        cursor: pointer;
-        border: solid 1px $color-4;
-        @include shadow;
+        
     }
     ul{
-        visibility: hidden;
-        opacity: 0;
-        transition: .3s;
-        border-radius: 20px;
-        border: solid 1px $color-3;
         list-style: none;
-        margin-bottom: $margin*3;
-        display: none;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: flex-start;
+        display: flex;
         width: 100%;
-        @include shadow;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
         #saludo{
-            color: $color-3;
+            color: $color-4;
             font-weight: normal;
             font-family: $font-extra;
             font-size: 2em;
-            background-color: $color-1;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-width: 1px;
-            border-bottom-color: $color-3;
-            border-bottom-style: solid;
+            order: 20;
+            right: 0;
+            position: absolute;
         }
         li{
-            opacity: .9;
-            &:last-child{
-                border-bottom-right-radius: 20px;
-                border-bottom-left-radius: 20px;
-            }
-            background-color: $color-1;
-            flex:auto;
             text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            margin-right: 15px;
             a{
                 text-transform: uppercase;
                 text-decoration: none;
                 color:$color-3;
                 transition: $transition;
                 line-height: 3;
-                display: block;
+                // display: block;
                 font-weight: bold;
                 border-radius: $border-3;
                 &:hover{
                     color: $color-4;
-                    background-color: $color-2;
-                    transform: scale(0.9);
                 }
             }
         }
