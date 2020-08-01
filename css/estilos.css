@@ -237,7 +237,6 @@ body .inicio #content-carga #carga {
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
