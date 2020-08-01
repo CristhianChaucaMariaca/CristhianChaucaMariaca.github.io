@@ -16,22 +16,36 @@
                 video{
                     display: none;
                 }
-                .perfil{
-                    width: 90% !important;
-                    padding: 10px;
-                    .name{
-                        font-size: 3.5em;
-                        line-height: 1;
+                .header-1{
+                    .section-header{
+                        width: 90% !important;
+                        padding: 10px;
+                        .name{
+                            font-size: 3.5em;
+                            line-height: 1;
+                        }
+                        .words{
+                            span{
+                                font-size: 2em;
+                                &:nth-child(2n+1){
+                                    font-size: 5em;
+                                }
+                            }
+                        }
+                        .social{
+                            font-size: 1em;
+                            .social__item{
+                                // margin:5px;
+                            }
+                        }
                     }
-                }
-                .words{
-                    span{
-                        font-size: 2em;
-                        &:nth-child(2n+1){
-                            font-size: 5em;
+                    .aside-header{
+                        img{
+                            display: none;
                         }
                     }
                 }
+                
             }
             .body{
                 .section{

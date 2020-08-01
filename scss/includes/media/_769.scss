@@ -84,33 +84,16 @@
             border-radius: 0;
             justify-content: center;
             align-items: center;
-            .perfil{
-                width: 100% !important;
-                margin: 0 auto;
-                .name{
-                    font-size: 2.5em;
-                    text-align: center;
-                    font-size: 2.5em;
-                    margin-bottom: 20px;
-                }
-                a{
-                    margin: 0 auto;
-                }
-            }
-            .words{
-                span{
-                    font-size: 2em;
-                    &:nth-child(2n+1){
-                        font-size: 6em;
-                    }
-                }
+            margin-top: 0px;
+            .header-1{
+                font-size: 9pt;
             }
         }
         .social{
             justify-content: space-between;
             flex-wrap: wrap;
             &__item{
-                margin: 10px;
+                // margin: 10px;
             }
         }
         .footer-1{

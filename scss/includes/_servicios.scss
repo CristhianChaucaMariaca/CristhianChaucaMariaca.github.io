@@ -1,12 +1,10 @@
 .servicios{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     .servicios-item{
         @include flex;
         flex-direction: column;
-        width: 297px;
-        margin:$margin;
         padding: $padding;
         background-color: $color-white;
         height: 430px;

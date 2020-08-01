@@ -2,17 +2,51 @@
      body{
          .container{
              .row{
-                 width: 100%;
+                 width: 90%;
              }
              header.header{
-                 .perfil{
-                     font-size: 7pt;
-                     padding-bottom: 0px !important;
-                     .name{
-                         margin-bottom: 0px;
-                     }
-                 }
-             }
+                height: 100vh;
+                background-image: url(../media/banner3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: left;
+                .header-1{
+                    grid-template-columns: repeat(1, 1fr);
+                    font-size: 8pt;
+                    video{
+                        display: none;
+                    }
+                    .section-header{
+                        width: 90% !important;
+                        padding: 10px;
+                        text-align: center;
+                        .name{
+                            font-size: 3em;
+                            line-height: 1;
+                            text-align: center;
+                        }
+                        .words{
+                            span{
+                                font-size: 2em;
+                                &:nth-child(2n+1){
+                                    font-size: 5em;
+                                }
+                            }
+                        }
+                        .social{
+                            font-size: 1.5em;
+                            justify-content: center;
+                        }
+                    }
+                    .aside-header{
+                        justify-content: center;
+                        img{
+                            width: 30%;
+                        }
+                    }
+                }
+                
+            }
          }
          .social{
              padding-top: 0 !important;
@@ -20,7 +54,6 @@
          }
          .cards{
              .card{
-                 width: 90%;
              }
          }
          .servicios{

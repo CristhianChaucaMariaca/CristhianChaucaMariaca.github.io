@@ -1,11 +1,13 @@
 .cards{
-    @include flex_row;
+    // @include flex_row;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     .card{
-        width: 300px;
         @include shadow;
         padding: 5px;
-        margin:$margin;
         &:hover img{
             transform: scale(1.2);
         }

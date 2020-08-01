@@ -3,4 +3,5 @@ include ../config/nav_in_page
 .nav-in-page
     ul
         each item in navpage
-            +nav_pages(item.text)(class="link-"+item.class) 
+            if(item.status === true)
+                +nav_pages(item.text)(class="link-"+item.class) 
