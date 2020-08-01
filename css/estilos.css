@@ -1204,11 +1204,11 @@ body .container #servicios h3:before {
     border-bottom: 1px solid #222831;
   }
   body .social {
-    margin-top: 30px !important;
+    font-size: 12pt !important;
     justify-content: center !important;
   }
   body .social__item a {
-    font-size: 2.5em !important;
+    font-size: 1em !important;
   }
 }
 .cards {
