@@ -413,7 +413,6 @@ nav ul li a:hover {
 }
 nav #toggle-menu {
   cursor: pointer;
-  line-height: 3;
   text-align: center;
   background-color: #00adb5;
   color: #222831;
@@ -854,8 +853,7 @@ body .container #servicios h3:before {
   }
 
   .mostrar-menu {
-    -webkit-clip-path: circle(150% at 100vw 100vh) !important;
-            clip-path: circle(150% at 100vw 100vh) !important;
+    left: 0;
   }
   .mostrar-menu ul {
     display: flex;
@@ -866,11 +864,9 @@ body .container #servicios h3:before {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 100vh;
     z-index: 20;
     background-color: #222831;
-    -webkit-clip-path: circle(80px at 100vw 100vh);
-            clip-path: circle(80px at 100vw 100vh);
     transition: 0.4s ease all;
     display: flex;
     flex-wrap: wrap;
@@ -882,14 +878,12 @@ body .container #servicios h3:before {
     background-color: #222831;
     display: block;
     color: #00adb5;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 2.5em;
     position: fixed;
-    right: 0px;
-    bottom: 0px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    line-height: 1 !important;
+    padding: 25px;
+    border-radius: 50px;
+    right: 30px;
+    bottom: 30px;
     transition: 0.3s;
   }
   nav #togle-menu2.icon-home {
