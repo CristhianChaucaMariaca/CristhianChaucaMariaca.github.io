@@ -24,13 +24,18 @@
             background-color: $color-1;
             display: block;
             color:$color-3;
-            font-size: 2.5em;
+            font-size: 2.4em;
             position: fixed;
-            padding: 25px;
+            padding: 15px;
             border-radius: 50px;
+            border:1px solid $color-2;
             right: 30px;
             bottom: 30px;
             transition: .3s;
+            -webkit-box-shadow: 5px 2px 15px -5px rgba(0,0,0,0.59);
+            -moz-box-shadow: 5px 2px 15px -5px rgba(0,0,0,0.59);
+            box-shadow: 5px 2px 15px -5px rgba(0,0,0,0.59);
+            overflow: hidden;
         }
         #togle-menu2.icon-home{
             display: none;

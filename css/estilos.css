@@ -320,6 +320,7 @@ body .inicio #content-carga #carga {
 .container .header .header-1 .section-header .description {
   color: #00adb5;
   text-align: justify;
+  font-size: 1em;
 }
 .container .header .header-1 .aside-header {
   display: flex;
@@ -521,6 +522,7 @@ body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje 
   grid-gap: 20px;
 }
 .servicios .servicios-item {
+  border: solid 1px rgba(0, 173, 181, 0.5);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -878,13 +880,16 @@ body .container #servicios h3:before {
     background-color: #222831;
     display: block;
     color: #00adb5;
-    font-size: 2.5em;
+    font-size: 2.4em;
     position: fixed;
-    padding: 25px;
+    padding: 15px;
     border-radius: 50px;
+    border: 1px solid #393e46;
     right: 30px;
     bottom: 30px;
     transition: 0.3s;
+    box-shadow: 5px 2px 15px -5px rgba(0, 0, 0, 0.59);
+    overflow: hidden;
   }
   nav #togle-menu2.icon-home {
     display: none;
@@ -1087,6 +1092,9 @@ body .container #servicios h3:before {
     font-size: 1.5em;
     justify-content: center;
   }
+  body .container header.header .header-1 .section-header .description {
+    font-size: 1.4em;
+  }
   body .container header.header .header-1 .aside-header {
     justify-content: center;
   }
@@ -1147,14 +1155,27 @@ body .container #servicios h3:before {
     font-size: 3.5em;
     line-height: 1;
   }
-  body .container header.header .header-1 .section-header .words span {
-    font-size: 2em;
+  body .container header.header .header-1 .section-header .words {
+    font-size: 16px;
   }
-  body .container header.header .header-1 .section-header .words span:nth-child(2n+1) {
-    font-size: 5em;
+  body .container header.header .header-1 .section-header .words p:first-child {
+    font-size: 2.6em;
+  }
+  body .container header.header .header-1 .section-header .words p:last-child {
+    font-size: 1.3em;
   }
   body .container header.header .header-1 .section-header .social {
-    font-size: 1em;
+    font-size: 1rem;
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
+  body .container header.header .header-1 .section-header .social .social__item {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
   }
   body .container header.header .header-1 .aside-header img {
     display: none;
@@ -1204,8 +1225,8 @@ body .container #servicios h3:before {
     border-bottom: 1px solid #222831;
   }
   body .social {
-    font-size: 12pt !important;
-    justify-content: center !important;
+    font-size: 12pt;
+    justify-content: center;
   }
   body .social__item a {
     font-size: 1em !important;
