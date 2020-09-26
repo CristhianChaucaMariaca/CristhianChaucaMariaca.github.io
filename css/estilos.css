@@ -278,7 +278,7 @@ body .inicio #content-carga #carga {
   content: "My name is:";
   font-family: "Stalemate", cursive;
   font-size: 1em;
-  color: #00adb5;
+  color: white;
   display: block;
   margin-bottom: 10px;
   font-weight: 100;
@@ -837,7 +837,7 @@ body .container #servicios h3:before {
     width: 80% !important;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) and (orientation: landscape) {
   body .container header.header .perfil {
     width: 100% !important;
   }
@@ -866,7 +866,7 @@ body .container #servicios h3:before {
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 100vh;
+    left: 100vw;
     z-index: 20;
     background-color: #222831;
     transition: 0.4s ease all;
@@ -1054,6 +1054,22 @@ body .container #servicios h3:before {
     -ms-grid-column-span: 1;
   }
 }
+@media screen and (max-width: 780px) and (orientation: landscape) {
+  header.header .header-1 {
+    grid-template-columns: 1fr !important;
+  }
+  header.header .header-1 .section-header {
+    width: 100%;
+  }
+  header.header .header-1 .section-header .name {
+    width: 100%;
+    grid-column: 1;
+  }
+  header.header .header-1 .aside-header {
+    display: none !important;
+    background-color: yellow;
+  }
+}
 @media screen and (max-width: 650px) {
   body .container .row {
     width: 90%;
@@ -1129,7 +1145,7 @@ body .container #servicios h3:before {
     background-image: url(../media/banner4-small.jpg);
   }
 }
-@media screen and (max-width: 360px) {
+@media (max-width: 360px) and (orientation: portrait) {
   body .container {
     width: 100% !important;
   }
@@ -1218,6 +1234,9 @@ body .container #servicios h3:before {
   body .container .proyecto .proyecto-item {
     margin-top: 7.5% !important;
   }
+  body .nav {
+    background-color: red;
+  }
   body .nav ul #saludo {
     border-radius: 0;
   }
@@ -1230,6 +1249,11 @@ body .container #servicios h3:before {
   }
   body .social__item a {
     font-size: 1em !important;
+  }
+}
+@media (max-width: 360px) and (orientation: landscape) {
+  .nav {
+    background-color: red;
   }
 }
 .cards {

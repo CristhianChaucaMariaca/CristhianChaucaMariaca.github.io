@@ -16,7 +16,7 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 100vh;
+        left: 100vw;
         z-index: 20;
         background-color: $color-1;
         transition: .4s ease all;
@@ -190,4 +190,26 @@
         }
     }
     
+}
+@media screen and( max-width: 780px) and (orientation:landscape){
+    header.header{
+        .header-1{
+            grid-template-columns: 1fr !important;
+            .section-header{
+                width: 100%;
+                
+                .name{
+                    width: 100%;
+                    grid-column: 1;
+                }
+                .words{
+
+                }
+            }
+            .aside-header{
+                display: none !important;
+                background-color: yellow;
+            }
+        }
+    }
 }

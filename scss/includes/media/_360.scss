@@ -1,4 +1,4 @@
-@media screen and(max-width:360px){
+@media (max-width:360px) and (orientation:portrait){
     body{
     
         .container{
@@ -137,6 +137,7 @@
             
         }
         .nav{
+            background-color: red;
             ul{
                 #saludo{
                     border-radius: 0;
@@ -155,5 +156,10 @@
                 }
             }
         }
+    }
+}
+@media (max-width:360px) and (orientation:landscape ){
+    .nav{
+        background-color: red;
     }
 }
