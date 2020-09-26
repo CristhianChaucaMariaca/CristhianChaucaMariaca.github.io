@@ -1233,9 +1233,6 @@ body .container #servicios h3:before {
   body .container .proyecto .proyecto-item {
     margin-top: 7.5% !important;
   }
-  body .nav {
-    background-color: red;
-  }
   body .nav ul #saludo {
     border-radius: 0;
   }
