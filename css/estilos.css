@@ -1119,6 +1119,13 @@ body .container #servicios h3:before {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 30px;
   }
+  body .container header.header {
+    background-image: url(../media/banner3-small.jpg);
+  }
+
+  .container .body .section .contacto {
+    background-image: url(../media/banner4-small.jpg);
+  }
 }
 @media screen and (max-width: 360px) {
   body .container {
