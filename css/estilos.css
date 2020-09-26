@@ -1067,7 +1067,6 @@ body .container #servicios h3:before {
   }
   header.header .header-1 .aside-header {
     display: none !important;
-    background-color: yellow;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1249,11 +1248,6 @@ body .container #servicios h3:before {
   }
   body .social__item a {
     font-size: 1em !important;
-  }
-}
-@media (max-width: 360px) and (orientation: landscape) {
-  .nav {
-    background-color: red;
   }
 }
 .cards {
