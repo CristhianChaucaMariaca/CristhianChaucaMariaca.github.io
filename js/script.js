@@ -1,9 +1,23 @@
-window.addEventListener('load', inicio);
+
+/* Variables Media Querys */
+let cuatroOchenta = "(max-width:480px)";
 function inicio(){
     ocultarInicio();
     document.getElementById('toggle-menu').addEventListener('click',mostrarMenu);
-    document.getElementById('togle-menu2').addEventListener('click', mostrarMunudesk);
+    mediaQuery(cuatroOchenta);
 }
+const mediaQuery=(e)=>{
+    if(window.matchMedia(e))
+    {
+        /* Removemos el video a partir de 480px para prevenir la demora en la carga de la web */
+        let videoHeader=document.getElementById("headerVideo");
+        let header = document.getElementById("header");
+
+        header.removeChild(videoHeader);
+    }
+}
+window.addEventListener('load', inicio);
+
 
 function mostrarMenu(e){
     if(document.getElementById('nav').classList.toggle('mostrar-menu'))
@@ -24,4 +38,5 @@ function ocultarInicio(){
     inicio.style.display = "none";
 
 }
+
 
