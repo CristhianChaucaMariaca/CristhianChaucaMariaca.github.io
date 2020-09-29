@@ -7,7 +7,7 @@ function inicio(){
     mediaQuery(cuatroOchenta);
 }
 const mediaQuery=(e)=>{
-    if(window.matchMedia(e))
+    if(window.matchMedia(e).matches)
     {
         /* Removemos el video a partir de 480px para prevenir la demora en la carga de la web */
         let videoHeader=document.getElementById("headerVideo");
