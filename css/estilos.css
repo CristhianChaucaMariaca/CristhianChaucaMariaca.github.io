@@ -275,33 +275,6 @@ body .inicio #content-carga #carga {
   font-size: 3.2em;
   z-index: 2;
 }
-.container .header .header-1 .section-header .name:before {
-  content: "My name is:";
-  font-family: "Stalemate", cursive;
-  font-size: 1em;
-  color: white;
-  display: block;
-  margin-bottom: 10px;
-  font-weight: 100;
-}
-.container .header .header-1 .section-header .name .x {
-  font-family: "Anton", sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-.container .header .header-1 .section-header .name .x:before {
-  content: "C";
-  color: #00adb5;
-}
-.container .header .header-1 .section-header .name .y {
-  font-family: "Anton", sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-.container .header .header-1 .section-header .name .y:before {
-  content: "M";
-  color: #00adb5;
-}
 .container .header .header-1 .section-header .words {
   z-index: 3;
   margin: 0 auto;
@@ -323,14 +296,6 @@ body .inicio #content-carga #carga {
   text-align: justify;
   font-size: 1em;
 }
-.container .header .header-1 .aside-header {
-  display: flex;
-  justify-content: flex-end;
-}
-.container .header .header-1 .aside-header img {
-  width: 80%;
-}
-
 .container .footer-nav {
   color: #00adb5;
   background-color: #222831;
@@ -1071,6 +1036,10 @@ body .container #servicios h3:before {
   }
 }
 @media screen and (max-width: 650px) {
+  .people {
+    margin-top: 30px;
+  }
+
   body .container .row {
     width: 90%;
   }
@@ -1110,12 +1079,6 @@ body .container #servicios h3:before {
   }
   body .container header.header .header-1 .section-header .description {
     font-size: 1.4em;
-  }
-  body .container header.header .header-1 .aside-header {
-    justify-content: center;
-  }
-  body .container header.header .header-1 .aside-header img {
-    width: 30%;
   }
   body .social {
     padding-top: 0 !important;
@@ -1192,9 +1155,6 @@ body .container #servicios h3:before {
   body .container header.header .header-1 .section-header .social .social__item {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-  }
-  body .container header.header .header-1 .aside-header img {
-    display: none;
   }
   body .container .body .section .habilidad .habilidad-item .habilidad-title {
     width: 100% !important;
@@ -2524,4 +2484,28 @@ body .container #servicios h3:before {
 .ptb-20 {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.people__picture {
+  width: 40%;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+}
+.people__img {
+  max-width: 100%;
+  display: block;
+}
+.people__name {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+  text-align: center;
 }

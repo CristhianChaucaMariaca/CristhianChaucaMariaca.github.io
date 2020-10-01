@@ -39,15 +39,6 @@
             font-size: 11pt;
             .section-header{
                 .name{
-                    &:before{
-                        content: 'My name is:';
-                        font-family: $font-extra;
-                        font-size: 1em;
-                        color:$color-white;
-                        display: block;
-                        margin-bottom: 10px;
-                        font-weight: 100;
-                    }
                     text-align: left;
                     color:$color-4;
                     font-size:3.2em;
@@ -56,21 +47,6 @@
                         font-family: $font-title;
                         letter-spacing: 3px;
                         text-transform: uppercase;
-                    }
-                    .x{
-                        @include name;
-                        &:before{
-                            content: "C";
-                            color:$color-3;
-                        }
-                        
-                    }
-                    .y{
-                        @include name;
-                        &:before{
-                            content: 'M';
-                            color:$color-3;
-                        }
                     }
                 }
                 .words{
@@ -96,11 +72,7 @@
                 }
             }
             .aside-header{
-                display: flex;
-                justify-content: flex-end;
-                img{
-                    width: 80%;
-                }               
+                               
             }
         }
         

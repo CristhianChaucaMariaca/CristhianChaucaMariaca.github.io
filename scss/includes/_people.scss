@@ -1,0 +1,24 @@
+.people{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    &__picture{
+        width: 40%;
+        border-radius: 100%;
+        overflow: hidden;
+        display: block;
+    }
+    &__img{
+        max-width: 100%;
+        display: block;
+    }
+    &__name{
+        color:$color-white;
+        // font-family: $font-extra;
+        font-family: $font-title;
+        font-size: 2em;
+        text-align: center;
+    }
+}

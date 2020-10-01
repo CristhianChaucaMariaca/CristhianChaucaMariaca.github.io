@@ -10,7 +10,13 @@
     <meta name="theme-color" content="#222831"/>
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="stylesheet" href="fonts/style.css"/>
-    <link rel="icon" href="media/icon.png" type="image/png"/>
+    <link rel="icon" href="media/icon.png" type="image/png"/><meta property="og:url"                content="https://cristhianchaucamariaca.github.io/" />
+<meta property="og:type"               content="profile" />
+<meta property="profile:first_name"    content="Cristhian"/>
+<meta property="profile:last_name"    content="Chauca"/>
+<meta property="og:title"              content="Portafolio" />
+<meta property="og:description"        content="Mira los proyectos que realizo, y los servicios que proporciono." />
+<meta property="og:image"              content="https://cristhianchaucamariaca.github.io/media/photo.jpeg" />
     <title>Portafolio | Cristhian C. Chauca Mariaca</title>
   </head>
   <body>
@@ -29,11 +35,9 @@
       </nav>
       <header class="header" id="header">
         <video src="media/video/coding-banner.mp4" autoplay="autoplay" muted="muted" loop="loop" id="headerVideo"></video>
-        <section class="header-1 row">
+        <section class="header-1 row" itemscope="itemscope" itemtype="https://schema.org/Person">
           <section class="section-header">
-            <h1 class="name"> <span class="x">risthian </span><span class="x">. </span><span class="x">hauca </span><span class="y">ariaca</span></h1>
-            <div class="hr"></div>
-            <div class="words">
+            <div class="words" itemprop="jobTitle">
               <p>Developer</p>
               <p>Backend & Frontend</p>
             </div>
@@ -48,7 +52,14 @@
                           <div class="social__item"><a class="social__link icon-whatsapp" href="https://wa.me/59172087907" target="_blank"></a></div>
             </div>
           </section>
-          <section class="aside-header"></section>
+          <section class="aside-header">
+            <div class="people">
+              <div class="people__picture"><img class="people__img" src="media/photo.jpeg" alt="Photo Autor" itemprop="image"/></div>
+              <div class="people__body">
+                <p class="people__name" itemprop="name">Cristhian C. Chauca Mariaca</p>
+              </div>
+            </div>
+          </section>
         </section>
       </header>
       <main class="body">

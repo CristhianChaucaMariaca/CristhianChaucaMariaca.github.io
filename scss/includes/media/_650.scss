@@ -1,5 +1,8 @@
 @media screen and (max-width:650px){
-     body{
+    .people{
+        margin-top: 30px;
+    }
+    body{
          .container{
              .row{
                  width: 90%;
@@ -42,10 +45,6 @@
                         }
                     }
                     .aside-header{
-                        justify-content: center;
-                        img{
-                            width: 30%;
-                        }
                     }
                 }
                 
@@ -65,4 +64,5 @@
              }
          }
      }
+    
 }
