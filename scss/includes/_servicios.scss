@@ -8,7 +8,7 @@
         flex-direction: column;
         padding: $padding;
         background-color: $color-white;
-        height: 430px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         @include card-shadow;
@@ -35,7 +35,7 @@
                 }
                 span{
                     width: 88%;
-                    text-align: justify;
+                    text-align: left;
                 }
             }
             .icon-checkmark2{

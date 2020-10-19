@@ -495,7 +495,7 @@ body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje 
   flex-direction: column;
   padding: 15px;
   background-color: white;
-  height: 430px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, 0.42);
@@ -528,7 +528,7 @@ body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje 
 }
 .servicios .servicios-item .servicios-items .service-li span {
   width: 88%;
-  text-align: justify;
+  text-align: left;
 }
 .servicios .servicios-item .servicios-items .icon-checkmark2 {
   color: #00adb5;
@@ -2108,9 +2108,6 @@ body .container #servicios h3:before {
 @media screen and (max-width: 1080px) and (orientation: landscape) {
   body .container header.header .perfil {
     width: 100% !important;
-  }
-  body .container .cards {
-    grid-template-columns: repeat(2, 1fr);
   }
   body .container .servicios {
     grid-template-columns: repeat(2, 1fr);
