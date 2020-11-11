@@ -1,67 +1,67 @@
-.cards{
-    // @include flex_row;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    .card{
-        @include shadow;
-        padding: 5px;
-        &:hover img{
-            transform: scale(1.2);
-        }
-        &__thumbnail{
-            overflow: hidden;
-            // FIXME: Revisar el marco y el alto del thumbnail
-            // border: 1px solid #e6e6e6;
-        }
-        &__img{
-            max-width: 100%;
-            width: 100%;
-            transition: transform 2s ease-in-out;
-        }
-        &__title{
-            h3{
-                text-align: left;
-            }
-        }
-        &__description{
-            p{
-                @include margin_l_r;
-                @include format_text;
-            }
-        }
-        &__technologis{
-            @include margin_l_r;
-            p{
-                text-align: justify;
-                color: #9b9b9b;
-            }
-            .tecnologis-img-card{
-                width: 100%;
-                text-align: center;
-                img{
-                    width: 20px;
-                    margin: 5px;
-                }
-            }
-        }
-        &__link{
-            @include padding_l_r;
-            @include padding_t_b;
-            span{
-                color:$color-2;
-                margin-right: 10px;
-                opacity: .8;
-            }
-            &:hover{
-                span{
-                    transform: rotate(-90deg);
-                    transition: transform .3s ease-in-out;
-                    display: inline-block;
-                }
-            }
-        }
+.cards {
+  // @include flex_row;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  .card {
+    @include shadow;
+    padding: 5px;
+    &:hover img {
+      transform: scale(1.2);
     }
+    &__thumbnail {
+      overflow: hidden;
+      // FIXME: Revisar el marco y el alto del thumbnail
+      // border: 1px solid #e6e6e6;
+    }
+    &__img {
+      max-width: 100%;
+      width: 100%;
+      transition: transform 2s ease-in-out;
+    }
+    &__title {
+      h3 {
+        text-align: left;
+      }
+    }
+    &__description {
+      p {
+        @include margin_l_r;
+        @include format_text;
+      }
+    }
+    &__technologis {
+      @include margin_l_r;
+      p {
+        text-align: justify;
+        color: #9b9b9b;
+      }
+      .tecnologis-img-card {
+        width: 100%;
+        text-align: center;
+        img {
+          width: 20px;
+          margin: 5px;
+        }
+      }
+    }
+    &__link {
+      @include padding_l_r;
+      @include padding_t_b;
+      span {
+        color: $color-2;
+        margin-right: 10px;
+        opacity: 0.8;
+      }
+      &:hover {
+        span {
+          transform: rotate(-90deg);
+          transition: transform 0.3s ease-in-out;
+          display: inline-block;
+        }
+      }
+    }
+  }
 }
