@@ -1,48 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: $font;
-    // box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  // box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    color: $color-font;
-    font-weight: 300;
+body {
+  color: $color-font;
+  font-weight: 300;
 }
-.container{
-    .body{
-        
-        .section{
-            margin-top: 50px;
-            .title{
-                @include title-2;
-            }
-        }
+.container {
+  .body {
+    .section {
+      margin-top: 50px;
+      .title {
+        @include title-2;
+      }
     }
-    .hr{
-        width: 100%;
-        margin:0 auto;
-        height: 1px;
-        background-color: $color-3;
-        @include margin_t_b;
-        position: relative;
-        opacity: .3;
-    }
+  }
+  .hr {
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: $color-3;
+    @include margin_t_b;
+    position: relative;
+    opacity: 0.3;
+  }
 }
 // Scroll personalizado
-body::-webkit-scrollbar{
-    background-color:$color-1;
-    width: 7px;
-    border-right: 1px solid $color-white;
+body::-webkit-scrollbar {
+  background-color: $color-1;
+  width: 7px;
+  border-right: 1px solid $color-white;
 }
-body::-webkit-scrollbar-thumb{
-    background-color: $color-3;
-    border-radius: 5px;
-    border-right: 1px solid $color-white;
+body::-webkit-scrollbar-thumb {
+  background-color: $color-3;
+  border-radius: 5px;
+  border-right: 1px solid $color-white;
 }
-p{
-    margin-top: 5px;
-    margin-bottom: 10px;
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
