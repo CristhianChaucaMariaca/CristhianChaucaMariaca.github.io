@@ -1,68 +1,67 @@
-@media screen and (max-width:650px){
-    .people{
-        margin-top: 30px;
-    }
-    body{
-         .container{
-             .row{
-                 width: 90%;
-             }
-             header.header{
-                height: 100vh;
-                background-image: url(../media/banner3.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: left;
-                .header-1{
-                    grid-template-columns: repeat(1, 1fr);
-                    font-size: 8pt;
-                    video{
-                        display: none;
-                    }
-                    .section-header{
-                        width: 90% !important;
-                        padding: 10px;
-                        text-align: center;
-                        .name{
-                            font-size: 3em;
-                            line-height: 1;
-                            text-align: center;
-                        }
-                        .words{
-                            span{
-                                font-size: 2em;
-                                &:nth-child(2n+1){
-                                    font-size: 5em;
-                                }
-                            }
-                        }
-                        .social{
-                            font-size: 1.5em;
-                            justify-content: center;
-                        }
-                        .description{
-                            font-size: 1.4em;
-                        }
-                    }
-                    .aside-header{
-                    }
-                }
-                
+@media screen and (max-width: 650px) {
+  .people {
+  }
+  body {
+    .container {
+      .row {
+        width: 90%;
+      }
+      header.header {
+        height: 100vh;
+        background-image: url(../media/banner3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        .header-1 {
+          grid-template-columns: repeat(1, 1fr);
+          font-size: 8pt;
+          video {
+            display: none;
+          }
+          .section-header {
+            width: 90% !important;
+            padding: 10px;
+            text-align: center;
+            .name {
+              font-size: 3em;
+              line-height: 1;
+              text-align: center;
             }
-         }
-         .social{
-             padding-top: 0 !important;
-             padding-bottom: 0 !important;
-         }
-         .cards{
-             .card{
-             }
-         }
-         .servicios{
-             .servicios-item{
-                 width: 90%;
-             }
-         }
-     }
-    
+            .words {
+              span {
+                font-size: 2em;
+                &:nth-child(2n + 1) {
+                  font-size: 5em;
+                }
+              }
+            }
+            .social {
+              font-size: 3em;
+              justify-content: center;
+            }
+            .description {
+              font-size: 1.4em;
+            }
+          }
+          .aside-header {
+          }
+        }
+      }
+    }
+    .cards {
+      .card {
+        &__title {
+          h3 {
+            font-size: 1.5em;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .servicios {
+      .servicios-item {
+        width: 90%;
+      }
+    }
+  }
 }

@@ -1,62 +1,20 @@
 @mixin title-decoration {
-    color:$color-3;
-    font-weight:900 !important;
+  color: $color-3;
 }
-body{
-    .container{
-        h3{
-            padding: $padding;
-            color: $color-2;
-            text-align: left;
-        }
-        @mixin size-title{
-            font-size: 1.4em !important;
-        }
-        #experiencias{
-            h3{
-                &:before{
-                    content: "E";
-                    @include title-decoration;
-                    @include size-title;
-                }
-            }
-        }
-        #proyectos{
-            h3.title{
-                font-style: $font-extra !important;
-                &:before{
-                    content: "P";
-                    @include title-decoration;
-                    @include size-title;
-                }
-            }
-        }
-        #habilidades{
-            h3{
-                &:before{
-                    content: "H";
-                    @include title-decoration;
-                    @include size-title;
-                }
-            }
-        }
-        #certificaciones{
-            h3{
-                &:before{
-                    content: "C";
-                    @include title-decoration;
-                    @include size-title;
-                }
-            }
-        }
-        #servicios{
-            h3{
-                &:before{
-                    content: "S";
-                    @include title-decoration;
-                    @include size-title;
-                }
-            }
-        }
+body {
+  .container {
+    h3 {
+      padding: $padding;
+      color: $color-2;
+      text-align: left;
     }
+    @mixin size-title {
+      font-size: 1.4em !important;
+    }
+    #proyectos {
+      h3.title {
+        font-family: $font-extra !important;
+      }
+    }
+  }
 }

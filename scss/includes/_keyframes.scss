@@ -18,14 +18,30 @@
     }
 }
 
-@keyframes texto{
+@keyframes appear{
     from{
-        letter-spacing: -1em;
         opacity: 0;
     }
     to{
-        letter-spacing: normal;
         opacity:1;
+    }
+}
+@keyframes jump{
+    0%{
+        transform: scale(.8);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fromUpToDown{
+    to{
+        transform:translateY(0px);
     }
 }
 

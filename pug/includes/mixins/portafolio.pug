@@ -3,15 +3,16 @@ mixin portafolio(img_project,title_project,description_project,technologys,link_
     .card
         .card__thumbnail
             img(src="media/proyectos/"+img_project+".jpg", loading="lazy", class="card__img" alt=title_project, title=title_project)
-        .card__title
-            h3= title_project
-        .card__description
-            p= description_project
-        .card__technologis
-            p El proyecto fue desarrollado con:
-            .tecnologis-img-card
-                each technology in technologys
-                    img(src="media/icons/"+technology+"-icon.png", loading="lazy", alt=technology, title=technology)
-        .card__link.t-a-c
-            span.icon-link
-            a(href=link_project, target="_blank").link-p Ver proyecto
+        .card__content
+            .card__title
+                h3= title_project
+            .card__description
+                p= description_project
+            .card__technologis
+                p El proyecto fue desarrollado con:
+                .tecnologis-img-card
+                    each technology in technologys
+                        img(src="media/icons/"+technology+"-icon.png", loading="lazy", alt=technology, title=technology)
+            .card__link.t-a-c
+                span.icon-link
+                a(href=link_project, target="_blank").link-p Ver proyecto

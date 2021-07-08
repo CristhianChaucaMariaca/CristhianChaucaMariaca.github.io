@@ -3,4 +3,4 @@ include mixins/social
 include ../config/social
 .social
     each social in socials
-        +social(social.enlace)(class=social.class)  
+        +social(social.enlace, social.id)(class=social.class, id=social.id)  

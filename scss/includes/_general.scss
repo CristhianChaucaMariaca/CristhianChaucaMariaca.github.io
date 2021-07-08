@@ -15,8 +15,18 @@ body {
   .body {
     .section {
       margin-top: 50px;
-      .title {
-        @include title-2;
+      &__description {
+        margin-bottom: 40px;
+        font-size: 1.2em;
+        text-align: center;
+        color: $color-3;
+        font-weight: 100;
+      }
+      &__title {
+        font-family: $font-extra;
+        font-size: 4em;
+        font-weight: 100;
+        text-align: center;
       }
     }
   }

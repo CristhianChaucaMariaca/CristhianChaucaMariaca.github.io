@@ -1,24 +1,25 @@
-.container{
-    .social{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: $padding*2;
-        position: relative;
-        border-radius: $border-3 $border-3 0 0;
-        opacity: .5;
-        margin: 0 auto;
-        &__item{
-            a{
-                text-decoration: none !important;
-                @include link;
-                text-align: center;
-                font-size: 1.5em;
-                margin: 5px;
-                &:hover{
-                    transform: scale(1.1);
-                }
-            }
-        }
+.container {
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    border-radius: $border-3 $border-3 0 0;
+    margin: 0 auto;
+    &__item {
     }
+    &__link {
+      text-decoration: none !important;
+      @include link;
+      text-align: center;
+      font-size: 2.3em;
+      margin: 5px;
+      display: block;
+      transition: $transition;
+      opacity: 0;
+      &:hover {
+        transform: scale(1.07);
+      }
+    }
+  }
 }
