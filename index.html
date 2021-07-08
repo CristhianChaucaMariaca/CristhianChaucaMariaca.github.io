@@ -21,42 +21,28 @@
   </head>
   <body>
     <div class="container">
-      <nav class="nav" id="nav">
-        <div class="icon-menu" id="toggle-menu"></div>
-        <div class="row">
-          <ul id="nav-ul">
-            <li id="saludo">Welcome...!</li>
-            <li><a class="link-inicio" href="#header">Inicio</a></li>
-            <li><a class="link-proyectos" href="#proyectos">Proyectos</a></li>
-            <li><a class="link-proyectos" href="#servicios">Servicios</a></li>
-            <li><a class="link-contacto" href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
       <header class="header" id="header">
         <video src="media/video/coding-banner.mp4" autoplay="autoplay" muted="muted" loop="loop" id="headerVideo"></video>
         <section class="header-1 row" itemscope="itemscope" itemtype="https://schema.org/Person">
           <section class="section-header">
+            <div class="photo" id="photo"><img class="photo__img" src="media/photo.jpeg" alt="" srcset=""/></div>
             <div class="words" itemprop="jobTitle">
-              <p>Developer</p>
-              <p>Backend & Frontend</p>
-            </div>
-            <p class="description">Soy un programador emocionado por aprender cada dia algo nuevo, que me ayude a perfeccionar mis habilidades como desarrollador y diseñador de sitios web. Intento presentar proyectos concluidos con el mayor detalle posible, que ayuden al usuario final a simplificar sus labores cotidianas con satisfacción al ciento por ciento. </p>
-            <div class="social">
-                          <div class="social__item"><a class="social__link icon-facebook2" href="https://www.facebook.com/cristhiancarlos.chaucamariaca.1" target="_blank"></a></div>
-                          <div class="social__item"><a class="social__link icon-twitter" href="https://twitter.com/cris_chauca" target="_blank"></a></div>
-                          <div class="social__item"><a class="social__link icon-github" href="https://github.com/CristhianChaucaMariaca?tab=repositories" target="_blank"></a></div>
-                          <div class="social__item"><a class="social__link icon-blogger" href="https://hdesks.blogspot.com/" target="_blank"></a></div>
-                          <div class="social__item"><a class="social__link icon-youtube" href="https://www.youtube.com/channel/UCa3NCItYc3T2puwjFcy4o0Q?disable_polymer=true" target="_blank"></a></div>
-                          <div class="social__item"><a class="social__link icon-linkedin" href="https://www.linkedin.com/in/cristhian-carlos-chauca-mariaca" target="_blank"></a></div>
-                          <div class="social__item"><a class="social__link icon-whatsapp" href="https://wa.me/59172087907" target="_blank"></a></div>
+              <p id="title">Developer</p>
+              <p id="skills">Backend & Frontend</p>
             </div>
           </section>
-          <section class="aside-header">
+          <section class="footer-header">
             <div class="people">
-              <div class="people__picture"><img class="people__img" src="media/photo.jpeg" alt="Photo Autor" itemprop="image"/></div>
-              <div class="people__body">
-                <p class="people__name" itemprop="name">Cristhian C. Chauca Mariaca</p>
+              <people__body>
+                <p class="people__name" id="name" itemprop="name"><span class="char">C</span>risthian <span class="char">C</span>hauca </p>
+              </people__body>
+            </div>
+            <div id="footer-header">
+              <div class="social">
+                              <div class="social__item"><a class="social__link icon-twitter" href="https://twitter.com/cris_chauca" target="_blank" id="twitter"></a></div>
+                              <div class="social__item"><a class="social__link icon-github" href="https://github.com/CristhianChaucaMariaca?tab=repositories" target="_blank" id="github"></a></div>
+                              <div class="social__item"><a class="social__link icon-linkedin" href="https://www.linkedin.com/in/cristhian-carlos-chauca-mariaca" target="_blank" id="linkedin"></a></div>
+                              <div class="social__item"><a class="social__link icon-whatsapp" href="https://wa.me/59172087907" target="_blank" id="whatsapp"></a></div>
               </div>
             </div>
           </section>
@@ -65,211 +51,304 @@
       <main class="body">
         <div class="row">
           <section class="section" id="proyectos">
-            <h3 class="title">ortafolio</h3>
+            <h3 class="section__title">Portfolio</h3>
+            <p class="section__description">check out some of my recent projects.</p>
             <section class="proyecto">
               <div class="cards">
                           <div class="card">
-                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="Blog avanzado" title="Blog avanzado"/></div>
-                            <div class="card__title">
-                              <h3>Blog avanzado</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Descripción corta del proyecto detallado</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/php-icon.png" loading="lazy" alt="php" title="php"/><img src="media/icons/mysql-icon.png" loading="lazy" alt="mysql" title="mysql"/>
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/steakhouse.jpg" loading="lazy" alt="The SteakHouse" title="The SteakHouse"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>The SteakHouse</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Menú del restaurante adaptado a dispositivos moviles</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/steakhouse-international-forms/" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/CristhianChaucaMariaca.github.io" target="_blank">Ver proyecto</a></div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/lacueva.jpg" loading="lazy" alt="La Cueva" title="La Cueva"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>La Cueva</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>La mejor comida mexicana para disfrutar.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/LaCueva-International-Forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/grillroom.jpg" loading="lazy" alt="THE GRILLROOM" title="THE GRILLROOM"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>THE GRILLROOM</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>Menú del restaurante donde se pueden ver sus platillos y precios.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/GrillRoom-International-Forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/dinos.jpg" loading="lazy" alt="Dinos" title="Dinos"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Dinos</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>Restaurante familiar donde se puede pasar en familia.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/Dinos-International-Forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/litleitaly.jpg" loading="lazy" alt="Litle Italy" title="Litle Italy"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Litle Italy</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>Restaurante de comida italiana.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/LitleItaly-International-Forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/sushiinn.jpg" loading="lazy" alt="Sushi Inn" title="Sushi Inn"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Sushi Inn</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>Menú de restaurante con precios y fotografias adaptado a dispositivos movieles</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/SushiInn-International-Forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/thedubliner.jpg" loading="lazy" alt="The Dubliner" title="The Dubliner"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>The Dubliner</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>Permite mostrar el menú del restaurante.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/TheDubliner-International-Forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="Blog avanzado" title="Blog avanzado"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Blog avanzado</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>Descripción corta del proyecto detallado</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/php-icon.png" loading="lazy" alt="php" title="php"/><img src="media/icons/mysql-icon.png" loading="lazy" alt="mysql" title="mysql"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/CristhianChaucaMariaca.github.io" target="_blank">Ver proyecto</a></div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card__thumbnail"><img class="card__img" src="media/proyectos/mood.jpg" loading="lazy" alt="Mood" title="Mood"/></div>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Mood</h3>
+                              </div>
+                              <div class="card__description">
+                                <p>La mejor comida rápida, encuentra sus mejores platillos.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://cristhianchaucamariaca.github.io/Mood-International-forms/" target="_blank">Ver proyecto</a></div>
+                            </div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/cubo.jpg" loading="lazy" alt="Cubo 3D" title="Cubo 3D"/></div>
-                            <div class="card__title">
-                              <h3>Cubo 3D</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Cubo diseñado en CSS 3D</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Cubo 3D</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Cubo diseñado en CSS 3D</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://codepen.io/cristhianchaucamariaca/pen/NWGYzVM" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://codepen.io/cristhianchaucamariaca/pen/NWGYzVM" target="_blank">Ver proyecto</a></div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/Ichuri.jpg" loading="lazy" alt="Ichuri Coffee" title="Ichuri Coffee"/></div>
-                            <div class="card__title">
-                              <h3>Ichuri Coffee</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Página web de Restaurante - Cafetería de la empresa Ichuri</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/><img src="media/icons/javascript-icon.png" loading="lazy" alt="javascript" title="javascript"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Ichuri Coffee</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Página web de Restaurante - Cafetería de la empresa Ichuri</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/><img src="media/icons/pug-icon.png" loading="lazy" alt="pug" title="pug"/><img src="media/icons/sass-icon.png" loading="lazy" alt="sass" title="sass"/><img src="media/icons/javascript-icon.png" loading="lazy" alt="javascript" title="javascript"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://www.ichuri.net/" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://www.ichuri.net/" target="_blank">Ver proyecto</a></div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="Blog HDesks" title="Blog HDesks"/></div>
-                            <div class="card__title">
-                              <h3>Blog HDesks</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Blog orientado a compartir información sobre tecnología</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Blog HDesks</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Blog orientado a compartir información sobre tecnología</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/css3-icon.png" loading="lazy" alt="css3" title="css3"/><img src="media/icons/html5-icon.png" loading="lazy" alt="html5" title="html5"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://www.hdesks.com" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://www.hdesks.com" target="_blank">Ver proyecto</a></div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="CRUD Laravel &amp; Vue" title="CRUD Laravel &amp; Vue"/></div>
-                            <div class="card__title">
-                              <h3>CRUD Laravel &amp; Vue</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Práctica de CRUD realizada con las técnologias Laravel y Vue</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>CRUD Laravel &amp; Vue</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Práctica de CRUD realizada con las técnologias Laravel y Vue</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/CRUD-Laravel-y-Vue" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/CRUD-Laravel-y-Vue" target="_blank">Ver proyecto</a></div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="Search Simple" title="Search Simple"/></div>
-                            <div class="card__title">
-                              <h3>Search Simple</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Proyecto donde se realiza una busqueda simple por campos.</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Search Simple</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Proyecto donde se realiza una busqueda simple por campos.</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/Serach-Simple" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/Serach-Simple" target="_blank">Ver proyecto</a></div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="Inventarío" title="Inventarío"/></div>
-                            <div class="card__title">
-                              <h3>Inventarío</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Desarrollo de Inventario con el metodo PEPs</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Inventarío</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Desarrollo de Inventario con el metodo PEPs</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/inventario" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/inventario" target="_blank">Ver proyecto</a></div>
                           </div>
                           <div class="card">
                             <div class="card__thumbnail"><img class="card__img" src="media/proyectos/laravel.jpg" loading="lazy" alt="Contacto" title="Contacto"/></div>
-                            <div class="card__title">
-                              <h3>Contacto</h3>
-                            </div>
-                            <div class="card__description">
-                              <p>Pequeño modulo dedicado a la administración de contactos empresariales</p>
-                            </div>
-                            <div class="card__technologis">
-                              <p>El proyecto fue desarrollado con:</p>
-                              <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                            <div class="card__content">
+                              <div class="card__title">
+                                <h3>Contacto</h3>
                               </div>
+                              <div class="card__description">
+                                <p>Pequeño modulo dedicado a la administración de contactos empresariales</p>
+                              </div>
+                              <div class="card__technologis">
+                                <p>El proyecto fue desarrollado con:</p>
+                                <div class="tecnologis-img-card"><img src="media/icons/laravel-icon.png" loading="lazy" alt="laravel" title="laravel"/><img src="media/icons/vue-icon.png" loading="lazy" alt="vue" title="vue"/><img src="media/icons/bootstrap-icon.png" loading="lazy" alt="bootstrap" title="bootstrap"/>
+                                </div>
+                              </div>
+                              <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/Contacto" target="_blank">Ver proyecto</a></div>
                             </div>
-                            <div class="card__link t-a-c"><span class="icon-link"></span><a class="link-p" href="https://github.com/CristhianChaucaMariaca/Contacto" target="_blank">Ver proyecto</a></div>
                           </div>
               </div>
             </section>
           </section>
         </div>
-        <div class="row">
-          <section class="section" id="servicios">
-            <h3 class="title">ervicios</h3>
-            <section class="servicios">
-                      <article class="servicios-item">
-                        <h4 class="servicio-title">Diseño Web</h4>
-                        <div class="hr"></div>
-                        <article class="servicios-items">
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Wordpress</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Webs a medida</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Blogger</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Diseño Responsive</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Soporte &amp; Administración de contenidos</span></div>
-                        </article>
-                        <div class="service-link"><a class="btn btn-primary" href="#" target="_blank">Consultar</a></div>
-                      </article>
-                      <article class="servicios-item">
-                        <h4 class="servicio-title">Desarrollo Web</h4>
-                        <div class="hr"></div>
-                        <article class="servicios-items">
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Diseño Backend PHP</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Diseño Frontend JavaScript</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Bases de datos MySql</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Administración de usuarios</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Roles &amp; permisos</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Sistemas a medida</span></div>
-                        </article>
-                        <div class="service-link"><a class="btn btn-primary" href="#" target="_blank">Consultar</a></div>
-                      </article>
-                      <article class="servicios-item">
-                        <h4 class="servicio-title">SEO</h4>
-                        <div class="hr"></div>
-                        <article class="servicios-items">
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Alta en Analytics</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Alta en Serch Console</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Analisis de Meta etiquetas</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Analisis de palabras clave</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Alta en navegadores</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Datos Estructurados</span></div>
-                          <div class="service-li"><span class="icon icon-checkmark2"></span><span>Alta en AdSense</span></div>
-                        </article>
-                        <div class="service-link"><a class="btn btn-primary" href="#" target="_blank">Consultar</a></div>
-                      </article>
-            </section>
-          </section>
-        </div>
         <section class="section" id="contacto">
           <section class="contacto">
-            <div class="email">
-              <h4> cristhiancchm</h4>
+            <div class="contacto__section">
+              <p class="contacto__paragraph">You can contact me in the following ways:</p>
             </div>
-            <div class="cellphone">
-              <h4> 72087907</h4>
+            <div class="contacto__section">
+              <div class="contacto__email">
+                <h4> cristhiancchm</h4>
+              </div>
+              <div class="contacto__cellphone">
+                <h4> 72087907</h4>
+              </div>
             </div>
           </section>
         </section>
       </main>
       <footer class="footer-1">
-        <div class="footer-ul">
-          <div class="social">
-                      <div class="social__item"><a class="social__link icon-facebook2" href="https://www.facebook.com/cristhiancarlos.chaucamariaca.1" target="_blank"></a></div>
-                      <div class="social__item"><a class="social__link icon-twitter" href="https://twitter.com/cris_chauca" target="_blank"></a></div>
-                      <div class="social__item"><a class="social__link icon-github" href="https://github.com/CristhianChaucaMariaca?tab=repositories" target="_blank"></a></div>
-                      <div class="social__item"><a class="social__link icon-blogger" href="https://hdesks.blogspot.com/" target="_blank"></a></div>
-                      <div class="social__item"><a class="social__link icon-youtube" href="https://www.youtube.com/channel/UCa3NCItYc3T2puwjFcy4o0Q?disable_polymer=true" target="_blank"></a></div>
-                      <div class="social__item"><a class="social__link icon-linkedin" href="https://www.linkedin.com/in/cristhian-carlos-chauca-mariaca" target="_blank"></a></div>
-                      <div class="social__item"><a class="social__link icon-whatsapp" href="https://wa.me/59172087907" target="_blank"></a></div>
-          </div>
-        </div>
-      </footer>
-      <footer class="footer-nav">
-        <div class="nav-in-page">
-          <ul>
-                    <li><a class="link-inicio" href="#">INICIO</a></li>
-                    <li><a class="link-proyectos" href="#">PROYECTOS</a></li>
-                    <li><a class="link-contacto" href="#">CONTACTO</a></li>
-          </ul>
-        </div>
+        <div class="footer-ul"></div>
       </footer>
       <footer class="copy-right">
         <p>© Cristhian Chauca</p>

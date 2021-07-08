@@ -4,4 +4,4 @@ include ../config/nav_in_page
     ul
         each item in navpage
             if(item.status === true)
-                +nav_pages(item.text)(class="link-"+item.class) 
+                +nav_pages(item.text, item.class)(class="link-"+item.class) 

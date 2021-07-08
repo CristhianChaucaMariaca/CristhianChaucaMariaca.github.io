@@ -2,12 +2,14 @@ header.header#header
     video(src="media/video/coding-banner.mp4", autoplay muted loop)#headerVideo
     section(itemscope, itemtype="https://schema.org/Person").header-1.row
         section.section-header
+            .photo#photo
+                img.photo__img(src="media/photo.jpeg", alt="", srcset="")
             .words(itemprop="jobTitle")
-                p Developer
-                p Backend & Frontend
-            p.description Soy un programador emocionado por aprender cada dia algo nuevo, que me ayude a perfeccionar mis habilidades como desarrollador y diseñador de sitios web. Intento presentar proyectos concluidos con el mayor detalle posible, que ayuden al usuario final a simplificar sus labores cotidianas con satisfacción al ciento por ciento. 
-            include social
-        section.aside-header
+                p#title Developer
+                p#skills Backend & Frontend
+        section.footer-header
             include people
+            #footer-header
+                include social
 
         

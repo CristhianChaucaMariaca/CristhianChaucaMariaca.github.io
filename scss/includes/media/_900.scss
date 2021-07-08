@@ -1,17 +1,18 @@
-@media screen and(max-width:1080px) and (orientation: landscape){
-    body{
-        .container{
-            header.header{
-                .perfil{
-                    width: 100% !important;
-                }
-            }
-            .cards{
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .servicios{
-                grid-template-columns: repeat(2, 1fr);
-            }
+@media screen and(max-width:900px) {
+  body {
+    .container {
+      header.header {
+        .perfil {
+          width: 100% !important;
         }
+      }
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+      }
     }
+  }
+  video {
+    height: 100vh;
+  }
 }
