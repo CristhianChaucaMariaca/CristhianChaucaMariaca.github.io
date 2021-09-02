@@ -1071,8 +1071,9 @@ body .container #proyectos h3.title {
     font-size: 1.5em;
     text-align: center;
   }
-  body .servicios .servicios-item {
-    width: 90%;
+
+  .services {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 450px) {
