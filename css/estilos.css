@@ -17,7 +17,7 @@
 
 .btn-primary {
   background-color: #222831;
-  color: #00adb5;
+  color: #eeeeee;
   transition: 0.3s;
 }
 .btn-primary:hover {
@@ -512,68 +512,35 @@ body .container .body .section .habilidad .habilidad-item .habilidad-porcentaje 
   filter: grayscale(60%);
 }
 
-.servicios {
+#services {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 40px;
+}
+
+.services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 40px;
 }
-.servicios .servicios-item {
-  border: solid 1px rgba(0, 173, 181, 0.5);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 15px;
-  background-color: white;
-  height: 430px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, 0.42);
-}
-.servicios .servicios-item .servicio-title {
+
+.service {
+  display: grid;
+  grid-row-gap: 20px;
+  justify-items: center;
   text-align: center;
-  color: #00adb5;
-  text-transform: uppercase;
-  font-size: 1.1em;
 }
-.servicios .servicios-item .servicios-items {
-  flex-grow: 1;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.servicios .servicios-item .servicios-items .service-li {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.servicios .servicios-item .servicios-items .service-li span.icon {
-  margin-bottom: 3%;
-  margin-bottom: 3%;
+
+.service__title {
+  text-align: center;
   color: #222831;
-  width: 10%;
+}
+
+.service__description {
   color: #00adb5;
-  font-size: 1.2em;
-}
-.servicios .servicios-item .servicios-items .service-li span {
-  width: 88%;
-  text-align: justify;
-}
-.servicios .servicios-item .servicios-items .icon-checkmark2 {
-  color: #00adb5;
-}
-.servicios .servicios-item .servicios-items .icon-checkmark2 span {
-  color: #222831;
-  margin-left: 3%;
-  font-weight: 300;
-  text-align: justify;
-}
-.servicios .servicios-item .service-link {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 body .container .body .section .experiencia .experiencia-item {

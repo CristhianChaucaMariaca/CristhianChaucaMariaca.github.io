@@ -1,57 +1,26 @@
-.servicios {
+#services {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 40px;
+}
+.services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  .servicios-item {
-    border: solid 1px rgba($color-3, $alpha: 0.5);
-    @include flex;
-    flex-direction: column;
-    padding: $padding;
-    background-color: $color-white;
-    height: 430px;
-    display: flex;
-    flex-direction: column;
-    @include card-shadow;
-    .servicio-title {
-      text-align: center;
-      color: $color-3;
-      text-transform: uppercase;
-      font-size: 1.1em;
-    }
-    .servicios-items {
-      flex-grow: 1;
-      @include margin_l-r;
-      .service-li {
-        @include flex;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        span.icon {
-          margin-bottom: $margin * 2;
-          margin-bottom: $margin * 2;
-          color: $color-1;
-          width: 10%;
-          color: $color-3;
-          font-size: 1.2em;
-        }
-        span {
-          width: 88%;
-          text-align: justify;
-        }
-      }
-      .icon-checkmark2 {
-        color: $color-3;
-        span {
-          color: $color-1;
-          margin-left: $margin * 2;
-          font-weight: 300;
-          // background-color: red;
-          text-align: justify;
-        }
-      }
-    }
-    .service-link {
-      @include flex;
-      justify-content: center;
-    }
-  }
+  grid-gap: 40px;
+}
+.service {
+  display: grid;
+  grid-row-gap: 20px;
+  justify-items: center;
+  text-align: center;
+}
+.service__title {
+  text-align: center;
+  color: $color-1;
+}
+.service__description {
+  color: $color-3;
 }
