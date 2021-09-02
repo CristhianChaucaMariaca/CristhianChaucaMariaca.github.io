@@ -1,15 +1,19 @@
 //- Incluimos el mixin de servicios
 include mixins/servicios
+include mixins/btn
 
 //- importamos el archivo de configuración de SERVICIOS con los datos necesarios
 include ../config/servicios
 //- Creamos un array para enviar los datos a cada servicio
 
 .row
-    section.section#servicios
-        h3.title ervicios
-        section.servicios
+    section.section#services
+        h3.section__title Servicios
+        p.section__description Si tienes un proyecto en el que podamos trabajar juntos, estos son los servicios en los que te puedo ayudar, no dudes en contactarme:
+        section.services
             each service in services
-                +servicio(service.name,service.items,service.link)
+                +servicio(service.icon,service.title,service.description)
+        section.section__footer
+            +btn('link','Contactame', 'primary')(class="btn-primary")
             
 

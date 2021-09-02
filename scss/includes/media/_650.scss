@@ -58,10 +58,8 @@
         }
       }
     }
-    .servicios {
-      .servicios-item {
-        width: 90%;
-      }
-    }
+  }
+  .services {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

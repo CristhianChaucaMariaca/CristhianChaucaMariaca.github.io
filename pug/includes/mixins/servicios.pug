@@ -1,11 +1,5 @@
-mixin servicio(name,items, link)
-    article.servicios-item
-        h4.servicio-title= name
-        .hr
-        article.servicios-items
-            each item in items
-                .service-li
-                    span.icon.icon-checkmark2
-                    span #{item}
-        .service-link
-            a.btn.btn-primary(href=link, target="_blank") Consultar
+mixin servicio(icon,title, description)
+    article.service
+        img(src="media/"+icon+".svg", alt=title, srcset="").service__icon
+        h2.service__title= title
+        p.service__description= description
