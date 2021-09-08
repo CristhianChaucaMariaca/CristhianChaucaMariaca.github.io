@@ -1218,13 +1218,15 @@ body .container #proyectos h3.title {
 }
 .cards .card {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  padding: 5px;
+  padding: 12px;
+  border-radius: 10px;
 }
-.cards .card:hover img {
+.cards .card:hover .card__img {
   transform: scale(1.2);
 }
 .cards .card__thumbnail {
   overflow: hidden;
+  border-radius: 10px;
 }
 .cards .card__img {
   max-width: 100%;
@@ -1232,28 +1234,12 @@ body .container #proyectos h3.title {
   transition: transform 2s ease-in-out;
 }
 .cards .card__title h3 {
-  text-align: left;
+  text-align: center;
 }
 .cards .card__description p {
   margin-left: 15px;
   margin-right: 15px;
   text-align: justify;
-}
-.cards .card__technologis {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.cards .card__technologis p {
-  text-align: justify;
-  color: #9b9b9b;
-}
-.cards .card__technologis .tecnologis-img-card {
-  width: 100%;
-  text-align: center;
-}
-.cards .card__technologis .tecnologis-img-card img {
-  width: 20px;
-  margin: 5px;
 }
 .cards .card__link {
   padding-left: 15px;
@@ -1261,15 +1247,18 @@ body .container #proyectos h3.title {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.cards .card__link span {
-  color: #393e46;
-  margin-right: 10px;
-  opacity: 0.8;
+.cards .card__link svg .card__icon {
+  fill: #00adb5;
+  transition: all 0.3s;
 }
-.cards .card__link:hover span {
-  transform: rotate(-90deg);
-  transition: transform 0.3s ease-in-out;
-  display: inline-block;
+.cards .card__link:hover svg .card__icon {
+  fill: #222831;
+  transform: scale(1.02);
+}
+.cards .card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Margin */
